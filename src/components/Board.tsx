@@ -107,7 +107,9 @@ const Board = () => {
             right: 0,
           }}
         />
-        <MlNavigationTools />
+        <div className="hidden md:flex">
+          <MlNavigationTools />
+        </div>
       </div>
     </section>
   );
