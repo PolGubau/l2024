@@ -1,62 +1,50 @@
 import "./App.css";
-import {
-  MapLibreMap,
-  MlFillExtrusionLayer,
-  MlGpxViewer,
-} from "@mapcomponents/react-maplibre";
-const args = {
-  paint: {
-    "fill-extrusion-color": "hsl(196, 61%, 83%)",
-    "fill-extrusion-height": {
-      property: "render_height",
-      type: "identity",
-    },
-    "fill-extrusion-base": {
-      property: "render_min_height",
-      type: "identity",
-    },
-    "fill-extrusion-opacity": [
-      "interpolate",
-      // Set to interpoleta linearly between the pair of stops
-      ["linear"],
-      ["zoom"],
-      // When zoom is 13.5, buildings will be 100% transparent.
-      13.5,
-      0,
-      // When zoom is 15 or higher, buildings will be 100% opaque.
-      14.5,
-      1,
-    ],
-  },
-};
+
+import Board from "./Board";
+
 function App() {
   return (
-    <main className="relative w-screen h-screen flex flex-col ">
-      <nav className="bg-slate-300 text-3xl p-4">L2024 Project</nav>
-
-      <section className="flex gap-8 bg-red-300 p-4 h-full">
-        <div className="w-96">options</div>
-        <div className="relative w-full h-full overflow-hidden rounded-3xl">
-          <MlFillExtrusionLayer {...args} />
-          <MlGpxViewer gpxData={ } />
-          <MapLibreMap
-            options={{
-              center: { lat: 41.390205, lng: 2.154007 },
-              style: "/map/schema.json",
-              zoom: 12,
-            }}
-            style={{
-              position: "absolute",
-              top: 0,
-              bottom: 0,
-              left: 0,
-              right: 0,
-            }}
-          />
-        </div>
-      </section>
+    <main className="relative w-screen h-screen ">
+      <Board />
     </main>
   );
 }
 
 export default App;
+
+/*
+  // const lineByName = (name: string) =>
+  //   linesData.find((line) => line.name === name);
+
+  // const loadSample = async (lineName: string) => {
+  //   const uri = `https://raw.githubusercontent.com/PolGubau/l2024/main/public/lines/${lineName}.gpx`;
+  //   try {
+  //     const response = await fetch(uri);
+  //     const gpx = await response.blob();
+  //     const reader = new FileReader();
+  //     reader.onload = function (e) {
+  //       const data = e.target?.result ?? undefined;
+  //       console.log(data);
+
+  //       // update the gpt data
+  //       setLines((prev) =>
+  //         prev.map((line) =>
+  //           line.name === lineName ? { ...line, gpx: data } : line
+  //         )
+  //       );
+
+  //       return data;
+  //     };
+  //     return reader.readAsText(gpx);
+  //   } catch (error) {
+  //     return console.log(error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   loadSample("L1");
+  //   loadSample("L2");
+  // }, []);
+
+
+*/

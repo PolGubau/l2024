@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx
 version="1.1"
-creator="Created by My Tracks from Daniel Qin"
+creator="Created by Pol Gubau Amores"
 xmlns="http://www.topografix.com/GPX/1/1"
 xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/1"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -14,7 +14,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <name><![CDATA[L2]]></name>
 <desc><![CDATA[]]></desc>
 <type><![CDATA[10]]></type>
-<extensions><topografix:color>3A73E2</topografix:color></extensions>
+<extensions><topografix:color>737</topografix:color></extensions>
 <trkseg>
 <trkpt lat="41.449848" lon="2.245184">
 <ele>65.2</ele>
