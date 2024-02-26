@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef } from "react";
 import { bbox } from "@turf/turf";
 import toGeoJSON from "../util/toGeoJSON";
@@ -8,6 +9,8 @@ import {
   useSource,
 } from "@mapcomponents/react-maplibre";
 import { LineType } from "../types";
+import { toast } from "pol-ui";
+import { LngLatBoundsLike } from "maplibre-gl";
 
 export interface MlGpxViewerProps {
   mapId?: string;
@@ -17,10 +20,14 @@ export interface MlGpxViewerProps {
   isSelectable?: boolean;
   isSelected?: boolean;
   setSelectedLine?: (line: LineType) => void;
+
+  setSelectedStop?: (stopId: string) => void;
+  selectedStop?: string;
 }
 
 export const Line = ({
   line,
+  setSelectedStop,
   isSelected,
   setSelectedLine,
   ...props
@@ -58,33 +65,37 @@ export const Line = ({
 
   useLayer({
     layerId: layerNameLines.current,
+    onClick: handleSelect,
+
     options: {
       type: "line",
 
       paint: {
         "line-width": 3,
-        "line-opacity": isSelected ? 1 : 0.5,
+        "line-opacity": isSelected ? 1 : 0.3,
         "line-color": line.metadata?.color || "rgba(72, 77, 99,0.5)",
       },
       source: sourceName.current,
-      onClick: handleSelect,
     },
   });
 
   useLayer({
-    onHover: (e) => {
-      if (e.features.length > 0) {
-        if (!mapHook.map) return;
+    onClick: (ev) => {
+      // properties are separated by commas as csv , get the number next to the wilidata key
 
-        mapHook.map.map.getCanvas().style.cursor = "pointer";
-      } else {
-        if (!mapHook.map) return;
+      // get the last -2 item in the array
+      const e = ev as any;
+      const stopId = e.features[0].properties.cmt
+        .split(",")
+        .slice(-1)[0]
+        .split(":")[1];
 
-        mapHook.map.map.getCanvas().style.cursor = "";
-      }
-    },
-    onClick: (e) => {
-      alert(e.features[0].properties.name);
+      toast({
+        title: e.features[0].properties.name,
+        description: "Stop selected",
+      });
+
+      setSelectedStop?.(stopId);
       handleSelect();
     },
 
@@ -94,7 +105,7 @@ export const Line = ({
       paint: {
         "circle-color": line.metadata?.color || "rgba(72, 77, 99,0.5)",
         "circle-opacity": isSelected ? 1 : 0.3,
-        "circle-radius": 6,
+        "circle-radius": 7,
       },
       filter: ["==", "$type", "Point"],
       source: sourceName.current,
@@ -107,7 +118,9 @@ export const Line = ({
     // fit map view to GeoJSON bbox
 
     const bounds = bbox(parsedGpx.geojson);
-    mapHook.map.map.fitBounds(bounds);
+    mapHook.map.map.fitBounds(bounds as LngLatBoundsLike, {
+      padding: 20,
+    });
   }, [mapHook.map, parsedGpx, props]);
 
   return <></>;

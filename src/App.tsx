@@ -1,11 +1,13 @@
+import { Toaster } from "pol-ui";
 import "./App.css";
 
-import Board from "./Board";
+import Board from "./components/Board";
 
 function App() {
   return (
     <main className="relative w-screen h-screen ">
       <Board />
+      <Toaster />
     </main>
   );
 }

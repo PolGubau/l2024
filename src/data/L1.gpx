@@ -7,191 +7,217 @@
         <link href="https://polgubau.com"></link>
     </author>
 </metadata>
+
+<wpt lat="41.4515878" lon="2.2183919">
+    <ele>46.6</ele>
+    <id>2</id>
+    <name>Estació de Fondo</name>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana, defibrillator:location:en: platform, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Fondo (L1), name:ca: Fondo (L1), network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547644, wikipedia: ca:Estació de Fondo, id:fondo</cmt>
+    <sym>Ground Transportation</sym>
+</wpt>
 <wpt lat="41.4510253" lon="2.2079477">
     <ele>33.7</ele>
     <name>Estació de Santa Coloma</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Santa Coloma, name:ca: Santa Coloma, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q506934, wikipedia: ca:Estació de Santa Coloma</cmt>
-    <sym>Ground Transportation</sym>
-</wpt>
-<wpt lat="41.4515878" lon="2.2183919">
-    <ele>46.6</ele>
-    <name>Estació de Fondo</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana, defibrillator:location:en: platform, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Fondo (L1), name:ca: Fondo (L1), network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547644, wikipedia: ca:Estació de Fondo</cmt>
+    <code>1</code>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Santa Coloma, name:ca: Santa Coloma, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q506934, wikipedia: ca:Estació de Santa Coloma, id:coloma</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4499467" lon="2.1995389">
     <ele>26.8</ele>
+    <id>3</id>
     <name>Railway Station</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Baró de Viver, name:ca: Baró de Viver, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547046, wikipedia: ca:Estació de Baró de Viver</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Baró de Viver, name:ca: Baró de Viver, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547046, wikipedia: ca:Estació de Baró de Viver, id:baro</cmt>
     <desc>Estació de Baró de Viver</desc>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4487676" lon="2.1937366">
     <ele>25.3</ele>
+    <id>4</id>
     <name>Estació de Trinitat Vella</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, name: Trinitat Vella, name:ca: Trinitat Vella, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2324406, wikipedia: ca:Estació de Trinitat Vella</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, name: Trinitat Vella, name:ca: Trinitat Vella, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2324406, wikipedia: ca:Estació de Trinitat Vella, id:trinitat</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4431273" lon="2.1907138">
     <ele>32.7</ele>
+    <id>5</id>
     <name>Estació de Torras i Bages</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana central, defibrillator:location:en: platform, emergency: defibrillator, name: Torras i Bages, name:ca: Torras i Bages, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547669, wikipedia: ca:Estació de Torras i Bages</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana central, defibrillator:location:en: platform, emergency: defibrillator, name: Torras i Bages, name:ca: Torras i Bages, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547669, wikipedia: ca:Estació de Torras i Bages, id:bages</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4366293" lon="2.1911382">
     <ele>34.7</ele>
+    <id>6</id>
     <name>Estació de Sant Andreu</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana central, defibrillator:location:en: platform, emergency: defibrillator, name: Sant Andreu, name:ca: Sant Andreu, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: limited, wikidata: Q2536679, wikipedia: ca:Estació de Sant Andreu</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana central, defibrillator:location:en: platform, emergency: defibrillator, name: Sant Andreu, name:ca: Sant Andreu, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: limited, wikidata: Q2536679, wikipedia: ca:Estació de Sant Andreu, id:andreu</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4297809" lon="2.1836388">
     <ele>44.7</ele>
+    <id>7</id>
     <name>Estació de Fabra i Puig</name>
-    <cmt>access: yes, defibrillator:access: yes, defibrillator:location: Andana central, defibrillator:location:en: Platform, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, level: -2, name: Fabra i Puig, name:ca: Fabra i Puig, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: yes, wikidata: Q1810408, wikipedia: ca:Estació de Fabra i Puig</cmt>
+    <cmt>access: yes, defibrillator:access: yes, defibrillator:location: Andana central, defibrillator:location:en: Platform, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, level: -2, name: Fabra i Puig, name:ca: Fabra i Puig, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: yes, wikidata: Q1810408, wikipedia: ca:Estació de Fabra i Puig, id:fabra</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
-<wpt lat="41.4204532" lon="2.1867491">
-    <ele>40.8</ele>
-    <name>Railway Station</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: Andada, defibrillator:location:en: Platform, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: La Sagrera (L9N-L10), name:ca: La Sagrera (L9N-L10), network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-12-11, train: yes, wheelchair: yes, wikidata: Q2140013, wikipedia: ca:Estació de la Sagrera</cmt>
-    <sym>Ground Transportation</sym>
-</wpt>
+ 
 <wpt lat="41.4226234" lon="2.1870242">
     <ele>35.3</ele>
+    <code>9</code>
     <name>Estació de la Sagrera</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana, defibrillator:location:en: platform, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/zoVF5iQ.jpg, name: La Sagrera (L1), name:ca: La Sagrera (L1), network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-12-24, wheelchair: yes, wikidata: Q2140013, wikipedia: ca:Estació de la Sagrera</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana, defibrillator:location:en: platform, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/zoVF5iQ.jpg, name: La Sagrera (L1), name:ca: La Sagrera (L1), network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-12-24, wheelchair: yes, wikidata: Q2140013, wikipedia: ca:Estació de la Sagrera, id:sagrera</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4160445" lon="2.1869379">
     <ele>37.5</ele>
+    <id>10</id>
     <name>Estació de Navas</name>
-    <cmt>access: yes, defibrillator:access: yes, defibrillator:location: Andana central, defibrillator:location:en: Platform, emergency: defibrillator, indoor: yes, level: -2, name: Navas, name:ca: Navas, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: yes, wikidata: Q2547614, wikipedia: ca:Estació de Navas</cmt>
+    <cmt>access: yes, defibrillator:access: yes, defibrillator:location: Andana central, defibrillator:location:en: Platform, emergency: defibrillator, indoor: yes, level: -2, name: Navas, name:ca: Navas, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: yes, wikidata: Q2547614, wikipedia: ca:Estació de Navas, id:navas</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4101394" lon="2.1869158">
     <ele>30.8</ele>
+    <id>11</id>
     <name>Estació El Clot</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana central, defibrillator:location:en: platform, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/ykLY4wH.jpg, indoor: yes, level: -2, name: el Clot, name:ca: el Clot, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: no, wikidata: Q2435438, wikipedia: ca:Estació El Clot</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana central, defibrillator:location:en: platform, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/ykLY4wH.jpg, indoor: yes, level: -2, name: el Clot, name:ca: el Clot, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: no, wikidata: Q2435438, wikipedia: ca:Estació El Clot, id:clot</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4022111" lon="2.1875183">
     <ele>16.0</ele>
+    <id>12</id>
     <name>Estació de Glòries</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: Andana central, defibrillator:location:en: Platform, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/bnTvPkk.jpg, indoor: yes, level: -2, name: Glòries, name:ca: Glòries, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2547599, wikipedia: ca:Estació de Glòries</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: Andana central, defibrillator:location:en: Platform, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/bnTvPkk.jpg, indoor: yes, level: -2, name: Glòries, name:ca: Glòries, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2547599, wikipedia: ca:Estació de Glòries, id:glories</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3949958" lon="2.1862682">
     <ele>16.5</ele>
+    <id>13</id>
     <name>Estació de Marina</name>
-    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, name: Marina, name:ca: Marina, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q2251103, wikipedia: ca:Estació de Marina</cmt>
+    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, name: Marina, name:ca: Marina, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q2251103, wikipedia: ca:Estació de Marina, id:marina</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3921143" lon="2.1809092">
     <ele>18.9</ele>
+    <id>14</id>
     <name>Estació d&apos;Arc de Triomf</name>
-    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, indoor: yes, name: Barcelona - Arc de Triomf, name:ca: Barcelona - Arc de Triomf, operator: Adif, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, train: yes, uic_ref: 7178804, wheelchair: yes, wikidata: Q800445, wikipedia: ca:Estació d&apos;Arc de Triomf</cmt>
+    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, indoor: yes, name: Barcelona - Arc de Triomf, name:ca: Barcelona - Arc de Triomf, operator: Adif, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, train: yes, uic_ref: 7178804, wheelchair: yes, wikidata: Q800445, wikipedia: ca:Estació d&apos;Arc de Triomf, id:arc</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.38785393851347" lon="2.1695225675883023">
     <ele>37.9</ele>
+    <id>15</id>
     <name>Estació de Plaça de Catalunya</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Trinitat Nova, defibrillator:location:en: platform to Trinitat Nova, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Catalunya, name:ca: Catalunya, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q800447, wikipedia: ca:Estació de Plaça de Catalunya</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Trinitat Nova, defibrillator:location:en: platform to Trinitat Nova, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Catalunya, name:ca: Catalunya, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q800447, wikipedia: ca:Estació de Plaça de Catalunya, id:cat</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3896372" lon="2.1745608">
     <ele>35.4</ele>
+    <id>16</id>
     <name>Estació de d&apos;Urquinaona</name>
-    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Urquinaona, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: no</cmt>
+    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Urquinaona, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: no, id:16</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.38540946769633" lon="2.163731246947656">
     <ele>29.0</ele>
+    <id>17</id>
     <name>Estació d&apos;Universitat</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, level: -2, name: Universitat, name:ca: Universitat, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-11, wheelchair: yes</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, level: -2, name: Universitat, name:ca: Universitat, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-11, wheelchair: yes, id:15</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3824863" lon="2.1588888">
     <ele>33.2</ele>
+    <id>18</id>
     <name>Estació d&apos;Urgell</name>
-    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, indoor: yes, level: -2, name: Urgell, name:ca: Urgell, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2094288, wikipedia: ca:Estació d&apos;Urgell</cmt>
+    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, indoor: yes, level: -2, name: Urgell, name:ca: Urgell, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2094288, wikipedia: ca:Estació d&apos;Urgell, id:14</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3792368" lon="2.1545732">
     <ele>31.3</ele>
+    <id>19</id>
     <name>Estació de Rocafort</name>
-    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, indoor: yes, level: -2, name: Rocafort, name:ca: Rocafort, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q935853, wikipedia: ca:Estació de Rocafort</cmt>
+    <cmt>access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, indoor: yes, level: -2, name: Rocafort, name:ca: Rocafort, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q935853, wikipedia: ca:Estació de Rocafort, id:13</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3754812" lon="2.1493272">
     <ele>30.3</ele>
+    <id>20</id>
     <name>Estació d&apos;Espanya</name>
-    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, image: https://i.imgur.com/R4KvR53.jpg, indoor: yes, level: -2, name: Espanya, name:ca: Espanya, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q669990, wikipedia: ca:Estació d&apos;Espanya</cmt>
+    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, image: https://i.imgur.com/R4KvR53.jpg, indoor: yes, level: -2, name: Espanya, name:ca: Espanya, network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q669990, wikipedia: ca:Estació d&apos;Espanya, id:12</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3752424" lon="2.143419">
     <ele>34.5</ele>
+    <id>21</id>
     <name>Estació d&apos;Hostafrancs</name>
-    <cmt>name: Hostafrancs, name:ca: Hostafrancs, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2021847, wikipedia: ca:Estació d&apos;Hostafrancs</cmt>
+    <cmt>name: Hostafrancs, name:ca: Hostafrancs, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, wheelchair: yes, wikidata: Q2021847, wikipedia: ca:Estació d&apos;Hostafrancs, id:11</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3753756" lon="2.1379127">
     <ele>40.8</ele>
+    <id>22</id>
     <name>Estació de Plaça de Sants</name>
-    <cmt>level: -2, name: Plaça de Sants, name:ca: Plaça de Sants, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wikidata: Q2054359, wikipedia: ca:Estació de Plaça de Sants</cmt>
+    <cmt>level: -2, name: Plaça de Sants, name:ca: Plaça de Sants, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wikidata: Q2054359, wikipedia: ca:Estació de Plaça de Sants, id:10</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3727946" lon="2.1333313">
     <ele>28.4</ele>
+    <id>23</id>
     <name>Estació de Mercat Nou</name>
-    <cmt>access: yes, indoor: yes, level: -1, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547776, wikipedia: ca:Estació de Mercat Nou</cmt>
+    <cmt>access: yes, indoor: yes, level: -1, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q2547776, wikipedia: ca:Estació de Mercat Nou, id:9</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3687993" lon="2.1286052">
     <ele>30.4</ele>
+    <id>24</id>
     <name>Estació de Santa Eulàlia</name>
-    <cmt>defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, name: Santa Eulàlia, name:ca: Santa Eulàlia, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2035804, wikipedia: ca:Estació de Santa Eulàlia</cmt>
+    <cmt>defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, name: Santa Eulàlia, name:ca: Santa Eulàlia, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2035804, wikipedia: ca:Estació de Santa Eulàlia, id:8</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3684057" lon="2.1166305">
     <ele>29.5</ele>
+    <id>25</id>
     <name>Estació de Torrassa</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/z7B0sm0.jpg, indoor: yes, level: -2, name: Torrassa, name:ca: Torrassa, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, survey:date: 2023-11-29, wheelchair: yes, wikidata: Q2003013, wikipedia: ca:Estació de Torrassa</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/z7B0sm0.jpg, indoor: yes, level: -2, name: Torrassa, name:ca: Torrassa, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, survey:date: 2023-11-29, wheelchair: yes, wikidata: Q2003013, wikipedia: ca:Estació de Torrassa, id:7</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3683228" lon="2.1098316">
     <ele>48.3</ele>
+    <id>26</id>
     <name>Estació de Florida</name>
-    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, image: https://i.imgur.com/2SzA1G3.jpg, indoor: yes, level: -2, name: Florida, name:ca: Florida, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2548194, wikipedia: ca:Estació de Florida</cmt>
+    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: platform to Fondo, emergency: defibrillator, image: https://i.imgur.com/2SzA1G3.jpg, indoor: yes, level: -2, name: Florida, name:ca: Florida, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2548194, wikipedia: ca:Estació de Florida, id:6</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3676843" lon="2.1027358">
     <ele>43.9</ele>
+    <id>27</id>
     <name>Estació de Can Serra</name>
-    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, image: https://i.imgur.com/EswUJDF.jpg, indoor: yes, level: -2, name: Can Serra, name:ca: Can Serra, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: limited, wikidata: Q2367549, wikipedia: ca:Estació de Can Serra</cmt>
+    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, image: https://i.imgur.com/EswUJDF.jpg, indoor: yes, level: -2, name: Can Serra, name:ca: Can Serra, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: limited, wikidata: Q2367549, wikipedia: ca:Estació de Can Serra, id:5</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.36353967560187" lon="2.1001052856445317">
     <ele>30.6</ele>
+    <id>28</id>
     <name>Estació de l&apos;Hospitalet de Llobregat</name>
-    <cmt>defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform, emergency: defibrillator, image: https://i.imgur.com/6wxhHeO.jpg, name: Rambla Just Oliveras, name:ca: Rambla Just Oliveras, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2536322, wikipedia: ca:Estació de l&apos;Hospitalet de Llobregat</cmt>
+    <cmt>defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform, emergency: defibrillator, image: https://i.imgur.com/6wxhHeO.jpg, name: Rambla Just Oliveras, name:ca: Rambla Just Oliveras, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2536322, wikipedia: ca:Estació de l&apos;Hospitalet de Llobregat, id:4</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3589129" lon="2.102483">
     <ele>15.4</ele>
+    <id>29</id>
     <name>Estació d&apos;Avinguda Carrilet</name>
-    <cmt>defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform, emergency: defibrillator, image: https://i.imgur.com/873KHdE.jpg, level: -2, name: Avinguda Carrilet, name:ca: Avinguda Carrilet, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, train: yes, wheelchair: yes, wikidata: Q2607435, wikipedia: ca:Estació d&apos;Avinguda Carrilet</cmt>
+    <cmt>defibrillator:location: andana direcció Fondo, defibrillator:location:en: platform, emergency: defibrillator, image: https://i.imgur.com/873KHdE.jpg, level: -2, name: Avinguda Carrilet, name:ca: Avinguda Carrilet, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, train: yes, wheelchair: yes, wikidata: Q2607435, wikipedia: ca:Estació d&apos;Avinguda Carrilet, id:3</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3509646" lon="2.1109354">
     <ele>11.3</ele>
+    <id>30</id>
     <name>Estació de Bellvitge Rambla Marina</name>
-    <cmt>defibrillator:access: yes, defibrillator:location: Andana direcciò Fondo, defibrillator:location:en: Platform to Fondo, defibrillator:survey:date: 2023-11-17, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/tEXZqL6.jpg, indoor: yes, level: -2, name: Bellvitge Rambla Marina, name:ca: Bellvitge Rambla Marina, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, train: yes, wheelchair: yes, wikidata: Q2547661, wikipedia: ca:Estació de Bellvitge Rambla Marina</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:location: Andana direcciò Fondo, defibrillator:location:en: Platform to Fondo, defibrillator:survey:date: 2023-11-17, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/tEXZqL6.jpg, indoor: yes, level: -2, name: Bellvitge Rambla Marina, name:ca: Bellvitge Rambla Marina, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, train: yes, wheelchair: yes, wikidata: Q2547661, wikipedia: ca:Estació de Bellvitge Rambla Marina, id:2</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.3446499" lon="2.1072007">
     <ele>12.2</ele>
+    <id>31</id>
     <name>Estació d&apos;Hospital de Bellvitge</name>
-    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/NoLmlam.jpg, indoor: yes, level: -2, name: Hospital de Bellvitge, name:ca: Hospital de Bellvitge, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-17, train: yes, wheelchair: yes, wikidata: Q2382515, wikipedia: ca:Estació d&apos;Hospital de Bellvitge</cmt>
+    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/NoLmlam.jpg, indoor: yes, level: -2, name: Hospital de Bellvitge, name:ca: Hospital de Bellvitge, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-17, train: yes, wheelchair: yes, wikidata: Q2382515, wikipedia: ca:Estació d&apos;Hospital de Bellvitge, id:1</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <trk>

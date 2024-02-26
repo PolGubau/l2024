@@ -10,110 +10,110 @@
 <wpt lat="41.44984113762751" lon="2.2451941000223345">
     <ele>21.5</ele>
     <name>Estació de Badalona Pompeu Fabra</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana, defibrillator:location:en: Platform, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/2BnV0Rs.jpg, level: -3, name: Badalona Pompeu Fabra, name:ca: Badalona Pompeu Fabra, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2375864, wikipedia: ca:Estació de Badalona Pompeu Fabra</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana, defibrillator:location:en: Platform, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/2BnV0Rs.jpg, level: -3, name: Badalona Pompeu Fabra, name:ca: Badalona Pompeu Fabra, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2375864, wikipedia: ca:Estació de Badalona Pompeu Fabra, id:1</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.44457567659349" lon="2.238419924749247">
     <ele>11.0</ele>
     <name>Estació de Pep Ventura</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana direcció Pompeu Fabra, defibrillator:location:en: Platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/S6tefrB.jpg, level: -2, name: Pep Ventura, name:ca: Pep Ventura, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2369006, wikipedia: ca:Estació de Pep Ventura</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana direcció Pompeu Fabra, defibrillator:location:en: Platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/S6tefrB.jpg, level: -2, name: Pep Ventura, name:ca: Pep Ventura, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, survey:date: 2023-11-17, wheelchair: yes, wikidata: Q2369006, wikipedia: ca:Estació de Pep Ventura, id:12</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.440446688665915" lon="2.2333402988786366">
     <ele>1.4</ele>
     <name>Estació de Gorg</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/okwpYGZ.jpg, name: Gorg, name:ca: Gorg, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2284424, wikipedia: ca:Estació de Gorg</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/okwpYGZ.jpg, name: Gorg, name:ca: Gorg, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2284424, wikipedia: ca:Estació de Gorg, id:13</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.43532499333051" lon="2.2277460907841555">
     <ele>8.1</ele>
     <name>Estació de Sant Roc</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Sant Roc, name:ca: Sant Roc, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2019277, wikipedia: ca:Estació de Sant Roc</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Sant Roc, name:ca: Sant Roc, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2019277, wikipedia: ca:Estació de Sant Roc, id:2</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4337214" lon="2.2175726">
     <ele>23.5</ele>
     <name>Estació d&apos;Artigues - Sant Adrià</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Artigues | Sant Adrià, name:ca: Artigues | Sant Adrià, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q1929866, wikimedia_commons: File:Estació Artigues Sant Adrià octubre 2023.jpg, wikipedia: ca:Estació d&apos;Artigues - Sant Adrià</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Artigues | Sant Adrià, name:ca: Artigues | Sant Adrià, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q1929866, wikimedia_commons: File:Estació Artigues Sant Adrià octubre 2023.jpg, wikipedia: ca:Estació d&apos;Artigues - Sant Adrià, id:14</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4298896" lon="2.2097745">
     <ele>14.5</ele>
     <name>Estació de Verneda</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Verneda, name:ca: Verneda, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q1832307, wikipedia: ca:Estació de Verneda</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Verneda, name:ca: Verneda, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q1832307, wikipedia: ca:Estació de Verneda, id:15</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.423372088741715" lon="2.206099904148897">
     <ele>18.9</ele>
     <name>Estació de la Pau
 </name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: La Pau, name:ca: La Pau, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q1427150, wikipedia: ca:Estació de la Pau</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: La Pau, name:ca: La Pau, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q1427150, wikipedia: ca:Estació de la Pau, id:3</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4190565" lon="2.2007307">
     <ele>16.9</ele>
     <name>Estació de Sant Martí</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Sant Martí, name:ca: Sant Martí, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2028238, wikipedia: ca:Estació de Sant Martí</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Sant Martí, name:ca: Sant Martí, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2028238, wikipedia: ca:Estació de Sant Martí, id:4</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4152191" lon="2.1955939">
     <ele>16.9</ele>
     <name>Estació de Bac de Roda</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Bac de Roda, name:ca: Bac de Roda, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q969395, wikipedia: ca:Estació de Bac de Roda</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Bac de Roda, name:ca: Bac de Roda, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q969395, wikipedia: ca:Estació de Bac de Roda, id:16</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.410245009319354" lon="2.1869019780486236">
     <ele>31.8</ele>
     <name>Estació El Clot</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana central, defibrillator:location:en: platform, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/ykLY4wH.jpg, indoor: yes, level: -2, name: el Clot, name:ca: el Clot, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: no, wikidata: Q2435438, wikipedia: ca:Estació El Clot</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana central, defibrillator:location:en: platform, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/ykLY4wH.jpg, indoor: yes, level: -2, name: el Clot, name:ca: el Clot, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-11-12, wheelchair: no, wikidata: Q2435438, wikipedia: ca:Estació El Clot, id:5</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4070747" lon="2.1825232">
     <ele>44.9</ele>
     <name>Estació d&apos;Encants</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency:fire_extinguisher: yes, name: Encants, name:ca: Encants, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, wheelchair: yes, wikidata: Q2184180, wikipedia: ca:Estació d&apos;Encants</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency:fire_extinguisher: yes, name: Encants, name:ca: Encants, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: rough manual transfer from http://www.tmb.net/img/genplano.pdf, station: subway, subway: yes, wheelchair: yes, wikidata: Q2184180, wikipedia: ca:Estació d&apos;Encants, id:6</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4040622" lon="2.173924">
     <ele>48.7</ele>
     <name>Estació de Sagrada Família</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana direcció Vall d&apos;Hebron, defibrillator:location:en: Platform to Vall d&apos;Hebron, defibrillator:survey:date: 2023-12-02, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/yADisXF.jpg, name: Sagrada Família, name:ca: Sagrada Família, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-12-02, wheelchair: yes, wikidata: Q2548808, wikipedia: ca:Estació de Sagrada Família</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: Andana direcció Vall d&apos;Hebron, defibrillator:location:en: Platform to Vall d&apos;Hebron, defibrillator:survey:date: 2023-12-02, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, image: https://i.imgur.com/yADisXF.jpg, name: Sagrada Família, name:ca: Sagrada Família, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, survey:date: 2023-12-02, wheelchair: yes, wikidata: Q2548808, wikipedia: ca:Estació de Sagrada Família, id:7</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.4005241" lon="2.1794545">
     <ele>40.7</ele>
     <name>Estació de Monumental</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Monumental, name:ca: Monumental, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q1877541, wikipedia: ca:Estació de Monumental</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Monumental, name:ca: Monumental, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q1877541, wikipedia: ca:Estació de Monumental, id:8</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.39429308749919" lon="2.1753410421885104">
     <ele>33.1</ele>
     <name>Estació de Tetuan</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Tetuan, name:ca: Tetuan, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2692167, wikipedia: ca:Estació de Tetuan</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, name: Tetuan, name:ca: Tetuan, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, wheelchair: yes, wikidata: Q2692167, wikipedia: ca:Estació de Tetuan, id:9</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.38916881578107" lon="2.16800857620636">
     <ele>32.6</ele>
     <name>Estació de Passeig de Gràcia</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, location: underground, name: Passeig de Gràcia (L2), name:ca: Passeig de Gràcia (L2), network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q800446, wikipedia: ca:Estació de Passeig de Gràcia</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, location: underground, name: Passeig de Gràcia (L2), name:ca: Passeig de Gràcia (L2), network: Metro de Barcelona, operator: TMB, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q800446, wikipedia: ca:Estació de Passeig de Gràcia, id:10</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.38576272123063" lon="2.164058926998909">
     <ele>27.7</ele>
     <name>Estació d&apos;Universitat</name>
-    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, indoor: yes, level: -2, name: Universitat, name:ca: Universitat, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-11, wheelchair: yes, wikidata: Q678668, wikipedia: ca:Estació d&apos;Universitat</cmt>
+    <cmt>access: yes, defibrillator:location: Andana direcció Fondo, defibrillator:location:en: Platform to Fondo, emergency: defibrillator, indoor: yes, level: -2, name: Universitat, name:ca: Universitat, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_1, station: subway, subway: yes, survey:date: 2023-11-11, wheelchair: yes, wikidata: Q678668, wikipedia: ca:Estació d&apos;Universitat, id:11</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.380217584941754" lon="2.162969190785882">
     <ele>25.8</ele>
     <name>Estació de Sant Antoni</name>
-    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Sant Antoni, name:ca: Sant Antoni, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q514447, wikipedia: ca:Estació de Sant Antoni</cmt>
+    <cmt>defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, name: Sant Antoni, name:ca: Sant Antoni, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, station: subway, subway: yes, wheelchair: yes, wikidata: Q514447, wikipedia: ca:Estació de Sant Antoni, id:17</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <wpt lat="41.375087431654" lon="2.1681561310552193">
     <ele>32.0</ele>
     <name>Estació del Paral·lel</name>
-    <cmt>access: yes, defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:location:fr: Vestíbol, entrant a l&apos;esquerra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, level: 0, name: Paral·lel, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, ref: Hall, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, survey:date: 2024-01-24, wheelchair: yes</cmt>
+    <cmt>access: yes, defibrillator:access: yes, defibrillator:indoor: yes, defibrillator:location: andana direcció Pompeu Fabra, defibrillator:location:en: platform to Pompeu Fabra, defibrillator:location:fr: Vestíbol, entrant a l&apos;esquerra, defibrillator:wheelchair:access: yes, emergency: defibrillator, emergency:fire_extinguisher: yes, indoor: yes, level: 0, name: Paral·lel, network: Metro de Barcelona, operator: Transports Metropolitans de Barcelona, public_transport: station, railway: station, ref: Hall, source: geolocation taken from http://en.wikipedia.org/wiki/Barcelona_metro_line_2, station: subway, subway: yes, survey:date: 2024-01-24, wheelchair: yes, id:18</cmt>
     <sym>Ground Transportation</sym>
 </wpt>
 <trk>
