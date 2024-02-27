@@ -1,6 +1,7 @@
 import { LineType } from "../types";
-import line1 from "./L1.gpx?raw";
-import line2 from "./L2.gpx?raw";
+import line1 from "./L1-geojson.json?raw";
+import line2 from "./L2-geojson.json?raw";
+import toGeoJSON from "../util/toGeoJSON";
 
 //
 export const linesData: LineType[] = [
@@ -36,3 +37,14 @@ export const linesData: LineType[] = [
     },
   },
 ];
+
+export function parseGPX(gpx: string) {
+  const domParser = new DOMParser();
+  const gpxDoc = domParser.parseFromString(gpx, "application/xml");
+  const parsedGpx = toGeoJSON.gpx(gpxDoc);
+  // copy to clipboard
+  const stringified = JSON.stringify(parsedGpx);
+  navigator.clipboard.writeText(stringified);
+  console.log(stringified);
+  return parsedGpx;
+}

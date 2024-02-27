@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef } from "react";
 import { bbox } from "@turf/turf";
-import toGeoJSON from "../util/toGeoJSON";
+// import toGeoJSON from "../util/toGeoJSON";
 import {
   useLayer,
   useLayerHoverPopup,
@@ -38,9 +38,10 @@ export const Line = ({
     }
   };
 
-  const domParser = new DOMParser();
-  const gpxDoc = domParser.parseFromString(line.gpx, "application/xml");
-  const parsedGpx = toGeoJSON.gpx(gpxDoc);
+  // const domParser = new DOMParser();
+  // const gpxDoc = domParser.parseFromString(line.gpx, "application/xml");
+  // const parsedGpx = toGeoJSON.gpx(gpxDoc);
+  const parsedGpx = JSON.parse(line.gpx);
 
   const mapHook = useMap({
     mapId: props.mapId,
@@ -112,11 +113,11 @@ export const Line = ({
   });
 
   useEffect(() => {
-    if (!mapHook.map || !parsedGpx.geojson) return;
+    if (!mapHook.map || !parsedGpx) return;
 
     // fit map view to GeoJSON bbox
 
-    const bounds = bbox(parsedGpx.geojson);
+    const bounds = bbox(parsedGpx);
     mapHook.map.map.fitBounds(bounds as LngLatBoundsLike, {
       padding: 20,
     });

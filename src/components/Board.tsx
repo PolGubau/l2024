@@ -40,7 +40,7 @@ const Board = () => {
   const [sidebarOpenend, setSidebarOpenend] = useState(false);
   const [selectedStop, setSelectedStop] = useState<string | null>(null);
   return (
-    <section className="flex gap-4 bg-neutral-200 p-4  h-full md:flex-row flex-col">
+    <section className="flex gap-4 bg-neutral-200 h-full md:flex-row flex-col">
       <Sidebar
         collapsable
         collapsed={!sidebarOpenend}
