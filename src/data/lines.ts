@@ -24,7 +24,7 @@ export const linesData: LineType[] = [
     gpx: line2,
     metadata: {
       title: "L2",
-      subtitle: "Paral·lel / Badalona Pompeu Fabras",
+      subtitle: "Paral·lel / Badalona Pompeu Fabra",
       timeWalking: "04:04:00",
       distance: 17.18,
       transport: "metro",

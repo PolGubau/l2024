@@ -92,7 +92,6 @@ export const Line = ({
 
       toast({
         title: e.features[0].properties.name,
-        description: "Stop selected",
       });
 
       setSelectedStop?.(stopId);

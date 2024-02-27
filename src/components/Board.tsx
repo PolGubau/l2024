@@ -7,7 +7,9 @@ import { Line } from "./Line";
 import { linesData } from "../data/lines";
 import { LineType } from "../types";
 import { useState } from "react";
-import { Button } from "pol-ui";
+import { TbLayout } from "react-icons/tb";
+
+import { Sidebar, SidebarItem } from "pol-ui";
 const Board = () => {
   const args = {
     paint: {
@@ -35,51 +37,45 @@ const Board = () => {
     },
   };
   const [selectedLine, setSelectedLine] = useState<LineType | null>(null);
+  const [sidebarOpenend, setSidebarOpenend] = useState(false);
   const [selectedStop, setSelectedStop] = useState<string | null>(null);
   return (
     <section className="flex gap-4 bg-neutral-200 p-4  h-full md:flex-row flex-col">
-      <div className="md:w-96 md:overflow-hidden p-1 gap-4 flex flex-col">
-        <ul className="flex gap-3 md:flex-col w-full overflow-y-auto p-1">
-          {linesData.map((line) => (
-            <button
-              onClick={() => setSelectedLine(line)}
-              className={`bg-neutral-50 rounded-xl shadow-lg p-1 pr-3 items-center flex transition-all ${
-                selectedLine?.id === line.id ? "bg-neutral-100" : ""
-              }`}
-              style={{
-                backgroundColor:
-                  selectedLine?.id === line.id
-                    ? line.metadata.color + "33"
-                    : undefined,
-              }}
-              key={line.id}
-            >
-              <li className="flex justify-normal items-center">
-                <div
-                  className="w-2 h-[60px] rounded-full mr-4 p-1.5"
-                  style={{
-                    backgroundColor: line.metadata.color,
-                  }}
-                ></div>
-                <div className="flex flex-col items-start">
-                  <h3 className="text-xl "> {line.metadata.title}</h3>
-                  <p className="text-xs md:text-sm">{line.metadata.subtitle}</p>
-                </div>
-              </li>
-            </button>
-          ))}
-        </ul>
-        {selectedStop && selectedLine && (
-          <img
-            src={`/images/${selectedLine?.id}/${selectedStop}.jpg`}
-            alt={selectedStop ?? "Select an stop"}
-            className="w-full h-96 bg-red-300 object-cover rounded-xl object-center"
-          />
-        )}
-        <Button disabled={!selectedLine} onClick={() => setSelectedLine(null)}>
-          Clear
-        </Button>
-      </div>
+      <Sidebar
+        collapsable
+        collapsed={!sidebarOpenend}
+        toggle={() => setSidebarOpenend(!sidebarOpenend)}
+      >
+        <SidebarItem
+          disabled={!selectedLine}
+          onClick={() => setSelectedLine(null)}
+          icon={TbLayout}
+        >
+          All
+        </SidebarItem>
+        {linesData.map((line) => (
+          <SidebarItem
+            disabled={selectedLine?.id === line.id}
+            onClick={() => setSelectedLine(line)}
+            key={line.id}
+          >
+            {line.metadata.title}
+          </SidebarItem>
+        ))}
+      </Sidebar>
+
+      {selectedStop && selectedLine ? (
+        <img
+          src={`/images/${selectedLine?.id}/${selectedStop}.jpg`}
+          alt={selectedStop ?? "Selecciona una parada"}
+          className="w-full h-96 bg-red-300 object-cover rounded-xl object-center"
+        />
+      ) : (
+        <div className="w-full h-96 bg-neutral-100 rounded-xl">
+          Selecciona una parada
+        </div>
+      )}
+
       <div className="relative w-full h-full overflow-hidden rounded-3xl">
         <MlFillExtrusionLayer {...args} />
 
