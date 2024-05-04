@@ -68,7 +68,7 @@ export const Line = ({
 
       paint: {
         "line-width": 3,
-        "line-opacity": isSelected ? 1 : 0.3,
+        "line-opacity": isSelected ? 1 : 1,
         "line-color": line.metadata?.color || "rgba(72, 77, 99,0.5)",
       },
       source: sourceName.current,

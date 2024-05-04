@@ -44,7 +44,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
     layerId: layerNamePoints.current,
     options: {
       type: "circle",
-      // minzoom: 13,
+
       paint: {
         "circle-color": "rgb(10, 20, 99)",
         "circle-radius": ["interpolate", ["linear"], ["zoom"], 11, 4, 15, 8],
