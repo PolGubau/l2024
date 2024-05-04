@@ -8,9 +8,10 @@ import { useId, useRef } from "react";
 import { Stops as IStops } from "../types/stops";
 interface StopsProps {
   stops: IStops;
+  setSelectedStop: (stop: string) => void;
 }
 
-export const Stops = ({ stops }: StopsProps) => {
+export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   const id = useId();
   const sourceName = useRef("gpx-viewer-source-" + id);
   const layerNamePoints = useRef("importer-layer-points-" + id);
@@ -35,16 +36,18 @@ export const Stops = ({ stops }: StopsProps) => {
     onClick: (ev) => {
       const e = ev as any;
       console.log(e.features[0]._vectorTileFeature.properties["EQUIPAMENT"]);
+      setSelectedStop(
+        e.features[0]._vectorTileFeature.properties["EQUIPAMENT"]
+      );
     },
 
     layerId: layerNamePoints.current,
     options: {
       type: "circle",
-      minzoom: 13,
+      // minzoom: 13,
       paint: {
         "circle-color": "rgb(10, 20, 99)",
-        // "circle-opacity": isSelected ? 1 : 0.3,
-        "circle-radius": 7,
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 11, 4, 15, 8],
       },
       filter: ["==", "$type", "Point"],
       source: sourceName.current,

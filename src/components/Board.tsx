@@ -6,13 +6,13 @@ import {
 import { Switch } from "pol-ui";
 import { useState } from "react";
 import { linesData, stops } from "../data/lines";
-import { Feature, Stops as IStops } from "../types/stops";
+import { Stops as IStops } from "../types/stops";
 import { LineType } from "../types/types";
 import { Line } from "./Line";
 import { Stops } from "./stops";
 
 const Board = () => {
-  const args = {
+  const exclusionArgs = {
     paint: {
       "fill-extrusion-color": "hsl(196, 61%, 83%)",
       "fill-extrusion-height": {
@@ -31,6 +31,8 @@ const Board = () => {
         // When zoom is 13.5, buildings will be 100% transparent.
         13.5,
         0,
+        14,
+        0.5,
         // When zoom is 15 or higher, buildings will be 100% opaque.
         14.5,
         1,
@@ -38,14 +40,11 @@ const Board = () => {
     },
   };
   const [selectedLine, setSelectedLine] = useState<LineType | null>(null);
-
-  const featureStops: Feature[] = stops.features.filter((stop) => {
-    return stop.properties.CODI_CAPA === "K001";
-  });
+  const [selectedStop, setSelectedStop] = useState<string | null>(null);
 
   const metroStops: IStops = {
     type: "FeatureCollection",
-    features: featureStops,
+    features: stops.features,
   };
   const [extras, setExtras] = useState({
     hasElevation: false,
@@ -67,9 +66,11 @@ const Board = () => {
             {extra}
           </Switch>
         ))}
+        {/* <Image width={100} height={100} src="/map/logo.png" alt="logo" /> */}
+        selectedStop: {selectedStop}
       </div>
       <div className="relative w-full h-full overflow-hidden rounded-3xl">
-        {extras.hasBuildings3d && <MlFillExtrusionLayer {...args} />}
+        {extras.hasBuildings3d && <MlFillExtrusionLayer {...exclusionArgs} />}
         {linesData.map((line) => (
           <Line
             seeElevation={extras.hasElevation}
@@ -79,8 +80,7 @@ const Board = () => {
             setSelectedLine={setSelectedLine}
           />
         ))}
-        <Stops stops={metroStops} />
-        dsa
+        <Stops stops={metroStops} setSelectedStop={setSelectedStop} />
         <MapLibreMap
           options={{
             center: { lat: 41.390205, lng: 2.154007 },
