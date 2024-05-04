@@ -46,7 +46,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
       type: "circle",
 
       paint: {
-        "circle-color": "rgb(10, 20, 99)",
+        "circle-color": "rgb(10, 20, 10)",
         "circle-radius": ["interpolate", ["linear"], ["zoom"], 11, 4, 15, 8],
       },
       filter: ["==", "$type", "Point"],

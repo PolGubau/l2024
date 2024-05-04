@@ -3,7 +3,7 @@ import {
   MlFillExtrusionLayer,
   MlNavigationTools,
 } from "@mapcomponents/react-maplibre";
-import { Switch } from "pol-ui";
+import { Switch, formatString } from "pol-ui";
 import { useState } from "react";
 import { linesData, stops } from "../data/lines";
 import { Stops as IStops } from "../types/stops";
@@ -48,7 +48,7 @@ const Board = () => {
   };
   const [extras, setExtras] = useState({
     hasElevation: false,
-    hasBuildings3d: false,
+    hasBuildings: false,
   });
   return (
     <section className=" gap-4 bg-neutral-200 h-full grid ">
@@ -57,7 +57,7 @@ const Board = () => {
           <Switch
             size="sm"
             key={extra}
-            label={extra}
+            label={formatString(extra)}
             checked={extras[extra]}
             onChange={() =>
               setExtras((prev) => ({ ...prev, [extra]: !prev[extra] }))
@@ -67,10 +67,10 @@ const Board = () => {
           </Switch>
         ))}
         {/* <Image width={100} height={100} src="/map/logo.png" alt="logo" /> */}
-        selectedStop: {selectedStop}
+        {selectedStop}
       </div>
       <div className="relative w-full h-full overflow-hidden rounded-3xl">
-        {extras.hasBuildings3d && <MlFillExtrusionLayer {...exclusionArgs} />}
+        {extras.hasBuildings && <MlFillExtrusionLayer {...exclusionArgs} />}
         {linesData.map((line) => (
           <Line
             seeElevation={extras.hasElevation}
@@ -89,24 +89,10 @@ const Board = () => {
           }}
           style={{
             minWidth: "100%",
-            minHeight: "500px",
             height: "100%",
-            // position: "absolute",
-            top: 0,
-            bottom: 0,
-            left: 0,
-            right: 0,
           }}
         />
-        {/* {metroStops.map((stop) => (
-          <MlMarker
-            key={stop.properties.ADRECA}
-            content="WhereGroup"
-            lat={stop.geometry.coordinates?.[1] as number}
-            lng={stop.geometry.coordinates?.[0] as number}
-             mapId="map_1"
-          />
-        ))} */}
+
         <div className="hidden md:flex">
           <MlNavigationTools />
         </div>
