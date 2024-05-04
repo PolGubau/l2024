@@ -3,13 +3,14 @@ import {
   MlFillExtrusionLayer,
   MlNavigationTools,
 } from "@mapcomponents/react-maplibre";
-import { Line } from "./Line";
-import { linesData } from "../data/lines";
-import { LineType } from "../types";
+import { Switch } from "pol-ui";
 import { useState } from "react";
-import { TbLayout } from "react-icons/tb";
+import { linesData, stops } from "../data/lines";
+import { Feature, Stops as IStops } from "../types/stops";
+import { LineType } from "../types/types";
+import { Line } from "./Line";
+import { Stops } from "./stops";
 
-import { Sidebar, SidebarItem } from "pol-ui";
 const Board = () => {
   const args = {
     paint: {
@@ -37,72 +38,75 @@ const Board = () => {
     },
   };
   const [selectedLine, setSelectedLine] = useState<LineType | null>(null);
-  const [sidebarOpenend, setSidebarOpenend] = useState(false);
-  const [selectedStop, setSelectedStop] = useState<string | null>(null);
+
+  const featureStops: Feature[] = stops.features.filter((stop) => {
+    return stop.properties.CODI_CAPA === "K001";
+  });
+
+  const metroStops: IStops = {
+    type: "FeatureCollection",
+    features: featureStops,
+  };
+  const [extras, setExtras] = useState({
+    hasElevation: false,
+    hasBuildings3d: false,
+  });
   return (
-    <section className="flex gap-4 bg-neutral-200 h-full md:flex-row flex-col">
-      <Sidebar
-        collapsable
-        collapsed={!sidebarOpenend}
-        toggle={() => setSidebarOpenend(!sidebarOpenend)}
-      >
-        <SidebarItem
-          disabled={!selectedLine}
-          onClick={() => setSelectedLine(null)}
-          icon={TbLayout}
-        >
-          All
-        </SidebarItem>
-        {linesData.map((line) => (
-          <SidebarItem
-            disabled={selectedLine?.id === line.id}
-            onClick={() => setSelectedLine(line)}
-            key={line.id}
+    <section className=" gap-4 bg-neutral-200 h-full grid ">
+      <div className="fixed top-2 left-2 z-10 p-2 gap-1 flex flex-col bg-secondary-50/70 backdrop-blur-sm rounded-xl">
+        {Object.keys(extras).map((extra) => (
+          <Switch
+            size="sm"
+            key={extra}
+            label={extra}
+            checked={extras[extra]}
+            onChange={() =>
+              setExtras((prev) => ({ ...prev, [extra]: !prev[extra] }))
+            }
           >
-            {line.metadata.title}
-          </SidebarItem>
+            {extra}
+          </Switch>
         ))}
-      </Sidebar>
-
-      {selectedStop && selectedLine ? (
-        <img
-          src={`/images/${selectedLine?.id}/${selectedStop}.jpg`}
-          alt={selectedStop ?? "Selecciona una parada"}
-          className="w-full h-96 bg-red-300 object-cover rounded-xl object-center"
-        />
-      ) : (
-        <div className="w-full h-96 bg-neutral-100 rounded-xl">
-          Selecciona una parada
-        </div>
-      )}
-
+      </div>
       <div className="relative w-full h-full overflow-hidden rounded-3xl">
-        <MlFillExtrusionLayer {...args} />
-
+        {extras.hasBuildings3d && <MlFillExtrusionLayer {...args} />}
         {linesData.map((line) => (
           <Line
-            setSelectedStop={setSelectedStop}
+            seeElevation={extras.hasElevation}
             line={line}
             key={line.id}
             isSelected={selectedLine?.id === line.id || !selectedLine}
             setSelectedLine={setSelectedLine}
           />
         ))}
-
+        <Stops stops={metroStops} />
+        dsa
         <MapLibreMap
           options={{
             center: { lat: 41.390205, lng: 2.154007 },
             style: "/map/schema.json",
-            zoom: 11,
+            zoom: 10,
           }}
           style={{
-            position: "absolute",
+            minWidth: "100%",
+            minHeight: "500px",
+            height: "100%",
+            // position: "absolute",
             top: 0,
             bottom: 0,
             left: 0,
             right: 0,
           }}
         />
+        {/* {metroStops.map((stop) => (
+          <MlMarker
+            key={stop.properties.ADRECA}
+            content="WhereGroup"
+            lat={stop.geometry.coordinates?.[1] as number}
+            lng={stop.geometry.coordinates?.[0] as number}
+             mapId="map_1"
+          />
+        ))} */}
         <div className="hidden md:flex">
           <MlNavigationTools />
         </div>

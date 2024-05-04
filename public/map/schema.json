@@ -48,7 +48,7 @@
       "url": "/map/tiles/world-14.json"
     }
   },
-  "sprite": "https://wms.wheregroup.com/tileserver/sprites/osm-bright",
+  "sprite": "https://wms.wheregroup.com/tileserver/sprites/osm-dark",
   "glyphs": "https://wms.wheregroup.com/tileserver/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -721,7 +721,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fff4c6",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -749,7 +749,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fff4c6",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -778,7 +778,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#ffdaa6",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1287,7 +1287,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fc8",
+        "line-color": "#bcbcbc",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1326,7 +1326,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1391,7 +1391,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1425,7 +1425,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1459,7 +1459,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1874,7 +1874,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1903,7 +1903,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1931,7 +1931,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": "#bfbfbf",
         "line-width": {
           "base": 1.2,
           "stops": [

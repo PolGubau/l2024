@@ -117,7 +117,7 @@ const toGeoJSON = (function () {
     };
   }
 
-  var serializer;
+  let serializer;
   if (typeof XMLSerializer !== "undefined") {
     /* istanbul ignore next */
     serializer = new XMLSerializer();
@@ -138,7 +138,7 @@ const toGeoJSON = (function () {
     return serializer.serializeToString(str);
   }
 
-  var t = {
+  let t = {
     kml: function (doc) {
       var gj = fc(),
         // styleindex keeps track of hashed styles in order to match features

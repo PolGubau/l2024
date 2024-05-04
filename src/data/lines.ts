@@ -1,7 +1,11 @@
-import { LineType } from "../types";
-import line1 from "./L1-geojson.json?raw";
-import line2 from "./L2-geojson.json?raw";
+import { LineType } from "../types/types";
+import line1 from "./geojson/L1.geojson?raw";
+import line2 from "./geojson/L2.geojson?raw";
+import line3 from "./geojson/L3.geojson?raw";
+import line4 from "./geojson/L4.geojson?raw";
+import stopsData from "./geojson/stops.geojson?raw";
 import toGeoJSON from "../util/toGeoJSON";
+import { Stops } from "../types/stops";
 
 //
 export const linesData: LineType[] = [
@@ -36,6 +40,38 @@ export const linesData: LineType[] = [
       time: "04:42:45",
     },
   },
+  {
+    id: "L3",
+    gpx: line3,
+    metadata: {
+      title: "L3",
+      subtitle: "L3 Zona Universitària / Trinitat Nova",
+      timeWalking: "03:27:00",
+      distance: 18.81,
+      transport: "metro",
+      color: "#067634",
+      velocity: 3.8,
+
+      dateTime: "2024-04-06T10:14:04.387Z",
+      time: "04:42:45",
+    },
+  },
+  {
+    id: "L4",
+    gpx: line4,
+    metadata: {
+      title: "L4",
+      subtitle: "Paral·lel / Badalona Pompeu Fabra",
+      timeWalking: "04:04:00",
+      distance: 17.18,
+      transport: "metro",
+      color: "#ffc10e",
+      velocity: 4.2,
+
+      dateTime: "2024-04-27T10:14:04.387Z",
+      time: "04:17:45",
+    },
+  },
 ];
 
 export function parseGPX(gpx: string) {
@@ -48,3 +84,5 @@ export function parseGPX(gpx: string) {
   console.log(stringified);
   return parsedGpx;
 }
+
+export const stops = JSON.parse(stopsData) as Stops;

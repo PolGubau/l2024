@@ -1,15 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef } from "react";
 import { bbox } from "@turf/turf";
-// import toGeoJSON from "../util/toGeoJSON";
 import {
+  MlSpatialElevationProfile,
   useLayer,
   useLayerHoverPopup,
   useMap,
   useSource,
 } from "@mapcomponents/react-maplibre";
-import { LineType } from "../types";
-import { toast } from "pol-ui";
+import { LineType } from "../types/types";
 import { LngLatBoundsLike } from "maplibre-gl";
 
 export interface MlGpxViewerProps {
@@ -20,15 +19,14 @@ export interface MlGpxViewerProps {
   isSelectable?: boolean;
   isSelected?: boolean;
   setSelectedLine?: (line: LineType) => void;
-
-  setSelectedStop?: (stopId: string) => void;
+  seeElevation?: boolean;
   selectedStop?: string;
 }
 
 export const Line = ({
   line,
-  setSelectedStop,
   isSelected,
+  seeElevation,
   setSelectedLine,
   ...props
 }: MlGpxViewerProps) => {
@@ -38,9 +36,6 @@ export const Line = ({
     }
   };
 
-  // const domParser = new DOMParser();
-  // const gpxDoc = domParser.parseFromString(line.gpx, "application/xml");
-  // const parsedGpx = toGeoJSON.gpx(gpxDoc);
   const parsedGpx = JSON.parse(line.gpx);
 
   const mapHook = useMap({
@@ -80,38 +75,6 @@ export const Line = ({
     },
   });
 
-  useLayer({
-    onClick: (ev) => {
-      // properties are separated by commas as csv , get the number next to the wilidata key
-
-      // get the last -2 item in the array
-      const e = ev as any;
-      const stopId = e.features[0].properties.cmt
-        .split(",")
-        .slice(-1)[0]
-        .split(":")[1];
-
-      toast({
-        title: e.features[0].properties.name,
-      });
-
-      setSelectedStop?.(stopId);
-      handleSelect();
-    },
-
-    layerId: layerNamePoints.current,
-    options: {
-      type: "circle",
-      paint: {
-        "circle-color": line.metadata?.color || "rgba(72, 77, 99,0.5)",
-        "circle-opacity": isSelected ? 1 : 0.3,
-        "circle-radius": 7,
-      },
-      filter: ["==", "$type", "Point"],
-      source: sourceName.current,
-    },
-  });
-
   useEffect(() => {
     if (!mapHook.map || !parsedGpx) return;
 
@@ -123,5 +86,10 @@ export const Line = ({
     });
   }, [mapHook.map, parsedGpx, props]);
 
-  return <></>;
+  return (
+    <MlSpatialElevationProfile
+      geojson={parsedGpx}
+      elevationFactor={seeElevation ? 2 : 0.01}
+    />
+  );
 };
