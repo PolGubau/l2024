@@ -3,6 +3,7 @@ import line1 from "./geojson/L1.geojson?raw";
 import line2 from "./geojson/L2.geojson?raw";
 import line3 from "./geojson/L3.geojson?raw";
 import line4 from "./geojson/L4.geojson?raw";
+import line11 from "./geojson/L11.geojson?raw";
 import stopsData from "./geojson/stops.geojson?raw";
 import toGeoJSON from "../util/toGeoJSON";
 import { Stops } from "../types/stops";
@@ -52,7 +53,7 @@ export const linesData: LineType[] = [
       color: "#067634",
       velocity: 3.8,
 
-      dateTime: "2024-04-06T10:14:04.387Z",
+      dateTime: "2024-04-06T11:14:04.387Z",
       time: "04:42:45",
     },
   },
@@ -70,6 +71,22 @@ export const linesData: LineType[] = [
 
       dateTime: "2024-04-27T10:14:04.387Z",
       time: "04:17:45",
+    },
+  },
+  {
+    id: "L11",
+    gpx: line11,
+    metadata: {
+      title: "L11",
+      subtitle: "Trinitat Nova / Can Cuiàs",
+      timeWalking: "04:04:00",
+      distance: 17.18,
+      transport: "metro",
+      color: "#9ed84c",
+      velocity: 4.2,
+
+      dateTime: "2024-04-06T10:14:04.387Z",
+      time: "01:05:00",
     },
   },
 ];

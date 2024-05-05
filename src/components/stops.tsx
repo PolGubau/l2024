@@ -19,7 +19,6 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   useLayerHoverPopup({
     layerId: layerNamePoints.current,
     getPopupContent: (feature) => {
-      console.log("feature", feature.properties?.["EQUIPAMENT"]);
       return feature.properties?.["EQUIPAMENT"];
     },
   });

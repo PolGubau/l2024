@@ -140,7 +140,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Mundet",
+        "EQUIPAMENT": "Mundet",
         "DISTRICTE": 7,
         "BARRI": 41,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -156,7 +156,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Liceu",
+        "EQUIPAMENT": "Liceu",
         "DISTRICTE": 1,
         "BARRI": 2,
         "NOM_DISTRICTE": "Ciutat Vella",
@@ -172,7 +172,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Paral·lel",
+        "EQUIPAMENT": "Paral·lel",
         "DISTRICTE": 3,
         "BARRI": 11,
         "NOM_DISTRICTE": "Sants-Montjuïc",
@@ -205,7 +205,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Passeig de Gràcia",
+        "EQUIPAMENT": "Passeig-de-Gràcia",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -301,7 +301,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Montbau",
+        "EQUIPAMENT": "Montbau",
         "DISTRICTE": 7,
         "BARRI": 40,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -512,7 +512,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Maria Cristina",
+        "EQUIPAMENT": "Maria Cristina",
         "DISTRICTE": 4,
         "BARRI": 20,
         "NOM_DISTRICTE": "Les Corts",
@@ -528,7 +528,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Trinitat Nova",
+        "EQUIPAMENT": "Trinitat Nova",
         "DISTRICTE": 8,
         "BARRI": 53,
         "NOM_DISTRICTE": "Nou Barris",
@@ -625,7 +625,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L11"],
-        "EQUIPAMENT": "L11 - Ciutat Meridiana",
+        "EQUIPAMENT": "CiutatMeridiana",
         "DISTRICTE": 8,
         "BARRI": 55,
         "NOM_DISTRICTE": "Nou Barris",
@@ -642,7 +642,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Tarragona",
+        "EQUIPAMENT": "Tarragona",
         "DISTRICTE": 2,
         "BARRI": 9,
         "NOM_DISTRICTE": "Eixample",
@@ -788,7 +788,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Drassanes",
+        "EQUIPAMENT": "Drassanes",
         "DISTRICTE": 1,
         "BARRI": 1,
         "NOM_DISTRICTE": "Ciutat Vella",
@@ -804,7 +804,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Fontana",
+        "EQUIPAMENT": "Fontana",
         "DISTRICTE": 6,
         "BARRI": 31,
         "NOM_DISTRICTE": "Gràcia",
@@ -852,7 +852,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Sants Estació",
+        "EQUIPAMENT": "SantsEstació",
         "DISTRICTE": 3,
         "BARRI": 18,
         "NOM_DISTRICTE": "Sants-Montjuïc",
@@ -982,7 +982,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Lesseps",
+        "EQUIPAMENT": "Lesseps",
         "DISTRICTE": 6,
         "BARRI": 31,
         "NOM_DISTRICTE": "Gràcia",
@@ -1176,7 +1176,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Poble Sec",
+        "EQUIPAMENT": "PobleSec",
         "DISTRICTE": 2,
         "BARRI": 10,
         "NOM_DISTRICTE": "Eixample",
@@ -1193,7 +1193,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Penitents",
+        "EQUIPAMENT": "Penitents",
         "DISTRICTE": 6,
         "BARRI": 28,
         "NOM_DISTRICTE": "Gràcia",
@@ -1209,7 +1209,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Roquetes",
+        "EQUIPAMENT": "Roquetes",
         "DISTRICTE": 8,
         "BARRI": 50,
         "NOM_DISTRICTE": "Nou Barris",
@@ -1339,7 +1339,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L11"],
-        "EQUIPAMENT": "L11 - Casa de l'Aigua",
+        "EQUIPAMENT": "CasaDeLaigua",
         "DISTRICTE": 8,
         "BARRI": 53,
         "NOM_DISTRICTE": "Nou Barris",
@@ -1372,7 +1372,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Zona Universitària",
+        "EQUIPAMENT": "ZonaUniversitària",
         "DISTRICTE": 4,
         "BARRI": 20,
         "NOM_DISTRICTE": "Les Corts",
@@ -1389,7 +1389,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Plaça del Centre",
+        "EQUIPAMENT": "PlaçaCentre",
         "DISTRICTE": 3,
         "BARRI": 18,
         "NOM_DISTRICTE": "Sants-Montjuïc",
@@ -1486,7 +1486,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L4"],
-        "EQUIPAMENT": "L4 - Trinitat Nova",
+        "EQUIPAMENT": "Trinitat-Nova",
         "DISTRICTE": 8,
         "BARRI": 53,
         "NOM_DISTRICTE": "Nou Barris",
@@ -1679,7 +1679,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L11"],
-        "EQUIPAMENT": "L11 - Can Cuiàs",
+        "EQUIPAMENT": "CanCuias",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1728,7 +1728,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L11"],
-        "EQUIPAMENT": "L11 - Torre Baró | Vallbona",
+        "EQUIPAMENT": "TorreBaró",
         "DISTRICTE": 8,
         "BARRI": 54,
         "NOM_DISTRICTE": "Nou Barris",
@@ -1811,7 +1811,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Vall d'Hebron",
+        "EQUIPAMENT": "VallD'Hebron",
         "DISTRICTE": 7,
         "BARRI": 40,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -1827,7 +1827,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Diagonal",
+        "EQUIPAMENT": "Diagonal",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -2037,7 +2037,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Catalunya",
+        "EQUIPAMENT": "Catalunya",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -2054,7 +2054,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Les Corts",
+        "EQUIPAMENT": "LesCorts",
         "DISTRICTE": 4,
         "BARRI": 19,
         "NOM_DISTRICTE": "Les Corts",
@@ -2152,7 +2152,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Palau Reial",
+        "EQUIPAMENT": "PalauReial",
         "DISTRICTE": 4,
         "BARRI": 20,
         "NOM_DISTRICTE": "Les Corts",
@@ -2168,7 +2168,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "L3 - Valldaura",
+        "EQUIPAMENT": "Valldaura",
         "DISTRICTE": 7,
         "BARRI": 43,
         "NOM_DISTRICTE": "Horta-Guinardó",

@@ -1,15 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useRef } from "react";
-import { bbox } from "@turf/turf";
 import {
   MlSpatialElevationProfile,
   useLayer,
   useLayerHoverPopup,
-  useMap,
   useSource,
 } from "@mapcomponents/react-maplibre";
+import { useRef } from "react";
 import { LineType } from "../types/types";
-import { LngLatBoundsLike } from "maplibre-gl";
 
 export interface MlGpxViewerProps {
   mapId?: string;
@@ -38,9 +35,9 @@ export const Line = ({
 
   const parsedGpx = JSON.parse(line.gpx);
 
-  const mapHook = useMap({
-    mapId: props.mapId,
-  });
+  // const mapHook = useMap({
+  //   mapId: props.mapId,
+  // });
   const sourceName = useRef("gpx-viewer-source-" + Math.random());
   const layerNameLines = useRef("importer-layer-lines-" + Math.random());
   const layerNamePoints = useRef("importer-layer-points-" + Math.random());
@@ -73,17 +70,6 @@ export const Line = ({
       source: sourceName.current,
     },
   });
-
-  useEffect(() => {
-    if (!mapHook.map || !parsedGpx) return;
-
-    // fit map view to GeoJSON bbox
-
-    const bounds = bbox(parsedGpx);
-    mapHook.map.map.fitBounds(bounds as LngLatBoundsLike, {
-      padding: 20,
-    });
-  }, [mapHook.map, parsedGpx, props]);
 
   return (
     <MlSpatialElevationProfile
