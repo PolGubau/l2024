@@ -4,13 +4,12 @@ import {
   MlNavigationTools,
 } from "@mapcomponents/react-maplibre";
 import { Switch, formatString } from "pol-ui";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { linesData, stops } from "../data/lines";
 import { Stops as IStops } from "../types/stops";
 import { LineNameEnum, LineType } from "../types/types";
 import { Line } from "./Line";
 import { Stops } from "./stops";
-
 const Board = () => {
   const exclusionArgs = {
     paint: {
@@ -50,6 +49,34 @@ const Board = () => {
     hasElevation: false,
     hasBuildings: false,
   });
+
+  // each lines has different images x stop
+  // we select a name as Trinitat-Nova
+  // Multiple lines has a photo in Trinitat-Nova, search in all lines the ones that have a photo with that name
+
+  // the selected Stop is a string for the name of the stop
+  // all photos are called as 1.string.jpg delete the number and the .jpg
+
+  // ex: selected stop is Trinitat-Nova
+  // from all images, get /L3/1.Trinitat-Nova.jpg but also /L4/2.Trinitat-Nova.jpg ...
+
+  const images: string[] = useMemo(() => {
+    if (!selectedStop) return [];
+    console.log("selectedStop", selectedStop);
+
+    const preUrl = "/images";
+
+    const postUrl = `${selectedStop}.jpg`;
+
+    const tryAllLines = linesData.map((line) => {
+      const image = `${preUrl}/${line.id}/${postUrl}`;
+      console.log("image", image);
+      return image;
+    });
+
+    return tryAllLines;
+  }, [selectedStop]);
+
   return (
     <section className=" gap-4 bg-neutral-200 h-full grid ">
       <div className="fixed top-2 left-2 z-10 p-2 gap-1 flex flex-col bg-secondary-50/70 backdrop-blur-sm rounded-xl">
@@ -66,7 +93,18 @@ const Board = () => {
             {extra}
           </Switch>
         ))}
-        {selectedStop}
+        {images.map((image) => (
+          <img
+            key={image}
+            src={image}
+            alt={image}
+            width={90}
+            height={90}
+            className="w-[90px] h-[90px] object-cover rounded-md"
+          />
+        ))}
+
+        {/* {selectedStop} */}
       </div>
 
       <ol className="w-fit min-w-10 fixed bottom-2 left-2 z-20 flex gap-2 items-center">

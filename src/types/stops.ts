@@ -1,3 +1,5 @@
+import { LineName } from "./types";
+
 export interface Stops {
   type: string;
   features: Feature[];
@@ -16,8 +18,7 @@ export interface Geometry {
 
 export interface Properties {
   CODI_CAPA: string;
-  ED50_COORD_X?: number;
-  ED50_COORD_Y?: number;
+  LINE: LineName[];
   EQUIPAMENT: string;
   DISTRICTE?: number;
   BARRI?: number;

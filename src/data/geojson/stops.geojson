@@ -512,7 +512,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "Maria Cristina",
+        "EQUIPAMENT": "MariaCristina",
         "DISTRICTE": 4,
         "BARRI": 20,
         "NOM_DISTRICTE": "Les Corts",
@@ -528,7 +528,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L3"],
-        "EQUIPAMENT": "Trinitat Nova",
+        "EQUIPAMENT": "Trinitat-Nova",
         "DISTRICTE": 8,
         "BARRI": 53,
         "NOM_DISTRICTE": "Nou Barris",
@@ -561,7 +561,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L4"],
-        "EQUIPAMENT": "Sant Pau",
+        "EQUIPAMENT": "SantPau",
         "DISTRICTE": 7,
         "BARRI": 35,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -712,22 +712,6 @@
         "BARRI": 43,
         "NOM_DISTRICTE": "Horta-Guinardó",
         "NOM_BARRI": "Horta"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.142382, 41.425021]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Vall d'Hebron",
-        "DISTRICTE": 7,
-        "BARRI": 40,
-        "NOM_DISTRICTE": "Horta-Guinardó",
-        "NOM_BARRI": "Montbau"
       }
     },
 
@@ -1810,7 +1794,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "LINE": ["L3"],
+        "LINE": ["L3", "L5"],
         "EQUIPAMENT": "VallD'Hebron",
         "DISTRICTE": 7,
         "BARRI": 40,
