@@ -63,15 +63,10 @@ const Board = () => {
 
   const images: string[] = useMemo(() => {
     if (!selectedStop) return [];
-    console.log("selectedStop", selectedStop);
-
     const preUrl = "/images";
-
     const postUrl = `${selectedStop}.jpg`;
-
     const tryAllLines = linesData.map((line) => {
       const image = `${preUrl}/${line.id}/${postUrl}`;
-      console.log("image", image);
       return image;
     });
 
