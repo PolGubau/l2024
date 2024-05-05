@@ -10,6 +10,7 @@ import { Stops as IStops } from "../types/stops";
 import { LineNameEnum, LineType } from "../types/types";
 import { Line } from "./Line";
 import { Stops } from "./stops";
+import LineImage from "./Image";
 const Board = () => {
   const exclusionArgs = {
     paint: {
@@ -93,18 +94,12 @@ const Board = () => {
             {extra}
           </Switch>
         ))}
-        {images.map((image) => (
-          <img
-            key={image}
-            src={image}
-            alt={image}
-            width={90}
-            height={90}
-            className="w-[90px] h-[90px] object-cover rounded-md"
-          />
-        ))}
-
-        {/* {selectedStop} */}
+        <div className="flex flex-col gap-2 overflow-auto max-h-[80vh]">
+          {selectedStop}
+          {images.map((image, i) => (
+            <LineImage image={image} key={i} />
+          ))}
+        </div>
       </div>
 
       <ol className="w-fit min-w-10 fixed bottom-2 left-2 z-20 flex gap-2 items-center">
