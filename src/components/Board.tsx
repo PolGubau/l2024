@@ -3,14 +3,14 @@ import {
   MlFillExtrusionLayer,
   MlNavigationTools,
 } from "@mapcomponents/react-maplibre";
-import { Switch, formatString } from "pol-ui";
+import { IconButton, Switch, formatString } from "pol-ui";
 import { useMemo, useState } from "react";
 import { linesData, stops } from "../data/lines";
 import { Stops as IStops } from "../types/stops";
 import { LineNameEnum, LineType } from "../types/types";
+import LineImage from "./Image";
 import { Line } from "./Line";
 import { Stops } from "./stops";
-import LineImage from "./Image";
 const Board = () => {
   const exclusionArgs = {
     paint: {
@@ -94,11 +94,16 @@ const Board = () => {
             {extra}
           </Switch>
         ))}
-        <div className="flex flex-col gap-2 overflow-auto max-h-[80vh]">
-          {selectedStop}
+        <div className="flex flex-col gap-2 overflow-auto max-h-[80vh] relative">
           {images.map((image, i) => (
             <LineImage image={image} key={i} />
           ))}
+          <IconButton
+            className="absolute top-1 right-1 bg-secondary-50 "
+            onClick={() => setSelectedStop(null)}
+          >
+            X
+          </IconButton>
         </div>
       </div>
 
