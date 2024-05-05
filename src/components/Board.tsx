@@ -7,7 +7,7 @@ import { Switch, formatString } from "pol-ui";
 import { useState } from "react";
 import { linesData, stops } from "../data/lines";
 import { Stops as IStops } from "../types/stops";
-import { LineType } from "../types/types";
+import { LineNameEnum, LineType } from "../types/types";
 import { Line } from "./Line";
 import { Stops } from "./stops";
 
@@ -66,9 +66,25 @@ const Board = () => {
             {extra}
           </Switch>
         ))}
-        {/* <Image width={100} height={100} src="/map/logo.png" alt="logo" /> */}
         {selectedStop}
       </div>
+
+      <ol className="w-fit min-w-10 fixed bottom-2 left-2 z-20 flex gap-2 items-center">
+        {Object.keys(LineNameEnum).map((line) => (
+          <button
+            key={line}
+            className="overflow-hidden rounded-md h-[50px] w-[50px]"
+            onClick={() =>
+              setSelectedLine(
+                linesData.find((l) => l.id === (line as LineNameEnum)) || null
+              )
+            }
+          >
+            <img width={50} height={50} src={`/logos/${line}.svg`} alt="logo" />
+          </button>
+        ))}
+      </ol>
+
       <div className="relative w-full h-full overflow-hidden rounded-3xl">
         {extras.hasBuildings && <MlFillExtrusionLayer {...exclusionArgs} />}
         {linesData.map((line) => (

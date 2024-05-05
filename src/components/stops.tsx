@@ -35,7 +35,6 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   useLayer({
     onClick: (ev) => {
       const e = ev as any;
-      console.log(e.features[0]._vectorTileFeature.properties["EQUIPAMENT"]);
       setSelectedStop(
         e.features[0]._vectorTileFeature.properties["EQUIPAMENT"]
       );
@@ -47,6 +46,17 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
 
       paint: {
         "circle-color": "rgb(10, 20, 10)",
+        "circle-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          11,
+          0.5,
+          15,
+          1,
+        ],
         "circle-radius": ["interpolate", ["linear"], ["zoom"], 11, 4, 15, 8],
       },
       filter: ["==", "$type", "Point"],

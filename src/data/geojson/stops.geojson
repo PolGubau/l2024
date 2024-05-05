@@ -10,10 +10,8 @@
       "properties": {
         "images": [""],
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429765.797,
-        "ED50_COORD_Y": 4581763.498,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Urgell",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Urgell",
         "DISTRICTE": 2,
         "BARRI": 8,
         "NOM_DISTRICTE": "Eixample",
@@ -28,10 +26,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432181.614,
-        "ED50_COORD_Y": 4583937.709,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Glòries",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Glòries",
         "DISTRICTE": 10,
         "BARRI": 66,
         "NOM_DISTRICTE": "Sant Martí",
@@ -42,14 +38,28 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [2.197738, 41.399453]
+      },
+      "properties": {
+        "CODI_CAPA": "K001",
+
+        "EQUIPAMENT": "Llacuna",
+        "DISTRICTE": 10,
+        "BARRI": 68,
+        "NOM_DISTRICTE": "Sant Martí",
+        "NOM_BARRI": "el Poblenou"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [2.184813, 41.381839]
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431930.389,
-        "ED50_COORD_Y": 4581667.765,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Barceloneta",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Barceloneta",
         "DISTRICTE": 1,
         "BARRI": 3,
         "NOM_DISTRICTE": "Ciutat Vella",
@@ -64,10 +74,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431504.785,
-        "ED50_COORD_Y": 4583749.453,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Monumental",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Monumental",
         "DISTRICTE": 2,
         "BARRI": 5,
         "NOM_DISTRICTE": "Eixample",
@@ -82,10 +90,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433301.089,
-        "ED50_COORD_Y": 4585791.13,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Sant Martí",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Sant-Martí",
         "DISTRICTE": 10,
         "BARRI": 72,
         "NOM_DISTRICTE": "Sant Martí",
@@ -100,9 +106,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434675.75,
-        "ED50_COORD_Y": 4588254.06,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10N - Llefià",
         "DISTRICTE": null,
         "BARRI": null,
@@ -118,9 +122,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428014.559,
-        "ED50_COORD_Y": 4579406.009,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10S - Foneria",
         "DISTRICTE": 3,
         "BARRI": 13,
@@ -128,24 +130,7 @@
         "NOM_BARRI": "la Marina de Port"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.168879, 41.373877]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430589.584,
-        "ED50_COORD_Y": 4580796.378,
-        "LINE": "FM",
-        "EQUIPAMENT": "FM - Paral·lel",
-        "DISTRICTE": 3,
-        "BARRI": 11,
-        "NOM_DISTRICTE": "Sants-Montjuïc",
-        "NOM_BARRI": "el Poble-sec"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -154,9 +139,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428952.565,
-        "ED50_COORD_Y": 4587673.545,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Mundet",
         "DISTRICTE": 7,
         "BARRI": 41,
@@ -172,9 +155,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430946.929,
-        "ED50_COORD_Y": 4581636.443,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Liceu",
         "DISTRICTE": 1,
         "BARRI": 2,
@@ -190,9 +171,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430612.855,
-        "ED50_COORD_Y": 4580912.069,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Paral·lel",
         "DISTRICTE": 3,
         "BARRI": 11,
@@ -209,10 +188,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434813.719,
-        "ED50_COORD_Y": 4589387.857,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Fondo",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Fondo",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -227,9 +204,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430315.353,
-        "ED50_COORD_Y": 4582770.325,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Passeig de Gràcia",
         "DISTRICTE": 2,
         "BARRI": 7,
@@ -245,10 +220,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432860.76,
-        "ED50_COORD_Y": 4585361.973,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Bac de Roda",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Bac-de-Roda",
         "DISTRICTE": 10,
         "BARRI": 72,
         "NOM_DISTRICTE": "Sant Martí",
@@ -263,10 +236,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433235.718,
-        "ED50_COORD_Y": 4589219.41,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Baró de Viver",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "BaróDeViver",
         "DISTRICTE": 9,
         "BARRI": 57,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -281,10 +252,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432548.263,
-        "ED50_COORD_Y": 4583138.32,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Bogatell",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Bogatell",
         "DISTRICTE": 10,
         "BARRI": 66,
         "NOM_DISTRICTE": "Sant Martí",
@@ -299,10 +268,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431409.721,
-        "ED50_COORD_Y": 4581929.71,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Jaume I",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "JaumeI",
         "DISTRICTE": 1,
         "BARRI": 4,
         "NOM_DISTRICTE": "Ciutat Vella",
@@ -317,10 +284,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428024.001,
-        "ED50_COORD_Y": 4580988.524,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Plaça de Sants",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "PlaçaDeSants",
         "DISTRICTE": 3,
         "BARRI": 18,
         "NOM_DISTRICTE": "Sants-Montjuïc",
@@ -335,9 +300,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428660.245,
-        "ED50_COORD_Y": 4587118.498,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Montbau",
         "DISTRICTE": 7,
         "BARRI": 40,
@@ -353,10 +316,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430126.681,
-        "ED50_COORD_Y": 4581465.336,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Sant Antoni",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Sant-Antoni",
         "DISTRICTE": 1,
         "BARRI": 1,
         "NOM_DISTRICTE": "Ciutat Vella",
@@ -371,10 +332,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431474,
-        "ED50_COORD_Y": 4588546.863,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Via Júlia",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "ViaJúlia",
         "DISTRICTE": 8,
         "BARRI": 51,
         "NOM_DISTRICTE": "Nou Barris",
@@ -390,10 +349,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434096.418,
-        "ED50_COORD_Y": 4585876.766,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Besòs",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Besòs",
         "DISTRICTE": 10,
         "BARRI": 70,
         "NOM_DISTRICTE": "Sant Martí",
@@ -408,9 +365,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 422338.97,
-        "ED50_COORD_Y": 4579041.71,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Cornellà Centre",
         "DISTRICTE": null,
         "BARRI": null,
@@ -426,9 +381,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 426439.007,
-        "ED50_COORD_Y": 4581047.865,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Collblanc",
         "DISTRICTE": null,
         "BARRI": null,
@@ -444,9 +397,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428658.221,
-        "ED50_COORD_Y": 4581994.167,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Entença",
         "DISTRICTE": 2,
         "BARRI": 9,
@@ -462,9 +413,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430546.717,
-        "ED50_COORD_Y": 4587082.912,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Vilapicina",
         "DISTRICTE": 8,
         "BARRI": 46,
@@ -480,9 +429,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 422500.208,
-        "ED50_COORD_Y": 4573103.524,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - Aeroport T2",
         "DISTRICTE": null,
         "BARRI": null,
@@ -499,10 +446,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430220.293,
-        "ED50_COORD_Y": 4582128.606,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Universitat",
+        "LINE": ["L1", "L2"],
+        "EQUIPAMENT": "Universitat",
         "DISTRICTE": 2,
         "BARRI": 10,
         "NOM_DISTRICTE": "Eixample",
@@ -518,10 +463,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427219.188,
-        "ED50_COORD_Y": 4580270.769,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Santa Eulàlia",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "SantaEulàlia",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -536,10 +479,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430551.5,
-        "ED50_COORD_Y": 4583740.889,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Verdaguer",
+        "LINE": ["L4", "L5"],
+        "EQUIPAMENT": "Verdaguer",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -554,9 +495,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428558.075,
-        "ED50_COORD_Y": 4577388.458,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10S - Zona Franca",
         "DISTRICTE": 3,
         "BARRI": 12,
@@ -572,9 +511,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427004.096,
-        "ED50_COORD_Y": 4582382.497,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Maria Cristina",
         "DISTRICTE": 4,
         "BARRI": 20,
@@ -590,9 +527,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431943.409,
-        "ED50_COORD_Y": 4589183.064,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Trinitat Nova",
         "DISTRICTE": 8,
         "BARRI": 53,
@@ -609,10 +544,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425034.208,
-        "ED50_COORD_Y": 4579153.554,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Av. Carrilet",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Av.Carrilet",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -627,10 +560,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431063.612,
-        "ED50_COORD_Y": 4585467.707,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Guinardó | Hospital de Sant Pau",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Sant Pau",
         "DISTRICTE": 7,
         "BARRI": 35,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -645,10 +576,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434077.559,
-        "ED50_COORD_Y": 4586998.656,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Verneda",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Verneda",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -663,9 +592,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 424782.29,
-        "ED50_COORD_Y": 4580569.135,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Can Vidalet",
         "DISTRICTE": null,
         "BARRI": null,
@@ -681,10 +608,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430424.051,
-        "ED50_COORD_Y": 4585075.794,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Alfons X",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "AlfonsX",
         "DISTRICTE": 7,
         "BARRI": 33,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -699,9 +624,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431166.269,
-        "ED50_COORD_Y": 4590445.954,
-        "LINE": "L1",
+        "LINE": ["L11"],
         "EQUIPAMENT": "L11 - Ciutat Meridiana",
         "DISTRICTE": 8,
         "BARRI": 55,
@@ -718,9 +641,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428628.025,
-        "ED50_COORD_Y": 4581331.176,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Tarragona",
         "DISTRICTE": 2,
         "BARRI": 9,
@@ -736,10 +657,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 426142.916,
-        "ED50_COORD_Y": 4580215.824,
-        "LINE": "L9",
-        "EQUIPAMENT": "L9SL10S - Torrassa",
+        "LINE": ["L9", "L10", "L1"],
+        "EQUIPAMENT": "Torrassa",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -754,34 +673,15 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429773.559,
-        "ED50_COORD_Y": 4583089.996,
-        "LINE": "L5",
-        "EQUIPAMENT": "L5 - Diagonal",
+        "LINE": ["L5"],
+        "EQUIPAMENT": "Diagonal",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
         "NOM_BARRI": "la Dreta de l'Eixample"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.167115, 41.39898]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430468.825,
-        "ED50_COORD_Y": 4583584.799,
-        "LINE": "L5",
-        "EQUIPAMENT": "L5 - Verdaguer",
-        "DISTRICTE": 2,
-        "BARRI": 7,
-        "NOM_DISTRICTE": "Eixample",
-        "NOM_BARRI": "la Dreta de l'Eixample"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -790,9 +690,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431690.127,
-        "ED50_COORD_Y": 4585361.613,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Camp de l'Arpa",
         "DISTRICTE": 10,
         "BARRI": 64,
@@ -808,9 +706,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429907.119,
-        "ED50_COORD_Y": 4587003.373,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Horta",
         "DISTRICTE": 7,
         "BARRI": 43,
@@ -826,9 +722,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428429.89,
-        "ED50_COORD_Y": 4586496.009,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Vall d'Hebron",
         "DISTRICTE": 7,
         "BARRI": 40,
@@ -845,10 +739,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431172.577,
-        "ED50_COORD_Y": 4583126.738,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Tetuan",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Tetuan",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -863,10 +755,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 436055.974,
-        "ED50_COORD_Y": 4588117.025,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Gorg",
+        "LINE": ["L2", "L10"],
+        "EQUIPAMENT": "Gorg",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -881,10 +771,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433939.007,
-        "ED50_COORD_Y": 4589338.515,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Santa Coloma",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "SantaColoma",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -899,9 +787,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431161.999,
-        "ED50_COORD_Y": 4581089.579,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Drassanes",
         "DISTRICTE": 1,
         "BARRI": 1,
@@ -917,9 +803,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429296.222,
-        "ED50_COORD_Y": 4583935.58,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Fontana",
         "DISTRICTE": 6,
         "BARRI": 31,
@@ -935,9 +819,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 435331.395,
-        "ED50_COORD_Y": 4588409.928,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10N - La Salut",
         "DISTRICTE": null,
         "BARRI": null,
@@ -953,9 +835,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428308.161,
-        "ED50_COORD_Y": 4578854.838,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10S - Foc",
         "DISTRICTE": 3,
         "BARRI": 12,
@@ -971,9 +851,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428268.192,
-        "ED50_COORD_Y": 4581679.478,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Sants Estació",
         "DISTRICTE": 3,
         "BARRI": 18,
@@ -989,10 +867,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425718.599,
-        "ED50_COORD_Y": 4578305.234,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Bellvitge",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Bellvitge",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1008,10 +884,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432621.41,
-        "ED50_COORD_Y": 4582202.672,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Ciutadella | Vila Olímpica",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Ciutadella",
         "DISTRICTE": 10,
         "BARRI": 67,
         "NOM_DISTRICTE": "Sant Martí",
@@ -1026,10 +900,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434740.569,
-        "ED50_COORD_Y": 4587419.43,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Artigues | Sant Adrià",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Artigues",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1044,9 +916,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427883.561,
-        "ED50_COORD_Y": 4575972.085,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10S - Ecoparc",
         "DISTRICTE": 3,
         "BARRI": 12,
@@ -1062,10 +932,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432155.551,
-        "ED50_COORD_Y": 4586168.739,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - La Sagrera",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "LaSagrera",
         "DISTRICTE": 9,
         "BARRI": 61,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -1080,10 +948,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431031.882,
-        "ED50_COORD_Y": 4587802.177,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Llucmajor",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Llucmajor",
         "DISTRICTE": 8,
         "BARRI": 48,
         "NOM_DISTRICTE": "Nou Barris",
@@ -1094,13 +960,28 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [2.163251, 41.406455]
+      },
+      "properties": {
+        "CODI_CAPA": "K001",
+
+        "EQUIPAMENT": "Joanic",
+        "LINE": ["L4"],
+        "DISTRICTE": 6,
+        "BARRI": 32,
+        "NOM_DISTRICTE": "Gràcia",
+        "NOM_BARRI": "el Camp d'en Grassot i Gràcia Nova"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [2.150433, 41.405766]
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429081.69,
-        "ED50_COORD_Y": 4584351.709,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Lesseps",
         "DISTRICTE": 6,
         "BARRI": 31,
@@ -1117,9 +998,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429119.412,
-        "ED50_COORD_Y": 4582449.407,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Hospital Clínic",
         "DISTRICTE": 2,
         "BARRI": 8,
@@ -1135,9 +1014,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429494.116,
-        "ED50_COORD_Y": 4586425.261,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - El Carmel",
         "DISTRICTE": 7,
         "BARRI": 37,
@@ -1153,9 +1030,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 422538.942,
-        "ED50_COORD_Y": 4573924.954,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - Mas Blau",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1171,9 +1046,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425037.338,
-        "ED50_COORD_Y": 4575885.475,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - Les Moreres",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1189,9 +1062,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433159.602,
-        "ED50_COORD_Y": 4589967.339,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9N - Can Zam",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1207,9 +1078,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434294.255,
-        "ED50_COORD_Y": 4589749.411,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9N - Església Major",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1225,9 +1094,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431227.517,
-        "ED50_COORD_Y": 4584887.797,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Sant Pau | Dos de Maig",
         "DISTRICTE": 2,
         "BARRI": 6,
@@ -1243,9 +1110,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432121.592,
-        "ED50_COORD_Y": 4586049.924,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - La Sagrera",
         "DISTRICTE": 9,
         "BARRI": 61,
@@ -1262,10 +1127,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430776.853,
-        "ED50_COORD_Y": 4583134.177,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Girona",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Girona",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -1280,10 +1143,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433506.64,
-        "ED50_COORD_Y": 4584085.177,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Poblenou",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "Poblenou",
         "DISTRICTE": 10,
         "BARRI": 68,
         "NOM_DISTRICTE": "Sant Martí",
@@ -1298,10 +1159,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428453.471,
-        "ED50_COORD_Y": 4580973.276,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Hostafrancs",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Hostafrancs",
         "DISTRICTE": 3,
         "BARRI": 15,
         "NOM_DISTRICTE": "Sants-Montjuïc",
@@ -1316,9 +1175,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429870.963,
-        "ED50_COORD_Y": 4580930.763,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Poble Sec",
         "DISTRICTE": 2,
         "BARRI": 10,
@@ -1335,9 +1192,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428306.856,
-        "ED50_COORD_Y": 4585751.773,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Penitents",
         "DISTRICTE": 6,
         "BARRI": 28,
@@ -1353,9 +1208,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431273.328,
-        "ED50_COORD_Y": 4588986.226,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Roquetes",
         "DISTRICTE": 8,
         "BARRI": 50,
@@ -1371,9 +1224,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 423514.244,
-        "ED50_COORD_Y": 4579705.496,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Sant Ildefons",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1389,10 +1240,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433991.693,
-        "ED50_COORD_Y": 4584556.599,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Selva de Mar",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "SelvaDeMar",
         "DISTRICTE": 10,
         "BARRI": 69,
         "NOM_DISTRICTE": "Sant Martí",
@@ -1408,9 +1257,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427543.689,
-        "ED50_COORD_Y": 4575259.006,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10S - ZAL | Riu Vell",
         "DISTRICTE": 3,
         "BARRI": 12,
@@ -1426,10 +1273,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431281.787,
-        "ED50_COORD_Y": 4586474.107,
-        "LINE": "L5",
-        "EQUIPAMENT": "L5 - Maragall",
+        "LINE": ["L5", "L4"],
+        "EQUIPAMENT": "Maragall",
         "DISTRICTE": 9,
         "BARRI": 62,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -1444,9 +1289,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428927.318,
-        "ED50_COORD_Y": 4586158.456,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - El Coll | La Teixonera",
         "DISTRICTE": 7,
         "BARRI": 38,
@@ -1462,9 +1305,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432713.579,
-        "ED50_COORD_Y": 4586961.82,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9N L10N - Onze de Setembre",
         "DISTRICTE": 9,
         "BARRI": 60,
@@ -1481,10 +1322,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425663.885,
-        "ED50_COORD_Y": 4580231.051,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Florida",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Florida",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1499,9 +1338,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432007.329,
-        "ED50_COORD_Y": 4589379.872,
-        "LINE": "L1",
+        "LINE": ["L11"],
         "EQUIPAMENT": "L11 - Casa de l'Aigua",
         "DISTRICTE": 8,
         "BARRI": 53,
@@ -1517,9 +1354,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425839.766,
-        "ED50_COORD_Y": 4581071.077,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Ernest Lluch",
         "DISTRICTE": 4,
         "BARRI": 20,
@@ -1527,24 +1362,7 @@
         "NOM_BARRI": "la Maternitat i Sant Ramon"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.177423, 41.423132]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431355.949,
-        "ED50_COORD_Y": 4586257.895,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Maragall",
-        "DISTRICTE": 7,
-        "BARRI": 35,
-        "NOM_DISTRICTE": "Horta-Guinardó",
-        "NOM_BARRI": "el Guinardó"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -1553,9 +1371,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425778.199,
-        "ED50_COORD_Y": 4581984.042,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Zona Universitària",
         "DISTRICTE": 4,
         "BARRI": 20,
@@ -1572,9 +1388,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427841.437,
-        "ED50_COORD_Y": 4581719.693,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Plaça del Centre",
         "DISTRICTE": 3,
         "BARRI": 18,
@@ -1590,34 +1404,15 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430615.964,
-        "ED50_COORD_Y": 4582310.664,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Catalunya",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Catalunya",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
         "NOM_BARRI": "la Dreta de l'Eixample"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.169143, 41.375033]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430612.89,
-        "ED50_COORD_Y": 4580924.504,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Paral·lel",
-        "DISTRICTE": 1,
-        "BARRI": 1,
-        "NOM_DISTRICTE": "Ciutat Vella",
-        "NOM_BARRI": "el Raval"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -1626,9 +1421,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 423079.327,
-        "ED50_COORD_Y": 4579111.867,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Gavarra",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1644,9 +1437,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425434.514,
-        "ED50_COORD_Y": 4580846.516,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Pubilla Cases",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1662,10 +1453,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432028.631,
-        "ED50_COORD_Y": 4583100.659,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Marina",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Marina",
         "DISTRICTE": 2,
         "BARRI": 5,
         "NOM_DISTRICTE": "Eixample",
@@ -1680,10 +1469,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 436954.724,
-        "ED50_COORD_Y": 4589088.056,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Badalona Pompeu Fabra",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Badalona-Pompeu-Fabra",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1698,9 +1485,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431804.14,
-        "ED50_COORD_Y": 4589146.184,
-        "LINE": "L4",
+        "LINE": ["L4"],
         "EQUIPAMENT": "L4 - Trinitat Nova",
         "DISTRICTE": 8,
         "BARRI": 53,
@@ -1716,10 +1501,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 435647.7,
-        "ED50_COORD_Y": 4587631.462,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Sant Roc",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Sant Roc",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1735,10 +1518,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433714.291,
-        "ED50_COORD_Y": 4586339.029,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - La Pau",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "La-Pau",
         "DISTRICTE": 10,
         "BARRI": 73,
         "NOM_DISTRICTE": "Sant Martí",
@@ -1753,10 +1534,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 433679.335,
-        "ED50_COORD_Y": 4586299.934,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - La Pau",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "LaPau",
         "DISTRICTE": 10,
         "BARRI": 73,
         "NOM_DISTRICTE": "Sant Martí",
@@ -1771,9 +1550,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432132.54,
-        "ED50_COORD_Y": 4585960.777,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9N L10N - La Sagrera",
         "DISTRICTE": 9,
         "BARRI": 63,
@@ -1789,9 +1566,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 423940.576,
-        "ED50_COORD_Y": 4576215.993,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - El Prat Estació",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1807,9 +1582,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427087.188,
-        "ED50_COORD_Y": 4577257.433,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - Parc Logístic",
         "DISTRICTE": 3,
         "BARRI": 12,
@@ -1825,9 +1598,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 426981.38,
-        "ED50_COORD_Y": 4579023.417,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - Europa | Fira",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1843,9 +1614,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 426372.628,
-        "ED50_COORD_Y": 4581083.181,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9SL10S - Collblanc",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1861,9 +1630,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427773.961,
-        "ED50_COORD_Y": 4581032.65,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Plaça de Sants",
         "DISTRICTE": 3,
         "BARRI": 18,
@@ -1879,9 +1646,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425726.914,
-        "ED50_COORD_Y": 4576363.133,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - Mercabarna",
         "DISTRICTE": 3,
         "BARRI": 12,
@@ -1897,9 +1662,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431672.922,
-        "ED50_COORD_Y": 4586292.197,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Congrés",
         "DISTRICTE": 9,
         "BARRI": 62,
@@ -1915,9 +1678,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431035.098,
-        "ED50_COORD_Y": 4590625.409,
-        "LINE": "L1",
+        "LINE": ["L11"],
         "EQUIPAMENT": "L11 - Can Cuiàs",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1934,10 +1695,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428963.106,
-        "ED50_COORD_Y": 4580996.682,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Espanya",
+        "LINE": ["L1", "L3"],
+        "EQUIPAMENT": "Espanya",
         "DISTRICTE": 2,
         "BARRI": 9,
         "NOM_DISTRICTE": "Eixample",
@@ -1952,9 +1711,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 436093.853,
-        "ED50_COORD_Y": 4588139.562,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10N - Gorg",
         "DISTRICTE": null,
         "BARRI": null,
@@ -1970,9 +1727,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431601.691,
-        "ED50_COORD_Y": 4590262.835,
-        "LINE": "L1",
+        "LINE": ["L11"],
         "EQUIPAMENT": "L11 - Torre Baró | Vallbona",
         "DISTRICTE": 8,
         "BARRI": 54,
@@ -1989,10 +1744,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425055.24,
-        "ED50_COORD_Y": 4580168.262,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Can Serra",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "CanSerra",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -2008,34 +1761,15 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432756.421,
-        "ED50_COORD_Y": 4589115.048,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Trinitat Vella",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Trinitat-Vella",
         "DISTRICTE": 9,
         "BARRI": 57,
         "NOM_DISTRICTE": "Sant Andreu",
         "NOM_BARRI": "la Trinitat Vella"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.163939, 41.384796]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430188.153,
-        "ED50_COORD_Y": 4582012.669,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Universitat",
-        "DISTRICTE": 2,
-        "BARRI": 10,
-        "NOM_DISTRICTE": "Eixample",
-        "NOM_BARRI": "Sant Antoni"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2044,9 +1778,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 424225.178,
-        "ED50_COORD_Y": 4575131.252,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9S - Cèntric",
         "DISTRICTE": null,
         "BARRI": null,
@@ -2062,10 +1794,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432155.968,
-        "ED50_COORD_Y": 4585482.356,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Navas",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Navas",
         "DISTRICTE": 9,
         "BARRI": 63,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -2080,9 +1810,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428447.673,
-        "ED50_COORD_Y": 4586528.032,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Vall d'Hebron",
         "DISTRICTE": 7,
         "BARRI": 40,
@@ -2098,9 +1826,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429876.862,
-        "ED50_COORD_Y": 4583250.319,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Diagonal",
         "DISTRICTE": 2,
         "BARRI": 7,
@@ -2116,10 +1842,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431782.478,
-        "ED50_COORD_Y": 4584492.053,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Encants",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Encants",
         "DISTRICTE": 10,
         "BARRI": 64,
         "NOM_DISTRICTE": "Sant Martí",
@@ -2134,17 +1858,29 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434580.549,
-        "ED50_COORD_Y": 4585339.213,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Besòs Mar",
+        "LINE": ["L4"],
+        "EQUIPAMENT": "BesòsMar",
         "DISTRICTE": 10,
         "BARRI": 70,
         "NOM_DISTRICTE": "Sant Martí",
         "NOM_BARRI": "el Besòs i el Maresme"
       }
     },
-
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.215048, 41.41399]
+      },
+      "properties": {
+        "CODI_CAPA": "K001",
+        "EQUIPAMENT": "Maresme",
+        "DISTRICTE": 10,
+        "BARRI": 70,
+        "NOM_DISTRICTE": "Sant Martí",
+        "NOM_BARRI": "el Besòs i el Maresme"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -2153,9 +1889,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 426321.735,
-        "ED50_COORD_Y": 4579400.267,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9SL10S - Can Tries | Gornal",
         "DISTRICTE": null,
         "BARRI": null,
@@ -2171,9 +1905,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 434103.739,
-        "ED50_COORD_Y": 4588550.816,
-        "LINE": "L9",
+        "LINE": ["L9"],
         "EQUIPAMENT": "L9N - Can Peixauet",
         "DISTRICTE": null,
         "BARRI": null,
@@ -2189,9 +1921,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427125.127,
-        "ED50_COORD_Y": 4581022.83,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Badal",
         "DISTRICTE": 3,
         "BARRI": 17,
@@ -2207,9 +1937,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 428216.717,
-        "ED50_COORD_Y": 4581497.679,
-        "LINE": "L5",
+        "LINE": ["L5"],
         "EQUIPAMENT": "L5 - Sants Estació",
         "DISTRICTE": 3,
         "BARRI": 18,
@@ -2226,10 +1954,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 425403.973,
-        "ED50_COORD_Y": 4577609.09,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Hospital de Bellvitge",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "HospitalDeBellvitge",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -2245,10 +1971,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431886.214,
-        "ED50_COORD_Y": 4586977.787,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Fabra i Puig",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "FabraIPuig",
         "DISTRICTE": 9,
         "BARRI": 60,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -2263,16 +1987,15 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432145.184,
-        "ED50_COORD_Y": 4584813.621,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Clot",
+        "LINE": ["L1", "L2"],
+        "EQUIPAMENT": "Clot",
         "DISTRICTE": 10,
         "BARRI": 65,
         "NOM_DISTRICTE": "Sant Martí",
         "NOM_BARRI": "el Clot"
       }
     },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2281,10 +2004,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431144.313,
-        "ED50_COORD_Y": 4584137.146,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Sagrada Família",
+        "LINE": ["L2"],
+        "EQUIPAMENT": "Sagrada-Família",
         "DISTRICTE": 2,
         "BARRI": 6,
         "NOM_DISTRICTE": "Eixample",
@@ -2299,10 +2020,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431868.902,
-        "ED50_COORD_Y": 4589228.179,
-        "LINE": "L1",
-        "EQUIPAMENT": "L11 - Trinitat Nova",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Trinitat-Nova",
         "DISTRICTE": 8,
         "BARRI": 53,
         "NOM_DISTRICTE": "Nou Barris",
@@ -2317,9 +2036,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430706.443,
-        "ED50_COORD_Y": 4582180.227,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Catalunya",
         "DISTRICTE": 2,
         "BARRI": 7,
@@ -2327,24 +2044,7 @@
         "NOM_BARRI": "la Dreta de l'Eixample"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.167872, 41.390085]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430522.632,
-        "ED50_COORD_Y": 4582596.681,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Passeig de Gràcia",
-        "DISTRICTE": 2,
-        "BARRI": 7,
-        "NOM_DISTRICTE": "Eixample",
-        "NOM_BARRI": "la Dreta de l'Eixample"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2353,9 +2053,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427424.715,
-        "ED50_COORD_Y": 4581967.902,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Les Corts",
         "DISTRICTE": 4,
         "BARRI": 19,
@@ -2371,10 +2069,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432486.023,
-        "ED50_COORD_Y": 4588481.263,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Torras i Bages",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "TorrasIBages",
         "DISTRICTE": 9,
         "BARRI": 60,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -2386,56 +2082,19 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [2.163296, 41.368985]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430117.379,
-        "ED50_COORD_Y": 4580257.769,
-        "LINE": "FM",
-        "EQUIPAMENT": "FM - Parc de Montjuïc",
-        "DISTRICTE": 3,
-        "BARRI": 11,
-        "NOM_DISTRICTE": "Sants-Montjuïc",
-        "NOM_BARRI": "el Poble-sec"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [2.191213, 41.436628]
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 432522.264,
-        "ED50_COORD_Y": 4587745.358,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Sant Andreu",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "SantAndreu",
         "DISTRICTE": 9,
         "BARRI": 60,
         "NOM_DISTRICTE": "Sant Andreu",
         "NOM_BARRI": "Sant Andreu"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.173471, 41.387989]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430988.522,
-        "ED50_COORD_Y": 4582359.508,
-        "LINE": "L4",
-        "EQUIPAMENT": "L4 - Urquinaona",
-        "DISTRICTE": 1,
-        "BARRI": 4,
-        "NOM_DISTRICTE": "Ciutat Vella",
-        "NOM_BARRI": "Sant Pere, Santa Caterina i la Ribera"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2444,10 +2103,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431084.099,
-        "ED50_COORD_Y": 4582544.57,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Urquinaona-",
+        "LINE": ["L1", "L4"],
+        "EQUIPAMENT": "Urquinaona",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -2462,10 +2119,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 431638.562,
-        "ED50_COORD_Y": 4582839.198,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Arc de Triomf-",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "ArcDeTriomf",
         "DISTRICTE": 2,
         "BARRI": 5,
         "NOM_DISTRICTE": "Eixample",
@@ -2480,10 +2135,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 430555.141,
-        "ED50_COORD_Y": 4582525.2,
-        "LINE": "L2",
-        "EQUIPAMENT": "L2 - Passeig de Gràcia",
+        "LINE": ["L2", "L4"],
+        "EQUIPAMENT": "Passeig-de-Gràcia",
         "DISTRICTE": 2,
         "BARRI": 7,
         "NOM_DISTRICTE": "Eixample",
@@ -2498,9 +2151,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 426395.612,
-        "ED50_COORD_Y": 4582184.809,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Palau Reial",
         "DISTRICTE": 4,
         "BARRI": 20,
@@ -2516,9 +2167,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429657.401,
-        "ED50_COORD_Y": 4587927.68,
-        "LINE": "L3",
+        "LINE": ["L3"],
         "EQUIPAMENT": "L3 - Valldaura",
         "DISTRICTE": 7,
         "BARRI": 43,
@@ -2534,10 +2183,8 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 429400.306,
-        "ED50_COORD_Y": 4581405.655,
-        "LINE": "L1",
-        "EQUIPAMENT": "L1 - Rocafort",
+        "LINE": ["L1"],
+        "EQUIPAMENT": "Rocafort",
         "DISTRICTE": 2,
         "BARRI": 9,
         "NOM_DISTRICTE": "Eixample",
@@ -2552,9 +2199,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "ED50_COORD_X": 427522.158,
-        "ED50_COORD_Y": 4579637.196,
-        "LINE": "L1",
+        "LINE": ["L10"],
         "EQUIPAMENT": "L10S - Ciutat de la Justícia",
         "DISTRICTE": null,
         "BARRI": null,
