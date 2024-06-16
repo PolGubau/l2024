@@ -3,6 +3,7 @@ import line1 from "./geojson/L1.geojson?raw";
 import line2 from "./geojson/L2.geojson?raw";
 import line3 from "./geojson/L3.geojson?raw";
 import line4 from "./geojson/L4.geojson?raw";
+import line5 from "./geojson/L5.geojson?raw";
 import line11 from "./geojson/L11.geojson?raw";
 import stopsData from "./geojson/stops.geojson?raw";
 import toGeoJSON from "../util/toGeoJSON";
@@ -55,6 +56,22 @@ export const linesData: LineType[] = [
 
       dateTime: "2024-04-06T11:14:04.387Z",
       time: "04:42:45",
+    },
+  },
+  {
+    id: "L5",
+    gpx: line5,
+    metadata: {
+      title: "L5",
+      subtitle: "Cornellà Centre / Vall d'Hebron",
+      timeWalking: "04:04:00",
+      distance: 17.18,
+      transport: "metro",
+      color: "#006b9d",
+      velocity: 4.2,
+
+      dateTime: "2024-05-7T10:14:04.387Z",
+      time: "04:17:45",
     },
   },
   {

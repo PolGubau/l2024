@@ -3,7 +3,7 @@ import {
   MlFillExtrusionLayer,
   MlNavigationTools,
 } from "@mapcomponents/react-maplibre";
-import { IconButton, Switch, formatString } from "pol-ui";
+import { Button, IconButton, Switch, cn, formatString } from "pol-ui";
 import { useMemo, useState } from "react";
 import { linesData, stops } from "../data/lines";
 import { Stops as IStops } from "../types/stops";
@@ -73,6 +73,25 @@ const Board = () => {
     return tryAllLines;
   }, [selectedStop]);
 
+  const selectThisLine = (line: LineNameEnum) => {
+    // select the line
+    setSelectedLine(linesData.find((l) => l.id === line) || null);
+  };
+  const toggleSelectLine = (line: LineNameEnum) => {
+    // if the line is already selected, deselect it
+    if (selectedLine?.id === line) {
+      setSelectedLine(null);
+    } else {
+      // select the line
+      selectThisLine(line);
+    }
+  };
+  const isThisLineSelected = (line: LineNameEnum) => {
+    // if 0 lines selected, return true
+    if (!selectedLine) return true;
+    return selectedLine?.id === line;
+  };
+
   return (
     <section className=" gap-4 bg-neutral-200 h-full grid ">
       <div className="fixed top-2 left-2 z-10 p-2 gap-1 flex flex-col bg-secondary-50/70 backdrop-blur-sm rounded-xl">
@@ -90,6 +109,7 @@ const Board = () => {
           </Switch>
         ))}
         <div className="flex flex-col gap-2 overflow-auto max-h-[80vh] relative">
+          {selectedStop}
           {images.map((image, i) => (
             <LineImage image={image} key={i} />
           ))}
@@ -104,17 +124,15 @@ const Board = () => {
 
       <ol className="w-fit min-w-10 fixed bottom-2 left-2 z-20 flex gap-2 items-center">
         {Object.keys(LineNameEnum).map((line) => (
-          <button
+          <Button
             key={line}
-            className="overflow-hidden rounded-md h-[50px] w-[50px]"
-            onClick={() =>
-              setSelectedLine(
-                linesData.find((l) => l.id === (line as LineNameEnum)) || null
-              )
-            }
+            className={cn("overflow-hidden p-0 rounded-md h-[50px] w-[50px]", {
+              "ring-4 ring-black": isThisLineSelected(line as LineNameEnum),
+            })}
+            onClick={() => toggleSelectLine(line as LineNameEnum)}
           >
             <img width={50} height={50} src={`/logos/${line}.svg`} alt="logo" />
-          </button>
+          </Button>
         ))}
       </ol>
 
@@ -125,8 +143,7 @@ const Board = () => {
             seeElevation={extras.hasElevation}
             line={line}
             key={line.id}
-            isSelected={selectedLine?.id === line.id || !selectedLine}
-            setSelectedLine={setSelectedLine}
+            isSelected={isThisLineSelected(line.id as LineNameEnum)}
           />
         ))}
         <Stops stops={metroStops} setSelectedStop={setSelectedStop} />

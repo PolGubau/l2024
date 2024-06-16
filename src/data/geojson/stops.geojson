@@ -366,7 +366,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Cornellà Centre",
+        "EQUIPAMENT": "Cornellà Centre",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -382,7 +382,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Collblanc",
+        "EQUIPAMENT": "Collblanc",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -398,7 +398,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Entença",
+        "EQUIPAMENT": "Entença",
         "DISTRICTE": 2,
         "BARRI": 9,
         "NOM_DISTRICTE": "Eixample",
@@ -414,7 +414,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Vilapicina",
+        "EQUIPAMENT": "Vilapicina",
         "DISTRICTE": 8,
         "BARRI": 46,
         "NOM_DISTRICTE": "Nou Barris",
@@ -593,7 +593,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Can Vidalet",
+        "EQUIPAMENT": "Can Vidalet",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -665,22 +665,6 @@
         "NOM_BARRI": ""
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.158856, 41.394463]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "LINE": ["L5"],
-        "EQUIPAMENT": "Diagonal",
-        "DISTRICTE": 2,
-        "BARRI": 7,
-        "NOM_DISTRICTE": "Eixample",
-        "NOM_BARRI": "la Dreta de l'Eixample"
-      }
-    },
 
     {
       "type": "Feature",
@@ -691,7 +675,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Camp de l'Arpa",
+        "EQUIPAMENT": "Camp de l'Arpa",
         "DISTRICTE": 10,
         "BARRI": 64,
         "NOM_DISTRICTE": "Sant Martí",
@@ -707,7 +691,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Horta",
+        "EQUIPAMENT": "Horta",
         "DISTRICTE": 7,
         "BARRI": 43,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -912,12 +896,12 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [2.187001, 41.422397]
+        "coordinates": [2.1868501, 41.421397]
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "LINE": ["L1"],
-        "EQUIPAMENT": "LaSagrera",
+        "LINE": ["L1", "L10", "L5"],
+        "EQUIPAMENT": "La Sagrera",
         "DISTRICTE": 9,
         "BARRI": 61,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -983,7 +967,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Hospital Clínic",
+        "EQUIPAMENT": "Hospital Clínic",
         "DISTRICTE": 2,
         "BARRI": 8,
         "NOM_DISTRICTE": "Eixample",
@@ -999,7 +983,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - El Carmel",
+        "EQUIPAMENT": "El Carmel",
         "DISTRICTE": 7,
         "BARRI": 37,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -1079,27 +1063,11 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Sant Pau | Dos de Maig",
+        "EQUIPAMENT": "Sant Pau",
         "DISTRICTE": 2,
         "BARRI": 6,
         "NOM_DISTRICTE": "Eixample",
         "NOM_BARRI": "la Sagrada Família"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.186608, 41.421324]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - La Sagrera",
-        "DISTRICTE": 9,
-        "BARRI": 61,
-        "NOM_DISTRICTE": "Sant Andreu",
-        "NOM_BARRI": "la Sagrera"
       }
     },
 
@@ -1209,7 +1177,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Sant Ildefons",
+        "EQUIPAMENT": "Sant Ildefons",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1274,7 +1242,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - El Coll | La Teixonera",
+        "EQUIPAMENT": "El Coll",
         "DISTRICTE": 7,
         "BARRI": 38,
         "NOM_DISTRICTE": "Horta-Guinardó",
@@ -1339,7 +1307,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Ernest Lluch",
+        "EQUIPAMENT": "Ernest Lluch",
         "DISTRICTE": 4,
         "BARRI": 20,
         "NOM_DISTRICTE": "Les Corts",
@@ -1406,7 +1374,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Gavarra",
+        "EQUIPAMENT": "Gavarra",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1422,7 +1390,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Pubilla Cases",
+        "EQUIPAMENT": "Pubilla Cases",
         "DISTRICTE": null,
         "BARRI": null,
         "NOM_DISTRICTE": "",
@@ -1526,22 +1494,7 @@
         "NOM_BARRI": "la Verneda i la Pau"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.186749, 41.420522]
-      },
-      "properties": {
-        "CODI_CAPA": "K001",
-        "LINE": ["L9"],
-        "EQUIPAMENT": "L9N L10N - La Sagrera",
-        "DISTRICTE": 9,
-        "BARRI": 63,
-        "NOM_DISTRICTE": "Sant Andreu",
-        "NOM_BARRI": "Navas"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -1615,7 +1568,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Plaça de Sants",
+        "EQUIPAMENT": "Plaça de Sants",
         "DISTRICTE": 3,
         "BARRI": 18,
         "NOM_DISTRICTE": "Sants-Montjuïc",
@@ -1647,7 +1600,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Congrés",
+        "EQUIPAMENT": "Congrés",
         "DISTRICTE": 9,
         "BARRI": 62,
         "NOM_DISTRICTE": "Sant Andreu",
@@ -1810,7 +1763,7 @@
       },
       "properties": {
         "CODI_CAPA": "K001",
-        "LINE": ["L3"],
+        "LINE": ["L3", "L5"],
         "EQUIPAMENT": "Diagonal",
         "DISTRICTE": 2,
         "BARRI": 7,
@@ -1906,7 +1859,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Badal",
+        "EQUIPAMENT": "Badal",
         "DISTRICTE": 3,
         "BARRI": 17,
         "NOM_DISTRICTE": "Sants-Montjuïc",
@@ -1922,7 +1875,7 @@
       "properties": {
         "CODI_CAPA": "K001",
         "LINE": ["L5"],
-        "EQUIPAMENT": "L5 - Sants Estació",
+        "EQUIPAMENT": "Sants Estació",
         "DISTRICTE": 3,
         "BARRI": 18,
         "NOM_DISTRICTE": "Sants-Montjuïc",

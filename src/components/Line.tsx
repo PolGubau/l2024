@@ -5,42 +5,22 @@ import {
   useLayerHoverPopup,
   useSource,
 } from "@mapcomponents/react-maplibre";
-import { useRef } from "react";
+import { useId, useRef } from "react";
 import { LineType } from "../types/types";
 
 export interface MlGpxViewerProps {
-  mapId?: string;
-  idPrefix?: string;
-
   line: LineType;
-  isSelectable?: boolean;
   isSelected?: boolean;
-  setSelectedLine?: (line: LineType) => void;
   seeElevation?: boolean;
-  selectedStop?: string;
 }
 
-export const Line = ({
-  line,
-  isSelected,
-  seeElevation,
-  setSelectedLine,
-  ...props
-}: MlGpxViewerProps) => {
-  const handleSelect = () => {
-    if (setSelectedLine) {
-      setSelectedLine(line);
-    }
-  };
-
+export const Line = ({ line, isSelected, seeElevation }: MlGpxViewerProps) => {
+  const id = useId();
   const parsedGpx = JSON.parse(line.gpx);
 
-  // const mapHook = useMap({
-  //   mapId: props.mapId,
-  // });
-  const sourceName = useRef("gpx-viewer-source-" + Math.random());
-  const layerNameLines = useRef("importer-layer-lines-" + Math.random());
-  const layerNamePoints = useRef("importer-layer-points-" + Math.random());
+  const sourceName = useRef("gpx-viewer-source-" + id);
+  const layerNameLines = useRef("importer-layer-lines-" + id);
+  const layerNamePoints = useRef("importer-layer-points-" + id);
 
   useLayerHoverPopup({
     layerId: layerNamePoints.current,
@@ -48,7 +28,6 @@ export const Line = ({
   });
 
   useSource({
-    mapId: props.mapId,
     sourceId: sourceName.current,
     source: {
       type: "geojson",
@@ -58,13 +37,14 @@ export const Line = ({
 
   useLayer({
     layerId: layerNameLines.current,
-    onClick: handleSelect,
 
     options: {
       type: "line",
 
       paint: {
-        "line-width": isSelected ? 7 : 3,
+        "line-width": isSelected
+          ? ["interpolate", ["linear"], ["zoom"], 5, 2, 22, 10]
+          : 0.01,
         "line-color": line.metadata?.color || "rgba(72, 77, 99,0.5)",
       },
       source: sourceName.current,
@@ -74,7 +54,7 @@ export const Line = ({
   return (
     <MlSpatialElevationProfile
       geojson={parsedGpx}
-      elevationFactor={seeElevation ? 2 : 0.01}
+      elevationFactor={seeElevation ? 2 : 0.001}
     />
   );
 };

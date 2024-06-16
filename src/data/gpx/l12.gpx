@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" version="1.1" creator="https://gpx.studio">
+<metadata>
+    <name>new</name>
+    <author>
+        <name>gpx.studio</name>
+        <link href="https://gpx.studio"></link>
+    </author>
+</metadata>
+<trk>
+    <name>new</name>
+    <type>Running</type>
+    <trkseg>
+    <trkpt lat="41.398776" lon="2.119049">
+        <ele>129.8</ele>
+    </trkpt>
+    <trkpt lat="41.399061" lon="2.119456">
+        <ele>131.8</ele>
+    </trkpt>
+    <trkpt lat="41.399147" lon="2.119314">
+        <ele>132.0</ele>
+    </trkpt>
+    <trkpt lat="41.399126" lon="2.119277">
+        <ele>132.0</ele>
+    </trkpt>
+    <trkpt lat="41.399148" lon="2.119186">
+        <ele>131.8</ele>
+    </trkpt>
+    <trkpt lat="41.399069" lon="2.11927">
+        <ele>131.5</ele>
+    </trkpt>
+    <trkpt lat="41.399108" lon="2.119327">
+        <ele>131.8</ele>
+    </trkpt>
+    <trkpt lat="41.399076" lon="2.119365">
+        <ele>131.8</ele>
+    </trkpt>
+    <trkpt lat="41.399692" lon="2.120472">
+        <ele>134.3</ele>
+    </trkpt>
+    <trkpt lat="41.399986" lon="2.121363">
+        <ele>132.3</ele>
+    </trkpt>
+    <trkpt lat="41.400016" lon="2.121405">
+        <ele>132.3</ele>
+    </trkpt>
+    <trkpt lat="41.400048" lon="2.121377">
+        <ele>132.5</ele>
+    </trkpt>
+    <trkpt lat="41.400082" lon="2.121418">
+        <ele>132.3</ele>
+    </trkpt>
+    <trkpt lat="41.40004" lon="2.121515">
+        <ele>131.8</ele>
+    </trkpt>
+    <trkpt lat="41.400056" lon="2.121626">
+        <ele>131.3</ele>
+    </trkpt>
+    <trkpt lat="41.400299" lon="2.122115">
+        <ele>128.3</ele>
+    </trkpt>
+    <trkpt lat="41.400591" lon="2.122579">
+        <ele>125.0</ele>
+    </trkpt>
+    <trkpt lat="41.400528" lon="2.122626">
+        <ele>125.0</ele>
+        <extensions>
+        <gpxtpx:TrackPointExtension>
+        <gpxtpx:Extensions>
+            <surface>asphalt</surface>
+        </gpxtpx:Extensions>
+        </gpxtpx:TrackPointExtension>
+        </extensions>
+    </trkpt>
+    <trkpt lat="41.400577" lon="2.122707">
+        <ele>124.8</ele>
+    </trkpt>
+    <trkpt lat="41.399565" lon="2.123794">
+        <ele>121.8</ele>
+    </trkpt>
+    <trkpt lat="41.399506" lon="2.12397">
+        <ele>121.0</ele>
+    </trkpt>
+    <trkpt lat="41.399569" lon="2.12415">
+        <ele>120.5</ele>
+    </trkpt>
+    <trkpt lat="41.399599" lon="2.124417">
+        <ele>119.3</ele>
+        <extensions>
+        <gpxtpx:TrackPointExtension>
+        <gpxtpx:Extensions>
+            <surface>asphalt</surface>
+        </gpxtpx:Extensions>
+        </gpxtpx:TrackPointExtension>
+        </extensions>
+    </trkpt>
+    <trkpt lat="41.398783" lon="2.125434">
+        <ele>111.5</ele>
+    </trkpt>
+    <trkpt lat="41.398747" lon="2.125327">
+        <ele>111.5</ele>
+        <extensions>
+        <gpxtpx:TrackPointExtension>
+        <gpxtpx:Extensions>
+            <surface>asphalt</surface>
+        </gpxtpx:Extensions>
+        </gpxtpx:TrackPointExtension>
+        </extensions>
+    </trkpt>
+    <trkpt lat="41.398844" lon="2.125126">
+        <ele>113.0</ele>
+        <extensions>
+        <gpxtpx:TrackPointExtension>
+        <gpxtpx:Extensions>
+            <surface>asphalt</surface>
+        </gpxtpx:Extensions>
+        </gpxtpx:TrackPointExtension>
+        </extensions>
+    </trkpt>
+    </trkseg>
+</trk>
+</gpx>
