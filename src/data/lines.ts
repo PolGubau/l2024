@@ -4,9 +4,12 @@ import line2 from "./geojson/L2.geojson?raw";
 import line3 from "./geojson/L3.geojson?raw";
 import line4 from "./geojson/L4.geojson?raw";
 import line5 from "./geojson/L5.geojson?raw";
+import line6 from "./geojson/L6.geojson?raw";
+import line7 from "./geojson/L7.geojson?raw";
+import line10 from "./geojson/L10.geojson?raw";
+import line12 from "./geojson/L12.geojson?raw";
 import line11 from "./geojson/L11.geojson?raw";
 import stopsData from "./geojson/stops.geojson?raw";
-import toGeoJSON from "../util/toGeoJSON";
 import { Stops } from "../types/stops";
 
 //
@@ -59,6 +62,22 @@ export const linesData: LineType[] = [
     },
   },
   {
+    id: "L4",
+    gpx: line4,
+    metadata: {
+      title: "L4",
+      subtitle: "Paral·lel / Badalona Pompeu Fabra",
+      timeWalking: "04:04:00",
+      distance: 17.18,
+      transport: "metro",
+      color: "#ffc10e",
+      velocity: 4.2,
+
+      dateTime: "2024-04-27T10:14:04.387Z",
+      time: "04:17:45",
+    },
+  },
+  {
     id: "L5",
     gpx: line5,
     metadata: {
@@ -75,19 +94,52 @@ export const linesData: LineType[] = [
     },
   },
   {
-    id: "L4",
-    gpx: line4,
+    id: "L6",
+    gpx: line6,
     metadata: {
-      title: "L4",
-      subtitle: "Paral·lel / Badalona Pompeu Fabra",
-      timeWalking: "04:04:00",
-      distance: 17.18,
+      title: "L6",
+      subtitle: "Plaça Catlunya / Sarrià",
+      timeWalking: "01:31:00",
+      distance: 5.55,
       transport: "metro",
-      color: "#ffc10e",
-      velocity: 4.2,
+      color: "#847dc6",
+      velocity: 3.6,
 
-      dateTime: "2024-04-27T10:14:04.387Z",
-      time: "04:17:45",
+      dateTime: "2024-05-15T10:14:04.387Z",
+      time: "01:39:00",
+    },
+  },
+  {
+    id: "L7",
+    gpx: line7,
+    metadata: {
+      title: "L7",
+      subtitle: "Plaça Catlunya / Av. Tibidabo",
+      timeWalking: "01:39:00",
+      distance: 6.09,
+      transport: "metro",
+      color: "#ae6118",
+      velocity: 3.7,
+
+      dateTime: "2024-05-15T10:14:04.387Z",
+      time: "01:39:00",
+    },
+  },
+
+  {
+    id: "L10",
+    gpx: line10,
+    metadata: {
+      title: "L10",
+      subtitle: "ZAL / Gorg",
+      timeWalking: "02:04:00",
+      distance: 7.36,
+      transport: "metro",
+      color: "#31a8e0",
+      velocity: 3.5,
+
+      dateTime: "2024-04-06T10:14:04.387Z",
+      time: "01:05:00",
     },
   },
   {
@@ -106,17 +158,22 @@ export const linesData: LineType[] = [
       time: "01:05:00",
     },
   },
-];
+  {
+    id: "L12",
+    gpx: line12,
+    metadata: {
+      title: "L12",
+      subtitle: "Trinitat Nova / Can Cuiàs",
+      timeWalking: "04:04:00",
+      distance: 17.18,
+      transport: "metro",
+      color: "#b6b3e1",
+      velocity: 4.2,
 
-export function parseGPX(gpx: string) {
-  const domParser = new DOMParser();
-  const gpxDoc = domParser.parseFromString(gpx, "application/xml");
-  const parsedGpx = toGeoJSON.gpx(gpxDoc);
-  // copy to clipboard
-  const stringified = JSON.stringify(parsedGpx);
-  navigator.clipboard.writeText(stringified);
-  console.log(stringified);
-  return parsedGpx;
-}
+      dateTime: "2024-04-06T10:14:04.387Z",
+      time: "01:05:00",
+    },
+  },
+];
 
 export const stops = JSON.parse(stopsData) as Stops;

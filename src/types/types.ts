@@ -4,7 +4,11 @@ export enum LineNameEnum {
   L3 = "L3",
   L4 = "L4",
   L5 = "L5",
+  L6 = "L6",
+  L7 = "L7",
+  L10 = "L10",
   L11 = "L11",
+  L12 = "L12",
 }
 export type LineName = keyof typeof LineNameEnum;
 

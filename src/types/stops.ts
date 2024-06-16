@@ -17,11 +17,10 @@ export interface Geometry {
 }
 
 export interface Properties {
-  CODI_CAPA: string;
   LINE: LineName[];
-  EQUIPAMENT: string;
+  stop_name: string;
   DISTRICTE?: number;
   BARRI?: number;
   NOM_DISTRICTE: string;
-  NOM_BARRI: string;
+  nom_barri: string;
 }

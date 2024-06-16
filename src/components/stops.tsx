@@ -19,7 +19,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   useLayerHoverPopup({
     layerId: layerNamePoints.current,
     getPopupContent: (feature) => {
-      return feature.properties?.["EQUIPAMENT"];
+      return feature.properties?.["stop_name"];
     },
   });
 
@@ -34,9 +34,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   useLayer({
     onClick: (ev) => {
       const e = ev as any;
-      setSelectedStop(
-        e.features[0]._vectorTileFeature.properties["EQUIPAMENT"]
-      );
+      setSelectedStop(e.features[0]._vectorTileFeature.properties["stop_name"]);
     },
 
     layerId: layerNamePoints.current,
