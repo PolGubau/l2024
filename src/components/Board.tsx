@@ -3,7 +3,14 @@ import {
   MlFillExtrusionLayer,
   MlNavigationTools,
 } from "@mapcomponents/react-maplibre";
-import { Button, IconButton, Switch, cn, formatString } from "pol-ui";
+import {
+  Button,
+  DrawerDialog,
+  IconButton,
+  Switch,
+  cn,
+  formatString,
+} from "pol-ui";
 import { useMemo, useState } from "react";
 import { linesData, stops } from "../data/lines";
 import { Stops as IStops } from "../types/stops";
@@ -121,6 +128,21 @@ const Board = () => {
           </IconButton>
         </div>
       </div>
+      <DrawerDialog
+        trigger={<></>}
+        open={Boolean(selectedStop)}
+        onOpenChange={(open) => {
+          if (!open) {
+            setSelectedStop(null);
+            setSelectedLine(null);
+          }
+        }}
+      >
+        {selectedStop}
+        {images.map((image, i) => (
+          <LineImage image={image} key={i} />
+        ))}
+      </DrawerDialog>
 
       <ol className="w-fit min-w-10 fixed bottom-2 left-2 z-20 flex gap-2 items-center">
         {Object.keys(LineNameEnum).map((line) => (

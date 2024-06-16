@@ -1083,19 +1083,6 @@
         "nom_barri": "Sants"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.169021, 41.387517]
-      },
-      "properties": {
-        "line": ["L1"],
-        "stop_name": "Catalunya",
-        "nom_districte": "Eixample",
-        "nom_barri": "la Dreta de l'Eixample"
-      }
-    },
 
     {
       "type": "Feature",
@@ -1581,7 +1568,7 @@
         "coordinates": [2.170118, 41.38635]
       },
       "properties": {
-        "line": ["L3"],
+        "line": ["L3", "L1", "L6", "L7"],
         "stop_name": "Catalunya",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
@@ -2079,20 +2066,7 @@
         "stop_name": "Pol\u00edgon industrial del Segre"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.168720219, 41.38563194]
-      },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "PC",
-        "stop_name": "Pl. Catalunya"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
