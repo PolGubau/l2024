@@ -6,6 +6,8 @@ import line4 from "./geojson/L4.geojson?raw";
 import line5 from "./geojson/L5.geojson?raw";
 import line6 from "./geojson/L6.geojson?raw";
 import line7 from "./geojson/L7.geojson?raw";
+import line8 from "./geojson/L8.geojson?raw";
+import line9 from "./geojson/L9.geojson?raw";
 import line10 from "./geojson/L10.geojson?raw";
 import line12 from "./geojson/L12.geojson?raw";
 import line11 from "./geojson/L11.geojson?raw";
@@ -119,6 +121,38 @@ export const linesData: LineType[] = [
       distance: 6.09,
       transport: "metro",
       color: "#ae6118",
+      velocity: 3.7,
+
+      dateTime: "2024-05-15T10:14:04.387Z",
+      time: "01:39:00",
+    },
+  },
+  {
+    id: "L8",
+    gpx: line8,
+    metadata: {
+      title: "L8",
+      subtitle: "Moli Nou / Plaça Espanya",
+      timeWalking: "01:39:00",
+      distance: 6.09,
+      transport: "metro",
+      color: "#e796bf",
+      velocity: 3.7,
+
+      dateTime: "2024-05-15T10:14:04.387Z",
+      time: "01:39:00",
+    },
+  },
+  {
+    id: "L9",
+    gpx: line9,
+    metadata: {
+      title: "L9",
+      subtitle: "Zona Universitària / Aeroport T1",
+      timeWalking: "01:39:00",
+      distance: 6.09,
+      transport: "metro",
+      color: "#fb712b",
       velocity: 3.7,
 
       dateTime: "2024-05-15T10:14:04.387Z",

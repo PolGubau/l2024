@@ -5,16 +5,30 @@ import {
 } from "@mapcomponents/react-maplibre";
 import {
   Button,
-  DrawerDialog,
-  IconButton,
-  Switch,
   cn,
+  Conveyor,
+  Divider,
+  Drawer,
+  Dropdown,
+  DropdownGroup,
+  DropdownItem,
+  DropdownLabel,
+  DropdownSubContent,
+  DropdownSubTrigger,
   formatString,
 } from "pol-ui";
+import {
+  DropdownCheckboxItem,
+  DropdownDescription,
+  DropdownHeader,
+  DropdownPortal,
+  DropdownSub,
+} from "pol-ui/lib/esm/components/Dropdown/Dropdown";
 import { useMemo, useState } from "react";
+import { TbFilterMinus, TbSettings } from "react-icons/tb";
 import { linesData, stops } from "../data/lines";
 import { Stops as IStops } from "../types/stops";
-import { LineNameEnum, LineType } from "../types/types";
+import { LineName, LineNameEnum, LineType } from "../types/types";
 import LineImage from "./Image";
 import { Line } from "./Line";
 import { Stops } from "./stops";
@@ -80,28 +94,131 @@ const Board = () => {
     return tryAllLines;
   }, [selectedStop]);
 
-  const selectThisLine = (line: LineNameEnum) => {
-    // select the line
-    setSelectedLine(linesData.find((l) => l.id === line) || null);
-  };
-  const toggleSelectLine = (line: LineNameEnum) => {
-    // if the line is already selected, deselect it
-    if (selectedLine?.id === line) {
-      setSelectedLine(null);
-    } else {
-      // select the line
-      selectThisLine(line);
-    }
-  };
-  const isThisLineSelected = (line: LineNameEnum) => {
+  const isThisLineSelected = (line: LineName) => {
     // if 0 lines selected, return true
     if (!selectedLine) return true;
     return selectedLine?.id === line;
   };
 
+  const getStopInfo = (stop: string) => {
+    return stops.features.find((s) => s.properties.stop_name === stop);
+  };
+  const snaps = ["750px", "1055px", 1];
+  const [snap, setSnap] = useState<number | string | null>(snaps[0]);
+
   return (
-    <section className=" gap-4 bg-neutral-200 h-full grid ">
-      <div className="fixed top-2 left-2 z-10 p-2 gap-1 flex flex-col bg-secondary-50/70 backdrop-blur-sm rounded-xl">
+    <>
+      <Drawer
+        contentProps={{
+          className: "z-50",
+        }}
+        direction="bottom"
+        snapPoints={snaps}
+        activeSnapPoint={snap}
+        setActiveSnapPoint={setSnap}
+        withoutTrigger
+        open={Boolean(selectedStop)}
+        onOpenChange={(open) => {
+          if (!open) {
+            setSelectedStop(null);
+            setSelectedLine(null);
+          }
+        }}
+      >
+        <header className="p-6 ">
+          <h2 className="text-secondary-50 text-2xl ">{selectedStop}</h2>
+        </header>
+        {images.map((image, i) => (
+          <LineImage image={image} key={i} />
+        ))}
+      </Drawer>
+      <section className="relative gap-4 bg-secondary/20 p-2 ">
+        <Dropdown
+          className="z-50"
+          trigger={
+            <Button
+              className="absolute w-[50px] h-[50px] bottom-8 z-20 left-8 bg-secondary-50 dark:bg-secondary-900 "
+              rounded={"full"}
+            >
+              <TbSettings
+                size={25}
+                className="text-secondary-900 dark:text-secondary-50"
+              />
+            </Button>
+          }
+        >
+          <DropdownHeader>
+            <DropdownLabel>Options</DropdownLabel>
+            <DropdownDescription>Customize the map</DropdownDescription>
+          </DropdownHeader>
+
+          <Divider />
+
+          <DropdownGroup>
+            <DropdownSub>
+              <DropdownSubTrigger>
+                <span>Filter Lines</span>
+              </DropdownSubTrigger>
+              <DropdownPortal>
+                <DropdownSubContent>
+                  <DropdownItem
+                    icon={TbFilterMinus}
+                    onSelect={() => setSelectedLine(null)}
+                  >
+                    <span>All</span>
+                  </DropdownItem>
+                  {Object.keys(LineNameEnum).map((line) => (
+                    <>
+                      <DropdownItem
+                        className={cn(" transition-colors ", {
+                          "bg-secondary/30": isThisLineSelected(
+                            line as LineName
+                          ),
+                          "hover:bg-secondary/10": !isThisLineSelected(
+                            line as LineName
+                          ),
+                        })}
+                        key={line}
+                        onSelect={() => {
+                          const l = linesData.find((l) => l.id === line);
+                          setSelectedLine(l ?? null);
+                        }}
+                      >
+                        <span className="items-center flex gap-2">
+                          <img
+                            width={20}
+                            height={20}
+                            src={`/logos/${line}.svg`}
+                            alt="logo"
+                          />
+
+                          {line}
+                        </span>
+                      </DropdownItem>{" "}
+                    </>
+                  ))}
+                </DropdownSubContent>
+              </DropdownPortal>
+            </DropdownSub>
+          </DropdownGroup>
+          <DropdownGroup>
+            {Object.keys(extras).map((extra) => (
+              <DropdownCheckboxItem
+                className="text-secondary-900 dark:text-secondary-50"
+                key={extra}
+                // label={formatString(extra)}
+                checked={extras[extra]}
+                onCheckedChange={() =>
+                  setExtras((prev) => ({ ...prev, [extra]: !prev[extra] }))
+                }
+              >
+                {formatString(extra)}
+              </DropdownCheckboxItem>
+            ))}
+          </DropdownGroup>
+          {/*  */}
+        </Dropdown>
+        {/* <div className="fixed top-2 left-2 z-10 p-2 gap-1 flex flex-col bg-secondary-50/70 dark:bg-secondary-900/70 backdrop-blur-sm rounded-br-2xl rounded-td-2xl">
         {Object.keys(extras).map((extra) => (
           <Switch
             size="sm"
@@ -127,65 +244,39 @@ const Board = () => {
             X
           </IconButton>
         </div>
-      </div>
-      <DrawerDialog
-        trigger={<></>}
-        open={Boolean(selectedStop)}
-        onOpenChange={(open) => {
-          if (!open) {
-            setSelectedStop(null);
-            setSelectedLine(null);
-          }
-        }}
-      >
-        {selectedStop}
-        {images.map((image, i) => (
-          <LineImage image={image} key={i} />
-        ))}
-      </DrawerDialog>
+      </div> */}
 
-      <ol className="w-fit min-w-10 fixed bottom-2 left-2 z-20 flex gap-2 items-center">
-        {Object.keys(LineNameEnum).map((line) => (
-          <Button
-            key={line}
-            className={cn("overflow-hidden p-0 rounded-md h-[50px] w-[50px]", {
-              "ring-4 ring-black": isThisLineSelected(line as LineNameEnum),
-            })}
-            onClick={() => toggleSelectLine(line as LineNameEnum)}
-          >
-            <img width={50} height={50} src={`/logos/${line}.svg`} alt="logo" />
-          </Button>
-        ))}
-      </ol>
-
-      <div className="relative w-full h-full overflow-hidden rounded-3xl">
-        {extras.hasBuildings && <MlFillExtrusionLayer {...exclusionArgs} />}
-        {linesData.map((line) => (
-          <Line
-            seeElevation={extras.hasElevation}
-            line={line}
-            key={line.id}
-            isSelected={isThisLineSelected(line.id as LineNameEnum)}
+        <div className="relative w-full h-full overflow-hidden rounded-3xl">
+          {extras.hasBuildings && <MlFillExtrusionLayer {...exclusionArgs} />}
+          {linesData.map((line) => (
+            <Line
+              seeElevation={extras.hasElevation}
+              line={line}
+              key={line.id}
+              isSelected={isThisLineSelected(line.id as LineNameEnum)}
+            />
+          ))}
+          <Stops stops={metroStops} setSelectedStop={setSelectedStop} />
+          <MapLibreMap
+            options={{
+              attributionControl: false,
+              maplibreLogo: false,
+              center: { lat: 41.390205, lng: 2.154007 },
+              style: "/map/schema.json",
+              zoom: 10,
+            }}
+            style={{
+              minWidth: "100%",
+              height: "100%",
+            }}
           />
-        ))}
-        <Stops stops={metroStops} setSelectedStop={setSelectedStop} />
-        <MapLibreMap
-          options={{
-            center: { lat: 41.390205, lng: 2.154007 },
-            style: "/map/schema.json",
-            zoom: 10,
-          }}
-          style={{
-            minWidth: "100%",
-            height: "100%",
-          }}
-        />
 
-        <div className="hidden md:flex">
-          <MlNavigationTools />
+          <div className="hidden md:flex">
+            <MlNavigationTools />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

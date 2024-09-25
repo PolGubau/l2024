@@ -1,0 +1,329 @@
+[
+  {
+    "name": "Pol",
+    "surnames": "Gubau Amores",
+    "lines_done": [
+      {
+        "name": "L1",
+        "percent": 100
+      },
+      {
+        "name": "L2",
+        "percent": 100
+      },
+      {
+        "name": "L3",
+        "percent": 100
+      },
+      {
+        "name": "L4",
+        "percent": 100
+      },
+      {
+        "name": "L5",
+        "percent": 100
+      },
+      {
+        "name": "L6",
+        "percent": 100
+      },
+      {
+        "name": "L7",
+        "percent": 100
+      },
+      {
+        "name": "L8",
+        "percent": 100
+      },
+      {
+        "name": "L9",
+        "percent": 100
+      },
+      {
+        "name": "L10",
+        "percent": 100
+      },
+      {
+        "name": "L11",
+        "percent": 100
+      },
+      {
+        "name": "L12",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Marcos",
+    "surnames": "Rayo García",
+    "lines_done": [
+      {
+        "name": "L1",
+        "percent": 100
+      },
+      {
+        "name": "L2",
+        "percent": 100
+      },
+      {
+        "name": "L3",
+        "percent": 100
+      },
+      {
+        "name": "L4",
+        "percent": 100
+      },
+      {
+        "name": "L5",
+        "percent": 100
+      },
+      {
+        "name": "L6",
+        "percent": 100
+      },
+      {
+        "name": "L7",
+        "percent": 100
+      },
+      {
+        "name": "L8",
+        "percent": 100
+      },
+      {
+        "name": "L9",
+        "percent": 100
+      },
+      {
+        "name": "L10",
+        "percent": 100
+      },
+      {
+        "name": "L11",
+        "percent": 100
+      },
+      {
+        "name": "L12",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Rebeca",
+    "surnames": "Staiku Berneceau",
+    "lines_done": [
+      {
+        "name": "L1",
+        "percent": 100
+      },
+      {
+        "name": "L2",
+        "percent": 100
+      },
+      {
+        "name": "L5",
+        "percent": 100
+      },
+      {
+        "name": "L6",
+        "percent": 100
+      },
+      {
+        "name": "L9",
+        "percent": 100
+      },
+      {
+        "name": "L10",
+        "percent": 100
+      },
+      {
+        "name": "L12",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Gerard",
+    "surnames": "Martínez",
+    "lines_done": [
+      {
+        "name": "L3",
+        "percent": 100
+      },
+      {
+        "name": "L6",
+        "percent": 100
+      },
+      {
+        "name": "L7",
+        "percent": 100
+      },
+      {
+        "name": "L10",
+        "percent": 50
+      },
+      {
+        "name": "L12",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Anna",
+    "surnames": "Camps Romero",
+    "lines_done": [
+      {
+        "name": "L3",
+        "percent": 100
+      },
+      {
+        "name": "L4",
+        "percent": 100
+      },
+      {
+        "name": "L5",
+        "percent": 30
+      },
+      {
+        "name": "L10",
+        "percent": 30
+      },
+      {
+        "name": "L11",
+        "percent": 100
+      },
+      {
+        "name": "L12",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Anna",
+    "surnames": "2 (Gerard)",
+    "lines_done": [
+      {
+        "name": "L10",
+        "percent": 50
+      }
+    ],
+    "avatar": ""
+  },
+
+  {
+    "name": "Maria",
+    "surnames": "Rogès Lopez",
+    "lines_done": [
+      {
+        "name": "L4",
+        "percent": 40
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Amigo de marcos",
+    "surnames": "ns",
+    "lines_done": [
+      {
+        "name": "L4",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Albert",
+    "surnames": "",
+    "lines_done": [
+      {
+        "name": "L2",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Berta",
+    "surnames": "Pasamontes",
+    "lines_done": [
+      {
+        "name": "L2",
+        "percent": 100
+      },
+      {
+        "name": "L6",
+        "percent": 100
+      },
+      {
+        "name": "L7",
+        "percent": 10
+      },
+      {
+        "name": "L12",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Xia",
+    "surnames": "(berta)",
+    "lines_done": [
+      {
+        "name": "L7",
+        "percent": 10
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Ivan",
+    "surnames": "(crack)",
+    "lines_done": [
+      {
+        "name": "L10",
+        "percent": 50
+      },
+      {
+        "name": "L12",
+        "percent": 100
+      },
+      {
+        "name": "L7",
+        "percent": 100
+      },
+      {
+        "name": "L8",
+        "percent": 100
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Señora",
+    "surnames": "(crack)",
+    "lines_done": [
+      {
+        "name": "L3",
+        "percent": 20
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "name": "Pelota",
+    "surnames": "de Fútbol",
+    "lines_done": [
+      {
+        "name": "L4",
+        "percent": 90
+      }
+    ],
+    "avatar": ""
+  }
+]

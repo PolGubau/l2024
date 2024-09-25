@@ -6,6 +6,7 @@ import {
 } from "@mapcomponents/react-maplibre";
 import { useId, useRef } from "react";
 import { Stops as IStops } from "../types/stops";
+import { formatString } from "pol-ui";
 interface StopsProps {
   stops: IStops;
   setSelectedStop: (stop: string) => void;
@@ -19,7 +20,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   useLayerHoverPopup({
     layerId: layerNamePoints.current,
     getPopupContent: (feature) => {
-      return feature.properties?.["stop_name"];
+      return formatString(feature.properties?.["stop_name"]);
     },
   });
 
@@ -40,7 +41,6 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
     layerId: layerNamePoints.current,
     options: {
       type: "circle",
-
       paint: {
         "circle-color": "rgb(10, 20, 10)",
         "circle-opacity": [
@@ -54,7 +54,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
           15,
           1,
         ],
-        "circle-radius": ["interpolate", ["linear"], ["zoom"], 11, 4, 15, 8],
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 12, 4, 15, 8],
       },
       filter: ["==", "$type", "Point"],
       source: sourceName.current,

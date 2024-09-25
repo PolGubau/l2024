@@ -259,7 +259,7 @@
       "source-layer": "landcover",
       "filter": ["==", "class", "grass"],
       "paint": {
-        "fill-color": "#d8e8c8",
+        "fill-color": "#d8e8a8",
         "fill-opacity": 1
       }
     },
@@ -383,25 +383,10 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(210, 67%, 85%)"
+        "fill-color": "hsl(210, 67%, 90%)"
       }
     },
-    {
-      "id": "water-pattern",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849382550.77"
-      },
-      "source": "openmaptiles",
-      "source-layer": "water",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-translate": [0, 2.5],
-        "fill-pattern": "wave"
-      }
-    },
+
     {
       "id": "landcover-ice-shelf",
       "type": "fill",

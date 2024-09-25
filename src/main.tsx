@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { MapComponentsProvider } from "@mapcomponents/react-maplibre";
-import App from './App'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import AppProviders from "./providers";
+import { Router } from "./Router";
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-   <MapComponentsProvider>
-      <App />
-    </MapComponentsProvider>
-  </React.StrictMode>,
-)
+    <AppProviders>
+      <Router />
+    </AppProviders>
+  </React.StrictMode>
+);
