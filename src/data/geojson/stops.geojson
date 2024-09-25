@@ -659,19 +659,7 @@
         "nom_barri": "la Marina del Prat Vermell"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.141018, 41.381626]
-      },
-      "properties": {
-        "line": ["L3"],
-        "stop_name": "SantsEstació",
-        "nom_districte": "Sants-Montjuïc",
-        "nom_barri": "Sants"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -1180,24 +1168,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [2.205634, 41.424061]
-      },
-      "properties": {
-        "line": ["L2"],
-        "stop_name": "LaPau",
-        "nom_districte": "Sant Martí",
-        "nom_barri": "la Verneda i la Pau"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [2.20522, 41.423706]
       },
       "properties": {
-        "line": ["L4"],
-        "stop_name": "LaPau",
+        "line": ["L4", "L2"],
+        "stop_name": "La Pau",
         "nom_districte": "Sant Martí",
         "nom_barri": "la Verneda i la Pau"
       }
@@ -1496,10 +1471,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [2.140424, 41.379984]
+        "coordinates": [2.1417, 41.38095]
       },
       "properties": {
-        "line": ["L5"],
+        "line": ["L5", "L3"],
         "stop_name": "Sants Estació",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "Sants"

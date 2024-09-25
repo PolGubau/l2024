@@ -103,14 +103,15 @@ const Board = () => {
   const getStopInfo = (stop: string) => {
     return stops.features.find((s) => s.properties.stop_name === stop);
   };
-  const snaps = ["750px", "1055px", 1];
+  const snaps = ["570px", 1];
   const [snap, setSnap] = useState<number | string | null>(snaps[0]);
 
+  const thisStop = selectedStop ? getStopInfo(selectedStop) : null;
   return (
     <>
       <Drawer
         contentProps={{
-          className: "z-50",
+          className: "z-50 overflow-hidden",
         }}
         direction="bottom"
         snapPoints={snaps}
@@ -125,12 +126,15 @@ const Board = () => {
           }
         }}
       >
-        <header className="p-6 ">
-          <h2 className="text-secondary-50 text-2xl ">{selectedStop}</h2>
+        <header className="pb-8 flex flex-col gap-1">
+          <h2 className=" text-xl">{thisStop?.properties.stop_name}</h2>
+          <span className="opacity-80">{thisStop?.properties.nom_barri}</span>
         </header>
-        {images.map((image, i) => (
-          <LineImage image={image} key={i} />
-        ))}
+        <div className="w-[500px] overflow-y-hidden overflow-x-auto flex">
+          {images.map((image, i) => (
+            <LineImage image={image} key={i} />
+          ))}
+        </div>
       </Drawer>
       <section className="relative gap-4 bg-secondary/20 p-2 ">
         <Dropdown
@@ -218,39 +222,12 @@ const Board = () => {
           </DropdownGroup>
           {/*  */}
         </Dropdown>
-        {/* <div className="fixed top-2 left-2 z-10 p-2 gap-1 flex flex-col bg-secondary-50/70 dark:bg-secondary-900/70 backdrop-blur-sm rounded-br-2xl rounded-td-2xl">
-        {Object.keys(extras).map((extra) => (
-          <Switch
-            size="sm"
-            key={extra}
-            label={formatString(extra)}
-            checked={extras[extra]}
-            onChange={() =>
-              setExtras((prev) => ({ ...prev, [extra]: !prev[extra] }))
-            }
-          >
-            {extra}
-          </Switch>
-        ))}
-        <div className="flex flex-col gap-2 overflow-auto max-h-[80vh] relative">
-          {selectedStop}
-          {images.map((image, i) => (
-            <LineImage image={image} key={i} />
-          ))}
-          <IconButton
-            className="absolute top-1 right-1 bg-secondary-50 "
-            onClick={() => setSelectedStop(null)}
-          >
-            X
-          </IconButton>
-        </div>
-      </div> */}
 
         <div className="relative w-full h-full overflow-hidden rounded-3xl">
           {extras.hasBuildings && <MlFillExtrusionLayer {...exclusionArgs} />}
           {linesData.map((line) => (
             <Line
-              seeElevation={extras.hasElevation}
+              seeElevation={extras.hasElevation ?? false}
               line={line}
               key={line.id}
               isSelected={isThisLineSelected(line.id as LineNameEnum)}

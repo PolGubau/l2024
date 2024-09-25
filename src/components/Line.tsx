@@ -54,7 +54,7 @@ export const Line = ({ line, isSelected, seeElevation }: MlGpxViewerProps) => {
   return (
     <MlSpatialElevationProfile
       geojson={parsedGpx}
-      elevationFactor={seeElevation ? 2 : 0.001}
+      elevationFactor={seeElevation ? 2 : 0.000001}
     />
   );
 };
