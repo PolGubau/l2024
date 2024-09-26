@@ -35,16 +35,18 @@ const NavItem = (props: typeof NavItem) => {
 
 const Layout = () => {
   return (
-    <main className="relative w-screen h-screen bg-secondary-50 dark:bg-secondary-900 text-secondary-900 dark:text-secondary-50 ">
+    <>
       <DarkThemeToggle className="absolute top-4 right-4 z-40 bg-secondary-50 dark:bg-secondary-900" />
-      <Outlet />
-      <ul className="flex justify-center p-2  w-full bg-secondary-50">
-        {Object.keys(routes).map((k) => {
-          const v = routes[k];
-          return <NavItem to={v}>{k}</NavItem>;
-        })}
-      </ul>
-    </main>
+      <main className="relative w-screen min-h-screen overflow-hidden grid grid-rows-[1fr,auto] bg-secondary-50 dark:bg-secondary-900 text-secondary-900 dark:text-secondary-50 ">
+        <Outlet />
+        <ul className="flex justify-center p-2  w-full bg-secondary-50">
+          {Object.keys(routes).map((k) => {
+            const v = routes[k];
+            return <NavItem to={v}>{k}</NavItem>;
+          })}
+        </ul>
+      </main>
+    </>
   );
 };
 

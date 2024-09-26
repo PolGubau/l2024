@@ -20,12 +20,11 @@ const PeoplePage = () => {
       <main className="p-6 flex flex-col gap-6 w-full max-w-5xl pt-16">
         <header className="flex justify-between gap-2">
           <h1 className="text-xl">Who made this possible</h1>
-
           <IconButton onClick={toggleDirection} label="Sort by km">
             {direction === "asc" ? <TbArrowDown /> : <TbArrowUp />}
           </IconButton>
         </header>
-        <ul className="gap-4 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
+        <ul className="gap-4 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] ">
           {orderedPeople.map((p) => {
             return (
               <li key={p.id}>
