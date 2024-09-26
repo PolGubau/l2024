@@ -182,8 +182,8 @@ const Board = () => {
           <Stops stops={metroStops} setSelectedStop={setSelectedStop} />
           <MapLibreMap
             options={{
-              attributionControl: false,
-              maplibreLogo: false,
+              // attributionControl: false,
+              // maplibreLogo: false,
               center: { lat: 41.390205, lng: 2.154007 },
               style: "/map/schema.json",
               zoom: 10,
