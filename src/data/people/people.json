@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Pol",
     "surnames": "Gubau Amores",
     "lines_done": [
@@ -55,6 +56,7 @@
     "avatar": "https://avatars.githubusercontent.com/u/63197171?v=4"
   },
   {
+    "id": 2,
     "name": "Marcos",
     "surnames": "Rayo García",
     "lines_done": [
@@ -110,6 +112,7 @@
     "avatar": "https://instagram.fbcn14-1.fna.fbcdn.net/v/t51.29350-15/279613173_295445746097427_416883954788047518_n.webp?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEzNTAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fbcn14-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=hvOrRgMmnRoQ7kNvgEPvoYC&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MjgyNzkzNjQzNzUzNDU1NTA5Nw%3D%3D.3-ccb7-5&oh=00_AYDSFsiCRv6A89T0svJD_bC3CuYV6_o8V06DeOh64eIE2A&oe=66F9A04B&_nc_sid=7a9f4b"
   },
   {
+    "id": 3,
     "name": "Rebeca",
     "surnames": "Staicu Berceanu",
     "lines_done": [
@@ -145,6 +148,7 @@
     "avatar": "https://instagram.fbcn14-1.fna.fbcdn.net/v/t51.2885-19/448173411_1380257042682556_8197993184858072435_n.jpg?_nc_ht=instagram.fbcn14-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=Y5M7jRJsRn8Q7kNvgHDdIdj&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYCb-eMO6WhmbjSimXBGY1Fo3dUGzQApWJAK6YcKHDnsjg&oe=66F9A18B&_nc_sid=7a9f4b"
   },
   {
+    "id": 4,
     "name": "Gerard",
     "surnames": "Martínez Alcocer",
     "lines_done": [
@@ -162,7 +166,11 @@
       },
       {
         "name": "L10",
-        "percent": 50
+        "percent": 100
+      },
+      {
+        "name": "L9",
+        "percent": 30
       },
       {
         "name": "L12",
@@ -172,6 +180,7 @@
     "avatar": "https://avatars.githubusercontent.com/u/78301921?v=4"
   },
   {
+    "id": 5,
     "name": "Anna",
     "surnames": "Camps Romero",
     "lines_done": [
@@ -188,8 +197,12 @@
         "percent": 30
       },
       {
-        "name": "L10",
+        "name": "L9",
         "percent": 30
+      },
+      {
+        "name": "L10",
+        "percent": 100
       },
       {
         "name": "L11",
@@ -203,18 +216,24 @@
     "avatar": "https://avatars.githubusercontent.com/u/94074414?v=4"
   },
   {
+    "id": 6,
     "name": "Anna",
     "surnames": "Vila Penedes",
     "lines_done": [
       {
         "name": "L10",
-        "percent": 50
+        "percent": 100
+      },
+      {
+        "name": "L9",
+        "percent": 30
       }
     ],
     "avatar": ""
   },
 
   {
+    "id": 7,
     "name": "Maria",
     "surnames": "Rogès Lopez",
     "lines_done": [
@@ -226,6 +245,7 @@
     "avatar": ""
   },
   {
+    "id": 8,
     "name": "Samuel",
     "surnames": "(Don)",
     "lines_done": [
@@ -237,6 +257,7 @@
     "avatar": ""
   },
   {
+    "id": 9,
     "name": "Albert Arrebola Sans",
     "surnames": "",
     "lines_done": [
@@ -248,6 +269,7 @@
     "avatar": ""
   },
   {
+    "id": 10,
     "name": "Berta",
     "surnames": "Pasamontes Baixeras",
     "lines_done": [
@@ -266,11 +288,20 @@
       {
         "name": "L12",
         "percent": 100
+      },
+      {
+        "name": "L9",
+        "percent": 30
+      },
+      {
+        "name": "L10",
+        "percent": 50
       }
     ],
     "avatar": ""
   },
   {
+    "id": 11,
     "name": "Xia",
     "surnames": "Turtós Palau",
     "lines_done": [
@@ -282,8 +313,9 @@
     "avatar": ""
   },
   {
+    "id": 12,
     "name": "Ivan",
-    "surnames": "(crack)",
+    "surnames": "Lopez Jimenez",
     "lines_done": [
       {
         "name": "L10",
@@ -305,17 +337,19 @@
     "avatar": ""
   },
   {
+    "id": 13,
     "name": "Señora",
     "surnames": "(crack)",
     "lines_done": [
       {
-        "name": "L3",
+        "name": "L11",
         "percent": 20
       }
     ],
     "avatar": ""
   },
   {
+    "id": 14,
     "name": "Pelota",
     "surnames": "de Fútbol",
     "lines_done": [

@@ -24,9 +24,11 @@ import {
 } from "pol-ui/lib/esm/components/Dropdown/Dropdown";
 import { useState } from "react";
 import { TbFilterMinus, TbSettings } from "react-icons/tb";
-import { linesData, stops } from "../data/lines";
-import { Stops as IStops, StopFeatures } from "../types/stops";
+import { linesData } from "../data/lines";
+import { rawStops } from "../data/stops";
+import { StopsObject } from "../types/stops";
 import { LineName, LineNameEnum, LineType } from "../types/types";
+import { getStopInfo } from "../util/get-info";
 import { Line } from "./Line";
 import StopDrawer from "./StopDrawer/StopDrawer";
 import { Stops } from "./stops";
@@ -61,9 +63,9 @@ const Board = () => {
   const [selectedLine, setSelectedLine] = useState<LineType | null>(null);
   const [selectedStop, setSelectedStop] = useState<string | null>(null);
 
-  const metroStops: IStops = {
+  const metroStops: StopsObject = {
     type: "FeatureCollection",
-    features: stops.features,
+    features: rawStops,
   };
   const [extras, setExtras] = useState({
     hasElevation: false,
@@ -74,10 +76,6 @@ const Board = () => {
     // if 0 lines selected, return true
     if (!selectedLine) return true;
     return selectedLine?.id === line;
-  };
-
-  const getStopInfo = (stop: string): StopFeatures | null => {
-    return stops.features.find((s) => s.properties.stop_name === stop) ?? null;
   };
 
   const thisStop = selectedStop ? getStopInfo(selectedStop) : null;
@@ -189,6 +187,7 @@ const Board = () => {
               center: { lat: 41.390205, lng: 2.154007 },
               style: "/map/schema.json",
               zoom: 10,
+              // maxBounds: [
             }}
             style={{
               minWidth: "100%",

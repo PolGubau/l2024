@@ -1,10 +1,10 @@
 import { Drawer, formatString } from "pol-ui";
 import { useState } from "react";
-import { StopFeatures } from "../../types/stops";
 import { getImage } from "../../util/get-info";
+import { StopData } from "../../types/stops";
 
 interface StopDrawerProps {
-  stop: StopFeatures | null;
+  stop: StopData | null;
   setSelectedStop: (stop: string | null) => void;
 }
 
@@ -30,17 +30,13 @@ const StopDrawer = ({ stop, setSelectedStop }: StopDrawerProps) => {
       }}
     >
       <header className="pb-8 flex flex-col gap-1">
-        {stop?.properties.stop_name && (
-          <h2 className=" text-xl">
-            {formatString(stop?.properties.stop_name)}
-          </h2>
-        )}{" "}
-        <span className="opacity-80">{stop?.properties.nom_barri}</span>
+        {stop?.name && <h2 className=" text-xl">{formatString(stop?.name)}</h2>}
+        <span className="opacity-80">{stop?.neighborhood}</span>
       </header>
 
       <div className="flex gap-4 items-center overflow-x-auto overflow-y-hidden">
-        {stop?.properties.line.map((l) => {
-          const url = getImage(l, stop.properties.stop_name);
+        {stop?.lines.map((l) => {
+          const url = getImage(l, stop.name);
           return (
             <div key={url}>
               <div className="w-[30px] aspect-square absolute bottom-2 left-2">
@@ -48,7 +44,7 @@ const StopDrawer = ({ stop, setSelectedStop }: StopDrawerProps) => {
               </div>
               <img
                 src={url}
-                alt={stop.properties.stop_name}
+                alt={stop.name}
                 className="w-[220px] h-full object-cover rounded-3xl"
               />
             </div>

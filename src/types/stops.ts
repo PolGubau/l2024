@@ -1,26 +1,32 @@
 import { LineName } from "./types";
-
-export interface Stops {
+export interface StopsObject {
   type: string;
-  features: StopFeatures[];
+  features: RawStop[];
 }
 
-export interface StopFeatures {
+export interface RawStop {
   type: string;
   geometry: Geometry;
   properties: Properties;
 }
 
-export interface Geometry {
-  type: string;
-  coordinates: unknown;
-}
-
-export interface Properties {
-  line: LineName[];
+interface Properties {
+  line?: LineName[];
   stop_name: string;
-  districte?: number;
-  BARRI?: number;
   nom_districte: string;
   nom_barri: string;
+  stop_id?: string;
+}
+
+interface Geometry {
+  type: string;
+  coordinates: number[];
+}
+
+export interface StopData {
+  name: string;
+  lines: LineName[];
+  district: string;
+  neighborhood: string;
+  coordinates: number[];
 }

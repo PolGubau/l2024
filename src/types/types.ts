@@ -20,6 +20,8 @@ export interface LineMetadata {
   transport?: string;
   color: string;
   distance: number;
+  metro_distance: number;
+  stations: number;
   dateTime: string;
   timeWalking: string;
   time: string;

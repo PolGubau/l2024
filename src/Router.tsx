@@ -1,7 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import HomePage from "./page/Home/Home";
-import PeoplePage from "./page/People/Home";
+import PeoplePage from "./page/People/PeoplePage";
 import { buttonVariants } from "pol-ui";
 
 export const Router = () => {
@@ -11,6 +11,7 @@ export const Router = () => {
         <Route path="" element={<Layout />}>
           <Route path="" element={<HomePage />} />
           <Route path="people" element={<PeoplePage />} />
+          <Route path="people/:id" element={<PeoplePage />} />
           <Route
             path="*"
             element={

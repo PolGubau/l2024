@@ -1,10 +1,8 @@
-import { linesData, stops } from "../data/lines";
-import { StopFeatures } from "../types/stops";
+import { linesData } from "../data/lines";
+import { people } from "../data/people";
+import { stops } from "../data/stops";
+import { StopData } from "../types/stops";
 import { LineName, LineType } from "../types/types";
-
-export const getStopInfo = (stop: string): StopFeatures | null => {
-  return stops.features.find((s) => s.properties.stop_name === stop) ?? null;
-};
 
 export const getLineInfo = (lineName: LineName): LineType | null => {
   return (
@@ -14,4 +12,86 @@ export const getLineInfo = (lineName: LineName): LineType | null => {
   );
 };
 
-const getImage = ()
+export const sumLinesKm = (lines: LineName[]): number => {
+  const float = lines.reduce((acc, l) => {
+    const line = getLineInfo(l);
+    return acc + (line?.metadata.distance ?? 0);
+  }, 0);
+
+  return Math.round(float * 100) / 100;
+};
+
+export const sumLinesWithPercent = (
+  lines: { name: LineName; percent: number }[]
+): number => {
+  const float = lines.reduce((acc, l) => {
+    const line = getLineInfo(l.name);
+    return acc + (line?.metadata.distance ?? 0) * (l.percent / 100);
+  }, 0);
+
+  return Math.round(float * 100) / 100;
+};
+
+export const getImage = (line: LineName, stop: string): string => {
+  return `/images/${line}/${stop}.jpg`;
+};
+export const getStopInfo = (stop: string): StopData | null => {
+  return stops.find((s) => s.name === stop) ?? null;
+};
+
+export const getTotalkmPerUser = (surnames: string) => {
+  const person = people.find((p) => p.surnames === surnames);
+  const linesDone = person?.lines_done;
+  if (!linesDone) return 0;
+
+  // get the km of these lines
+  const kms = sumLinesWithPercent(linesDone);
+
+  // sum all the kms but if the percent is 50% only sum 50% of the km, and so
+
+  return kms;
+};
+
+export const getStopsByLine = (line: LineName): number | undefined => {
+  const lineInfo = getLineInfo(line);
+  return lineInfo?.metadata.stations;
+};
+
+export const getLinesByStop = (stop: string): LineName[] => {
+  return stops.find((s) => s.name === stop)?.lines ?? [];
+};
+
+export const getStopsByLineAndPercent = (lineAndPercent: {
+  name: LineName;
+  percent: number;
+}): number => {
+  const stopsAmount = getStopsByLine(lineAndPercent.name);
+
+  // if the percent is 100 return all the stops, if not return the percent of the stops
+
+  const stops = stopsAmount
+    ? Math.round((stopsAmount * lineAndPercent.percent) / 100)
+    : 0;
+
+  return stops;
+};
+
+export const getStopsByLinesAndPercent = (
+  linesAndPercent: { name: LineName; percent: number }[]
+): number => {
+  const stopsByLines = linesAndPercent.reduce((acc, l) => {
+    return acc + getStopsByLineAndPercent(l);
+  }, 0);
+  return stopsByLines;
+};
+
+export const userStopAmount = (surnames: string): number => {
+  const person = people.find((p) => p.surnames === surnames);
+  const linesDone = person?.lines_done;
+  if (!linesDone) return 0;
+
+  // get the km of these lines
+  const stops = getStopsByLinesAndPercent(linesDone);
+
+  return stops;
+};
