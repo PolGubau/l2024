@@ -6,9 +6,7 @@ import {
 import {
   Button,
   cn,
-  Conveyor,
   Divider,
-  Drawer,
   Dropdown,
   DropdownGroup,
   DropdownItem,
@@ -24,13 +22,13 @@ import {
   DropdownPortal,
   DropdownSub,
 } from "pol-ui/lib/esm/components/Dropdown/Dropdown";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { TbFilterMinus, TbSettings } from "react-icons/tb";
 import { linesData, stops } from "../data/lines";
-import { Stops as IStops } from "../types/stops";
+import { Stops as IStops, StopFeatures } from "../types/stops";
 import { LineName, LineNameEnum, LineType } from "../types/types";
-import LineImage from "./Image";
 import { Line } from "./Line";
+import StopDrawer from "./StopDrawer/StopDrawer";
 import { Stops } from "./stops";
 const Board = () => {
   const exclusionArgs = {
@@ -72,76 +70,26 @@ const Board = () => {
     hasBuildings: false,
   });
 
-  // each lines has different images x stop
-  // we select a name as Trinitat-Nova
-  // Multiple lines has a photo in Trinitat-Nova, search in all lines the ones that have a photo with that name
-
-  // the selected Stop is a string for the name of the stop
-  // all photos are called as 1.string.jpg delete the number and the .jpg
-
-  // ex: selected stop is Trinitat-Nova
-  // from all images, get /L3/1.Trinitat-Nova.jpg but also /L4/2.Trinitat-Nova.jpg ...
-
-  const images: string[] = useMemo(() => {
-    if (!selectedStop) return [];
-    const preUrl = "/images";
-    const postUrl = `${selectedStop}.jpg`;
-    const tryAllLines = linesData.map((line) => {
-      const image = `${preUrl}/${line.id}/${postUrl}`;
-      return image;
-    });
-
-    return tryAllLines;
-  }, [selectedStop]);
-
   const isThisLineSelected = (line: LineName) => {
     // if 0 lines selected, return true
     if (!selectedLine) return true;
     return selectedLine?.id === line;
   };
 
-  const getStopInfo = (stop: string) => {
-    return stops.features.find((s) => s.properties.stop_name === stop);
+  const getStopInfo = (stop: string): StopFeatures | null => {
+    return stops.features.find((s) => s.properties.stop_name === stop) ?? null;
   };
-  const snaps = ["570px", 1];
-  const [snap, setSnap] = useState<number | string | null>(snaps[0]);
 
   const thisStop = selectedStop ? getStopInfo(selectedStop) : null;
   return (
     <>
-      <Drawer
-        contentProps={{
-          className: "z-50 overflow-hidden",
-        }}
-        direction="bottom"
-        snapPoints={snaps}
-        activeSnapPoint={snap}
-        setActiveSnapPoint={setSnap}
-        withoutTrigger
-        open={Boolean(selectedStop)}
-        onOpenChange={(open) => {
-          if (!open) {
-            setSelectedStop(null);
-            setSelectedLine(null);
-          }
-        }}
-      >
-        <header className="pb-8 flex flex-col gap-1">
-          <h2 className=" text-xl">{thisStop?.properties.stop_name}</h2>
-          <span className="opacity-80">{thisStop?.properties.nom_barri}</span>
-        </header>
-        <div className="w-[500px] overflow-y-hidden overflow-x-auto flex">
-          {images.map((image, i) => (
-            <LineImage image={image} key={i} />
-          ))}
-        </div>
-      </Drawer>
+      <StopDrawer stop={thisStop} setSelectedStop={setSelectedStop} />
       <section className="relative gap-4 bg-secondary/20 p-2 ">
         <Dropdown
           className="z-50"
           trigger={
             <Button
-              className="absolute w-[50px] h-[50px] bottom-8 z-20 left-8 bg-secondary-50 dark:bg-secondary-900 "
+              className="absolute w-[50px] h-[50px] bottom-4 z-20 left-4 bg-secondary-50 dark:bg-secondary-900 "
               rounded={"full"}
             >
               <TbSettings

@@ -14,7 +14,7 @@ export enum LineNameEnum {
 }
 export type LineName = keyof typeof LineNameEnum;
 
-export interface MetadataType {
+export interface LineMetadata {
   title: LineName;
   subtitle: string;
   transport?: string;
@@ -29,5 +29,5 @@ export interface MetadataType {
 export interface LineType {
   id: LineName;
   gpx: string;
-  metadata: MetadataType;
+  metadata: LineMetadata;
 }

@@ -9,7 +9,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Urgell",
+        "stop_name": "urgell",
         "nom_districte": "Eixample",
         "nom_barri": "l'Antiga Esquerra de l'Eixample"
       }
@@ -22,7 +22,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Glòries",
+        "stop_name": "glòries",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Parc i la Llacuna del Poblenou"
       }
@@ -34,7 +34,7 @@
         "coordinates": [2.197738, 41.399453]
       },
       "properties": {
-        "stop_name": "Llacuna",
+        "stop_name": "llacuna",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Poblenou"
       }
@@ -47,7 +47,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "Barceloneta",
+        "stop_name": "barceloneta",
         "nom_districte": "Ciutat Vella",
         "nom_barri": "la Barceloneta"
       }
@@ -60,7 +60,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Monumental",
+        "stop_name": "monumental",
         "nom_districte": "Eixample",
         "nom_barri": "el Fort Pienc"
       }
@@ -73,7 +73,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Sant-Martí",
+        "stop_name": "santMartí",
         "nom_districte": "Sant Martí",
         "nom_barri": "Sant Martí de Provençals"
       }
@@ -86,7 +86,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "Llefià",
+        "stop_name": "llefià",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -99,7 +99,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "Bon Pastor",
+        "stop_name": "bonPastor",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -112,7 +112,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "Foneria",
+        "stop_name": "foneria",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina de Port"
       }
@@ -126,7 +126,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Mundet",
+        "stop_name": "mundet",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "la Vall d'Hebron"
       }
@@ -139,7 +139,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Liceu",
+        "stop_name": "liceu",
         "nom_districte": "Ciutat Vella",
         "nom_barri": "el Barri Gòtic"
       }
@@ -152,7 +152,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Paral·lel",
+        "stop_name": "paral·lel",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "el Poble-sec"
       }
@@ -166,22 +166,9 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Fondo",
+        "stop_name": "fondo",
         "nom_districte": "",
         "nom_barri": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.165373, 41.391631]
-      },
-      "properties": {
-        "line": ["L3"],
-        "stop_name": "Passeig-de-Gràcia",
-        "nom_districte": "Eixample",
-        "nom_barri": "la Dreta de l'Eixample"
       }
     },
     {
@@ -192,7 +179,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Bac-de-Roda",
+        "stop_name": "bacDeRoda",
         "nom_districte": "Sant Martí",
         "nom_barri": "Sant Martí de Provençals"
       }
@@ -205,7 +192,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "BaróDeViver",
+        "stop_name": "baróDeViver",
         "nom_districte": "Sant Andreu",
         "nom_barri": "la Trinitat Vella"
       }
@@ -218,7 +205,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "Bogatell",
+        "stop_name": "bogatell",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Parc i la Llacuna del Poblenou"
       }
@@ -231,7 +218,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "JaumeI",
+        "stop_name": "jaumeI",
         "nom_districte": "Ciutat Vella",
         "nom_barri": "Sant Pere, Santa Caterina i la Ribera"
       }
@@ -244,7 +231,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "PlaçaDeSants",
+        "stop_name": "plaçaDeSants",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "Sants"
       }
@@ -257,7 +244,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Montbau",
+        "stop_name": "montbau",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "Montbau"
       }
@@ -270,7 +257,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Sant-Antoni",
+        "stop_name": "santAntoni",
         "nom_districte": "Ciutat Vella",
         "nom_barri": "el Raval"
       }
@@ -283,7 +270,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "ViaJúlia",
+        "stop_name": "viaJúlia",
         "nom_districte": "Nou Barris",
         "nom_barri": "Verdun"
       }
@@ -297,7 +284,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "Besòs",
+        "stop_name": "besòs",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Besòs i el Maresme"
       }
@@ -310,20 +297,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Cornellà Centre",
-        "nom_districte": "",
-        "nom_barri": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.119222, 41.375772]
-      },
-      "properties": {
-        "line": ["L5"],
-        "stop_name": "Collblanc",
+        "stop_name": "cornellàCentre",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -336,7 +310,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Entença",
+        "stop_name": "entença",
         "nom_districte": "Eixample",
         "nom_barri": "la Nova Esquerra de l'Eixample"
       }
@@ -349,7 +323,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Vilapicina",
+        "stop_name": "vilapicina",
         "nom_districte": "Nou Barris",
         "nom_barri": "el Turó de la Peira"
       }
@@ -362,7 +336,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Aeroport T2",
+        "stop_name": "aeroportT2",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -375,7 +349,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Aeroport T1",
+        "stop_name": "aeroportT1",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -389,7 +363,7 @@
       },
       "properties": {
         "line": ["L1", "L2"],
-        "stop_name": "Universitat",
+        "stop_name": "universitat",
         "nom_districte": "Eixample",
         "nom_barri": "Sant Antoni"
       }
@@ -403,7 +377,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "SantaEulàlia",
+        "stop_name": "santaEulàlia",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -416,7 +390,7 @@
       },
       "properties": {
         "line": ["L4", "L5"],
-        "stop_name": "Verdaguer",
+        "stop_name": "verdaguer",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
       }
@@ -429,7 +403,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "Zona Franca",
+        "stop_name": "zonaFranca",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina del Prat Vermell"
       }
@@ -442,7 +416,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "MariaCristina",
+        "stop_name": "mariaCristina",
         "nom_districte": "Les Corts",
         "nom_barri": "la Maternitat i Sant Ramon"
       }
@@ -456,7 +430,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "SantPau",
+        "stop_name": "santPau",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "el Guinardó"
       }
@@ -469,7 +443,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Verneda",
+        "stop_name": "verneda",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -482,7 +456,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Can Vidalet",
+        "stop_name": "canVidalet",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -495,7 +469,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "AlfonsX",
+        "stop_name": "alfonsX",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "el Baix Guinardó"
       }
@@ -508,7 +482,7 @@
       },
       "properties": {
         "line": ["L11"],
-        "stop_name": "CiutatMeridiana",
+        "stop_name": "ciutatMeridiana",
         "nom_districte": "Nou Barris",
         "nom_barri": "Ciutat Meridiana"
       }
@@ -522,7 +496,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Tarragona",
+        "stop_name": "tarragona",
         "nom_districte": "Eixample",
         "nom_barri": "la Nova Esquerra de l'Eixample"
       }
@@ -535,7 +509,7 @@
       },
       "properties": {
         "line": ["L9", "L10", "L1"],
-        "stop_name": "Torrassa",
+        "stop_name": "torrassa",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -549,7 +523,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Camp de l'Arpa",
+        "stop_name": "campDeL'arpa",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Camp de l'Arpa del Clot"
       }
@@ -562,7 +536,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Horta",
+        "stop_name": "horta",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "Horta"
       }
@@ -576,7 +550,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Tetuan",
+        "stop_name": "tetuan",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
       }
@@ -589,7 +563,7 @@
       },
       "properties": {
         "line": ["L2", "L10"],
-        "stop_name": "Gorg",
+        "stop_name": "gorg",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -602,7 +576,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "SantaColoma",
+        "stop_name": "santaColoma",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -615,7 +589,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Drassanes",
+        "stop_name": "drassanes",
         "nom_districte": "Ciutat Vella",
         "nom_barri": "el Raval"
       }
@@ -628,7 +602,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Fontana",
+        "stop_name": "fontana",
         "nom_districte": "Gràcia",
         "nom_barri": "la Vila de Gràcia"
       }
@@ -641,7 +615,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "La Salut",
+        "stop_name": "laSalut",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -654,7 +628,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "Foc",
+        "stop_name": "foc",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina del Prat Vermell"
       }
@@ -668,7 +642,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Bellvitge",
+        "stop_name": "bellvitge",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -682,7 +656,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "Ciutadella",
+        "stop_name": "ciutadella",
         "nom_districte": "Sant Martí",
         "nom_barri": "la Vila Olímpica del Poblenou"
       }
@@ -695,7 +669,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Artigues",
+        "stop_name": "artigues",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -708,7 +682,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "Ecoparc",
+        "stop_name": "ecoparc",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina del Prat Vermell"
       }
@@ -721,7 +695,7 @@
       },
       "properties": {
         "line": ["L1", "L10", "L5"],
-        "stop_name": "La Sagrera",
+        "stop_name": "laSagrera",
         "nom_districte": "Sant Andreu",
         "nom_barri": "la Sagrera"
       }
@@ -734,7 +708,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "Llucmajor",
+        "stop_name": "llucmajor",
         "nom_districte": "Nou Barris",
         "nom_barri": "la Guineueta"
       }
@@ -746,7 +720,7 @@
         "coordinates": [2.163251, 41.406455]
       },
       "properties": {
-        "stop_name": "Joanic",
+        "stop_name": "joanic",
         "line": ["L4"],
         "nom_districte": "Gràcia",
         "nom_barri": "el Camp d'en Grassot i Gràcia Nova"
@@ -760,7 +734,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Lesseps",
+        "stop_name": "lesseps",
         "nom_districte": "Gràcia",
         "nom_barri": "la Vila de Gràcia"
       }
@@ -774,7 +748,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Hospital Clínic",
+        "stop_name": "hospitalClínic",
         "nom_districte": "Eixample",
         "nom_barri": "l'Antiga Esquerra de l'Eixample"
       }
@@ -787,7 +761,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "El Carmel",
+        "stop_name": "elCarmel",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "el Carmel"
       }
@@ -800,7 +774,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Mas Blau",
+        "stop_name": "masBlau",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -813,7 +787,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Les Moreres",
+        "stop_name": "lesMoreres",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -826,7 +800,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "- Can Zam",
+        "stop_name": "canZam",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -839,7 +813,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "- Església Major",
+        "stop_name": "esglésiaMajor",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -852,7 +826,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Sant Pau",
+        "stop_name": "santPau",
         "nom_districte": "Eixample",
         "nom_barri": "la Sagrada Família"
       }
@@ -866,7 +840,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "Girona",
+        "stop_name": "girona",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
       }
@@ -879,7 +853,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "Poblenou",
+        "stop_name": "poblenou",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Poblenou"
       }
@@ -892,7 +866,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Hostafrancs",
+        "stop_name": "hostafrancs",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "Hostafrancs"
       }
@@ -905,7 +879,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "PobleSec",
+        "stop_name": "pobleSec",
         "nom_districte": "Eixample",
         "nom_barri": "Sant Antoni"
       }
@@ -919,7 +893,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Penitents",
+        "stop_name": "penitents",
         "nom_districte": "Gràcia",
         "nom_barri": "Vallcarca i els Penitents"
       }
@@ -932,7 +906,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Roquetes",
+        "stop_name": "roquetes",
         "nom_districte": "Nou Barris",
         "nom_barri": "les Roquetes"
       }
@@ -945,7 +919,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Sant Ildefons",
+        "stop_name": "santIldefons",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -958,7 +932,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "SelvaDeMar",
+        "stop_name": "selvaDeMar",
         "nom_districte": "Sant Martí",
         "nom_barri": "Diagonal Mar i el Front Marítim del Poblenou"
       }
@@ -972,7 +946,7 @@
       },
       "properties": {
         "line": ["L10"],
-        "stop_name": "ZAL | Riu Vell",
+        "stop_name": "riuVell",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina del Prat Vermell"
       }
@@ -985,7 +959,7 @@
       },
       "properties": {
         "line": ["L5", "L4"],
-        "stop_name": "Maragall",
+        "stop_name": "maragall",
         "nom_districte": "Sant Andreu",
         "nom_barri": "el Congrés i els Indians"
       }
@@ -998,7 +972,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "El Coll",
+        "stop_name": "elColl",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "la Teixonera"
       }
@@ -1011,7 +985,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Onze de Setembre",
+        "stop_name": "onzeDeSetembre",
         "nom_districte": "Sant Andreu",
         "nom_barri": "Sant Andreu"
       }
@@ -1025,7 +999,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Florida",
+        "stop_name": "florida",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1038,7 +1012,7 @@
       },
       "properties": {
         "line": ["L11"],
-        "stop_name": "CasaDeLaigua",
+        "stop_name": "casaDeLaigua",
         "nom_districte": "Nou Barris",
         "nom_barri": "la Trinitat Nova"
       }
@@ -1051,7 +1025,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Ernest Lluch",
+        "stop_name": "ernestLluch",
         "nom_districte": "Les Corts",
         "nom_barri": "la Maternitat i Sant Ramon"
       }
@@ -1065,7 +1039,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Zona Universitària",
+        "stop_name": "zonaUniversitària",
         "nom_districte": "Les Corts",
         "nom_barri": "la Maternitat i Sant Ramon"
       }
@@ -1079,7 +1053,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "PlaçaCentre",
+        "stop_name": "plaçaCentre",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "Sants"
       }
@@ -1093,7 +1067,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Gavarra",
+        "stop_name": "gavarra",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1106,7 +1080,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Pubilla Cases",
+        "stop_name": "pubillaCases",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1119,7 +1093,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Marina",
+        "stop_name": "marina",
         "nom_districte": "Eixample",
         "nom_barri": "el Fort Pienc"
       }
@@ -1132,7 +1106,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Badalona-Pompeu-Fabra",
+        "stop_name": "badalonaPompeuFabra",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1145,7 +1119,7 @@
       },
       "properties": {
         "line": ["L4", "L11", "L3"],
-        "stop_name": "Trinitat-Nova",
+        "stop_name": "trinitatNova",
         "nom_districte": "Nou Barris",
         "nom_barri": "la Trinitat Nova"
       }
@@ -1158,12 +1132,11 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Sant Roc",
+        "stop_name": "santRoc",
         "nom_districte": "",
         "nom_barri": ""
       }
     },
-
     {
       "type": "Feature",
       "geometry": {
@@ -1172,12 +1145,11 @@
       },
       "properties": {
         "line": ["L4", "L2"],
-        "stop_name": "La Pau",
+        "stop_name": "laPau",
         "nom_districte": "Sant Martí",
         "nom_barri": "la Verneda i la Pau"
       }
     },
-
     {
       "type": "Feature",
       "geometry": {
@@ -1186,7 +1158,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "El Prat Estació",
+        "stop_name": "elPratEstació",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1199,7 +1171,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Parc Logístic",
+        "stop_name": "parcLogístic",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina del Prat Vermell"
       }
@@ -1211,8 +1183,8 @@
         "coordinates": [2.118424, 41.376084]
       },
       "properties": {
-        "line": ["L9"],
-        "stop_name": "L9SCollblanc",
+        "line": ["L9", "L5"],
+        "stop_name": "collblanc",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1225,8 +1197,8 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Plaça de Sants",
-        "nom_districte": "Sants-Montjuïc",
+        "stop_name": "plaçaDeSants",
+        "nom_districte": "santsMontjuïc",
         "nom_barri": "Sants"
       }
     },
@@ -1238,7 +1210,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Mercabarna",
+        "stop_name": "mercabarna",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina del Prat Vermell"
       }
@@ -1251,7 +1223,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Congrés",
+        "stop_name": "congrés",
         "nom_districte": "Sant Andreu",
         "nom_barri": "el Congrés i els Indians"
       }
@@ -1264,7 +1236,7 @@
       },
       "properties": {
         "line": ["L11"],
-        "stop_name": "CanCuias",
+        "stop_name": "canCuias",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1278,24 +1250,12 @@
       },
       "properties": {
         "line": ["L1", "L3", "L8"],
-        "stop_name": "Pl. Espanya",
+        "stop_name": "pl.Espanya",
         "nom_districte": "Eixample",
         "nom_barri": "la Nova Esquerra de l'Eixample"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.233917, 41.440471]
-      },
-      "properties": {
-        "line": ["L10"],
-        "stop_name": "Gorg",
-        "nom_districte": "",
-        "nom_barri": ""
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -1304,7 +1264,7 @@
       },
       "properties": {
         "line": ["L11"],
-        "stop_name": "TorreBaró",
+        "stop_name": "torreBaró",
         "nom_districte": "Nou Barris",
         "nom_barri": "Torre Baró"
       }
@@ -1318,7 +1278,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "CanSerra",
+        "stop_name": "canSerra",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1332,7 +1292,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Trinitat-Vella",
+        "stop_name": "trinitatVella",
         "nom_districte": "Sant Andreu",
         "nom_barri": "la Trinitat Vella"
       }
@@ -1346,7 +1306,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Cèntric",
+        "stop_name": "cèntric",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1359,7 +1319,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Navas",
+        "stop_name": "navas",
         "nom_districte": "Sant Andreu",
         "nom_barri": "Navas"
       }
@@ -1372,7 +1332,7 @@
       },
       "properties": {
         "line": ["L3", "L5"],
-        "stop_name": "VallD'Hebron",
+        "stop_name": "vallD'hebron",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "Montbau"
       }
@@ -1385,7 +1345,7 @@
       },
       "properties": {
         "line": ["L3", "L5"],
-        "stop_name": "Diagonal",
+        "stop_name": "diagonal",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
       }
@@ -1398,7 +1358,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Encants",
+        "stop_name": "encants",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Camp de l'Arpa del Clot"
       }
@@ -1411,7 +1371,7 @@
       },
       "properties": {
         "line": ["L4"],
-        "stop_name": "BesòsMar",
+        "stop_name": "besòsMar",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Besòs i el Maresme"
       }
@@ -1423,7 +1383,7 @@
         "coordinates": [2.215048, 41.41399]
       },
       "properties": {
-        "stop_name": "Maresme",
+        "stop_name": "maresme",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Besòs i el Maresme"
       }
@@ -1436,7 +1396,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "Can Tries",
+        "stop_name": "canTries",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1449,7 +1409,7 @@
       },
       "properties": {
         "line": ["L9"],
-        "stop_name": "- Can Peixauet",
+        "stop_name": "canPeixauet",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1462,7 +1422,7 @@
       },
       "properties": {
         "line": ["L5"],
-        "stop_name": "Badal",
+        "stop_name": "badal",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "Sants - Badal"
       }
@@ -1475,12 +1435,11 @@
       },
       "properties": {
         "line": ["L5", "L3"],
-        "stop_name": "Sants Estació",
+        "stop_name": "santsEstació",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "Sants"
       }
     },
-
     {
       "type": "Feature",
       "geometry": {
@@ -1489,12 +1448,11 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "HospitalDeBellvitge",
+        "stop_name": "hospitalDeBellvitge",
         "nom_districte": "",
         "nom_barri": ""
       }
     },
-
     {
       "type": "Feature",
       "geometry": {
@@ -1503,7 +1461,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "FabraIPuig",
+        "stop_name": "fabraIPuig",
         "nom_districte": "Sant Andreu",
         "nom_barri": "Sant Andreu"
       }
@@ -1516,7 +1474,7 @@
       },
       "properties": {
         "line": ["L1", "L2"],
-        "stop_name": "Clot",
+        "stop_name": "clot",
         "nom_districte": "Sant Martí",
         "nom_barri": "el Clot"
       }
@@ -1530,7 +1488,7 @@
       },
       "properties": {
         "line": ["L2"],
-        "stop_name": "Sagrada-Família",
+        "stop_name": "sagradaFamília",
         "nom_districte": "Eixample",
         "nom_barri": "la Sagrada Família"
       }
@@ -1544,12 +1502,11 @@
       },
       "properties": {
         "line": ["L3", "L1", "L6", "L7"],
-        "stop_name": "Catalunya",
+        "stop_name": "catalunya",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
       }
     },
-
     {
       "type": "Feature",
       "geometry": {
@@ -1558,7 +1515,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "LesCorts",
+        "stop_name": "lesCorts",
         "nom_districte": "Les Corts",
         "nom_barri": "les Corts"
       }
@@ -1571,7 +1528,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "TorrasIBages",
+        "stop_name": "torrasIBages",
         "nom_districte": "Sant Andreu",
         "nom_barri": "Sant Andreu"
       }
@@ -1585,7 +1542,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "SantAndreu",
+        "stop_name": "santAndreu",
         "nom_districte": "Sant Andreu",
         "nom_barri": "Sant Andreu"
       }
@@ -1599,7 +1556,7 @@
       },
       "properties": {
         "line": ["L1", "L4"],
-        "stop_name": "Urquinaona",
+        "stop_name": "urquinaona",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
       }
@@ -1612,7 +1569,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "ArcDeTriomf",
+        "stop_name": "arcDeTriomf",
         "nom_districte": "Eixample",
         "nom_barri": "el Fort Pienc"
       }
@@ -1624,8 +1581,8 @@
         "coordinates": [2.168269, 41.389444]
       },
       "properties": {
-        "line": ["L2", "L4"],
-        "stop_name": "Passeig-de-Gràcia",
+        "line": ["L2", "L4", "L3"],
+        "stop_name": "passeigDeGràcia",
         "nom_districte": "Eixample",
         "nom_barri": "la Dreta de l'Eixample"
       }
@@ -1638,7 +1595,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "PalauReial",
+        "stop_name": "palauReial",
         "nom_districte": "Les Corts",
         "nom_barri": "la Maternitat i Sant Ramon"
       }
@@ -1651,7 +1608,7 @@
       },
       "properties": {
         "line": ["L3"],
-        "stop_name": "Valldaura",
+        "stop_name": "valldaura",
         "nom_districte": "Horta-Guinardó",
         "nom_barri": "Horta"
       }
@@ -1664,7 +1621,7 @@
       },
       "properties": {
         "line": ["L1"],
-        "stop_name": "Rocafort",
+        "stop_name": "rocafort",
         "nom_districte": "Eixample",
         "nom_barri": "la Nova Esquerra de l'Eixample"
       }
@@ -1677,7 +1634,7 @@
       },
       "properties": {
         "line": ["L6", "L7"],
-        "stop_name": "Provença",
+        "stop_name": "provença",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -1693,7 +1650,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "BN",
-        "stop_name": "La Bonanova"
+        "stop_name": "laBonanova"
       }
     },
     {
@@ -1707,7 +1664,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "TT",
-        "stop_name": "Les Tres Torres"
+        "stop_name": "lesTresTorres"
       }
     },
     {
@@ -1716,9 +1673,9 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L7"],
         "stop_id": "PM",
-        "stop_name": "Pl. Molina"
+        "stop_name": "pl.Molina"
       }
     },
     {
@@ -1729,7 +1686,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VD",
-        "stop_name": "Valldoreix"
+        "stop_name": "valldoreix"
       }
     },
     {
@@ -1743,7 +1700,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SC",
-        "stop_name": "Sant Cugat Centre"
+        "stop_name": "santCugatCentre"
       }
     },
     {
@@ -1757,7 +1714,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "RB",
-        "stop_name": "Rub\u00ed Centre"
+        "stop_name": "rubíCentre"
       }
     },
     {
@@ -1771,7 +1728,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SQ",
-        "stop_name": "Sant Quirze"
+        "stop_name": "santQuirze"
       }
     },
     {
@@ -1782,7 +1739,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "EN",
-        "stop_name": "Terrassa  Estaci\u00f3 del nord"
+        "stop_name": "terrassaEstacióDelNord"
       }
     },
     {
@@ -1793,7 +1750,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "NA",
-        "stop_name": "Terrassa Nacions Unides"
+        "stop_name": "terrassaNacionsUnides"
       }
     },
 
@@ -1808,7 +1765,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CO",
-        "stop_name": "Cornell\u00e0 Riera"
+        "stop_name": "cornellàRiera"
       }
     },
     {
@@ -1819,7 +1776,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MC",
-        "stop_name": "Martorell Central"
+        "stop_name": "martorellCentral"
       }
     },
     {
@@ -1833,7 +1790,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SA",
-        "stop_name": "Sant Andreu de la Barca"
+        "stop_name": "santAndreuDeLaBarca"
       }
     },
     {
@@ -1844,7 +1801,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MV",
-        "stop_name": "Martorell Vila"
+        "stop_name": "martorellVila"
       }
     },
     {
@@ -1855,7 +1812,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MB",
-        "stop_name": "Manresa-Baixador"
+        "stop_name": "manresaBaixador"
       }
     },
     {
@@ -1869,7 +1826,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CP",
-        "stop_name": "Can Parellada"
+        "stop_name": "canParellada"
       }
     },
     {
@@ -1880,7 +1837,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MQ",
-        "stop_name": "Masquefa"
+        "stop_name": "masquefa"
       }
     },
     {
@@ -1891,7 +1848,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PI",
-        "stop_name": "Piera"
+        "stop_name": "piera"
       }
     },
     {
@@ -1902,7 +1859,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "AT",
-        "stop_name": "Alcoletge"
+        "stop_name": "alcoletge"
       }
     },
     {
@@ -1913,7 +1870,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "GB",
-        "stop_name": "Gerb"
+        "stop_name": "gerb"
       }
     },
     {
@@ -1924,7 +1881,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SM",
-        "stop_name": "St. Lloren\u00e7 de Montgai"
+        "stop_name": "st.LlorençDeMontgai"
       }
     },
     {
@@ -1935,7 +1892,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SN",
-        "stop_name": "Santa Linya"
+        "stop_name": "santaLinya"
       }
     },
     {
@@ -1946,7 +1903,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "LL",
-        "stop_name": "Cellers-Llimiana"
+        "stop_name": "cellersLlimiana"
       }
     },
     {
@@ -1957,7 +1914,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SD",
-        "stop_name": "Sal\u00e0s de Pallars"
+        "stop_name": "salísDePallars"
       }
     },
     {
@@ -1968,7 +1925,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PS",
-        "stop_name": "La Pobla de Segur"
+        "stop_name": "laPoblaDeSegur"
       }
     },
     {
@@ -1979,7 +1936,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PJ",
-        "stop_name": "Sabadell Pla\u00e7a Major"
+        "stop_name": "sabadellPlaçaMajor"
       }
     },
     {
@@ -1990,7 +1947,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CT",
-        "stop_name": "La Creu Alta"
+        "stop_name": "laCreuAlta"
       }
     },
     {
@@ -2004,7 +1961,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "RV",
-        "stop_name": "Ribes-Vila"
+        "stop_name": "ribesVila"
       }
     },
     {
@@ -2015,7 +1972,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PG",
-        "stop_name": "Pol\u00edgon industrial del Segre"
+        "stop_name": "polígonIndustrialDelSegre"
       }
     },
 
@@ -2030,7 +1987,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MN",
-        "stop_name": "Muntaner"
+        "stop_name": "muntaner"
       }
     },
     {
@@ -2042,9 +1999,9 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L7"],
         "stop_id": "PD",
-        "stop_name": "P\u00e0dua"
+        "stop_name": "pàdua"
       }
     },
     {
@@ -2056,9 +2013,9 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L7"],
         "stop_id": "EP",
-        "stop_name": "El Putxet"
+        "stop_name": "elPutxet"
       }
     },
     {
@@ -2070,9 +2027,9 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L7"],
         "stop_id": "TB",
-        "stop_name": "Av. Tibidabo"
+        "stop_name": "tibidabo"
       }
     },
     {
@@ -2086,7 +2043,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VS",
-        "stop_name": "Vallvidrera Superior"
+        "stop_name": "vallvidreraSuperior"
       }
     },
     {
@@ -2097,7 +2054,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "LP",
-        "stop_name": "Les Planes"
+        "stop_name": "lesPlanes"
       }
     },
     {
@@ -2111,7 +2068,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "FN",
-        "stop_name": "Les Fonts"
+        "stop_name": "lesFonts"
       }
     },
     {
@@ -2125,7 +2082,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SJ",
-        "stop_name": "Sant Joan"
+        "stop_name": "santJoan"
       }
     },
     {
@@ -2136,7 +2093,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VP",
-        "stop_name": "Vallparad\u00eds Universitat"
+        "stop_name": "vallparadísUniversitat"
       }
     },
     {
@@ -2150,7 +2107,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MG",
-        "stop_name": "Mag\u00f2ria La Campana"
+        "stop_name": "magòriaLaCampana"
       }
     },
     {
@@ -2164,7 +2121,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "IC",
-        "stop_name": "Ildefons Cerd\u00e0"
+        "stop_name": "ildefonsCerdà"
       }
     },
     {
@@ -2175,7 +2132,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SP",
-        "stop_name": "Sant Josep"
+        "stop_name": "santJosep"
       }
     },
     {
@@ -2190,7 +2147,7 @@
 
         "nom_barri": "",
         "stop_id": "LH",
-        "stop_name": "Av. Carrilet"
+        "stop_name": "av.Carrilet"
       }
     },
     {
@@ -2204,7 +2161,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "BO",
-        "stop_name": "Sant Boi"
+        "stop_name": "santBoi"
       }
     },
     {
@@ -2218,7 +2175,7 @@
         "nom_barri": "",
         "line": ["L9", "L8"],
         "stop_id": "EU",
-        "stop_name": "Europa Fira"
+        "stop_name": "europaFira"
       }
     },
     {
@@ -2232,7 +2189,7 @@
         "nom_barri": "",
         "line": ["L9"],
         "stop_id": "EU",
-        "stop_name": "Fira"
+        "stop_name": "fira"
       }
     },
     {
@@ -2246,7 +2203,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VH",
-        "stop_name": "Sant Vicen\u00e7 dels Horts"
+        "stop_name": "santVicençDelsHorts"
       }
     },
     {
@@ -2260,7 +2217,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "QC",
-        "stop_name": "Quatre Camins"
+        "stop_name": "quatreCamins"
       }
     },
     {
@@ -2274,7 +2231,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PA",
-        "stop_name": "Pallej\u00e0"
+        "stop_name": "pallejà"
       }
     },
     {
@@ -2288,7 +2245,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "ME",
-        "stop_name": "Martorell Enlla\u00e7"
+        "stop_name": "martorellEnllaç"
       }
     },
     {
@@ -2302,7 +2259,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "OL",
-        "stop_name": "Olesa de Montserrat"
+        "stop_name": "olesaDeMontserrat"
       }
     },
     {
@@ -2316,7 +2273,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CB",
-        "stop_name": "Castellbell i El Vilar"
+        "stop_name": "castellbellIElVilar"
       }
     },
     {
@@ -2327,7 +2284,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SV",
-        "stop_name": "Sant Vicen\u00e7-Castellgal\u00ed"
+        "stop_name": "santVicençCastellgalí"
       }
     },
     {
@@ -2338,7 +2295,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VI",
-        "stop_name": "Manresa Viladordis"
+        "stop_name": "manresaViladordis"
       }
     },
     {
@@ -2349,7 +2306,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "BE",
-        "stop_name": "La Beguda"
+        "stop_name": "laBeguda"
       }
     },
     {
@@ -2363,7 +2320,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VA",
-        "stop_name": "Vallbona d'Anoia"
+        "stop_name": "vallbonaD'anoia"
       }
     },
     {
@@ -2377,7 +2334,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CA",
-        "stop_name": "Capellades"
+        "stop_name": "capellades"
       }
     },
     {
@@ -2391,7 +2348,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PO",
-        "stop_name": "La Pobla de Claramunt"
+        "stop_name": "laPoblaDeClaramunt"
       }
     },
     {
@@ -2405,7 +2362,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "IG",
-        "stop_name": "Igualada"
+        "stop_name": "igualada"
       }
     },
     {
@@ -2419,7 +2376,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MP",
-        "stop_name": "Monistrol-Vila"
+        "stop_name": "monistrolVila"
       }
     },
     {
@@ -2441,7 +2398,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "GT",
-        "stop_name": "Guardia de Tremp"
+        "stop_name": "guardiadeTremp"
       }
     },
     {
@@ -2452,7 +2409,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PT",
-        "stop_name": "Palau de Noguera"
+        "stop_name": "palauDeNoguera"
       }
     },
     {
@@ -2463,7 +2420,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "TP",
-        "stop_name": "Tremp"
+        "stop_name": "tremp"
       }
     },
     {
@@ -2474,7 +2431,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VR",
-        "stop_name": "Vallvidrera Inferior"
+        "stop_name": "vallvidreraInferior"
       }
     },
     {
@@ -2488,23 +2445,10 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "QUE",
-        "stop_name": "Queralbs"
+        "stop_name": "queralbs"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.158030869, 41.39281434]
-      },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "PR",
-        "stop_name": "Proven\u00e7a"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2514,9 +2458,9 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L7"],
         "stop_id": "GR",
-        "stop_name": "Gr\u00e0cia"
+        "stop_name": "gràcia"
       }
     },
     {
@@ -2528,9 +2472,9 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L6"],
         "stop_id": "SG",
-        "stop_name": "Sant Gervasi"
+        "stop_name": "santGervasi"
       }
     },
     {
@@ -2544,7 +2488,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SR",
-        "stop_name": "Sarri\u00e0"
+        "stop_name": "sarrià"
       }
     },
     {
@@ -2558,7 +2502,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "RE",
-        "stop_name": "Reina Elisenda"
+        "stop_name": "reinaElisenda"
       }
     },
     {
@@ -2572,7 +2516,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PF",
-        "stop_name": "Peu del Funicular"
+        "stop_name": "peuDelFunicular"
       }
     },
     {
@@ -2586,7 +2530,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VL",
-        "stop_name": "Baixador de Vallvidrera"
+        "stop_name": "baixadorDeVallvidrera"
       }
     },
     {
@@ -2600,7 +2544,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "LF",
-        "stop_name": "La Floresta"
+        "stop_name": "laFloresta"
       }
     },
     {
@@ -2614,7 +2558,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MS",
-        "stop_name": "Mira-Sol"
+        "stop_name": "miraSol"
       }
     },
     {
@@ -2628,7 +2572,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "HG",
-        "stop_name": "Hospital General"
+        "stop_name": "hospitalGeneral"
       }
     },
     {
@@ -2642,7 +2586,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "TR",
-        "stop_name": "Terrassa - Rambla"
+        "stop_name": "terrassaRambla"
       }
     },
     {
@@ -2653,7 +2597,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VO",
-        "stop_name": "Volpelleres"
+        "stop_name": "volpelleres"
       }
     },
     {
@@ -2667,7 +2611,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "BT",
-        "stop_name": "Bellaterra"
+        "stop_name": "bellaterra"
       }
     },
     {
@@ -2681,7 +2625,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "UN",
-        "stop_name": "Universitat Aut\u00f2noma"
+        "stop_name": "universitatAutònoma"
       }
     },
     {
@@ -2695,7 +2639,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "GO",
-        "stop_name": "Gornal"
+        "stop_name": "gornal"
       }
     },
     {
@@ -2709,7 +2653,7 @@
         "nom_barri": "",
         "line": ["L8"],
         "stop_id": "AL",
-        "stop_name": "Almeda"
+        "stop_name": "almeda"
       }
     },
     {
@@ -2723,7 +2667,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CG",
-        "stop_name": "Col\u00f2nia G\u00fcell"
+        "stop_name": "colòniaGüell"
       }
     },
     {
@@ -2737,7 +2681,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "ML",
-        "stop_name": "Ciutat Cooperativa"
+        "stop_name": "ciutatCooperativa"
       }
     },
     {
@@ -2751,7 +2695,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CL",
-        "stop_name": "Santa Coloma de Cervell\u00f3"
+        "stop_name": "santaColomaDeCervellò"
       }
     },
     {
@@ -2765,7 +2709,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CR",
-        "stop_name": "Can Ros"
+        "stop_name": "canRos"
       }
     },
     {
@@ -2776,7 +2720,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PL",
-        "stop_name": "El Palau"
+        "stop_name": "elPalau"
       }
     },
     {
@@ -2790,7 +2734,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "AB",
-        "stop_name": "Abrera"
+        "stop_name": "abrera"
       }
     },
     {
@@ -2804,7 +2748,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "AE",
-        "stop_name": "Montserrat-Aeri"
+        "stop_name": "montserratAeri"
       }
     },
     {
@@ -2815,7 +2759,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MO",
-        "stop_name": "Monistrol de Montserrat"
+        "stop_name": "monistrolDeMontserrat"
       }
     },
     {
@@ -2826,7 +2770,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MA",
-        "stop_name": "Manresa-Alta"
+        "stop_name": "manresaAlta"
       }
     },
     {
@@ -2837,7 +2781,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "SE",
-        "stop_name": "Sant Esteve Sesrovires"
+        "stop_name": "santEsteveSesrovires"
       }
     },
     {
@@ -2851,7 +2795,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VN",
-        "stop_name": "Vilanova del Cam\u00ed"
+        "stop_name": "vilanovaDelCamí"
       }
     },
     {
@@ -2865,7 +2809,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "MM",
-        "stop_name": "Montserrat"
+        "stop_name": "montserrat"
       }
     },
     {
@@ -2876,7 +2820,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "LE",
-        "stop_name": "Lleida"
+        "stop_name": "lleida"
       }
     },
     {
@@ -2887,7 +2831,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VB",
-        "stop_name": "Vilanova de la Barca"
+        "stop_name": "vilanovaDeLaBarca"
       }
     },
     {
@@ -2909,7 +2853,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "VF",
-        "stop_name": "Vallfogona de Balaguer"
+        "stop_name": "vallfogonaDeBalaguer"
       }
     },
     {
@@ -2920,7 +2864,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "BG",
-        "stop_name": "Balaguer"
+        "stop_name": "balaguer"
       }
     },
     {
@@ -2931,7 +2875,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "LS",
-        "stop_name": "Vilanova de la Sal"
+        "stop_name": "vilanovaDeLaSal"
       }
     },
     {
@@ -2945,7 +2889,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "CF",
-        "stop_name": "Can Feu - Gr\u00e0cia"
+        "stop_name": "canFeuGràcia"
       }
     },
     {
@@ -2956,7 +2900,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "NO",
-        "stop_name": "Sabadell Nord"
+        "stop_name": "sabadellNord"
       }
     },
     {
@@ -2967,7 +2911,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "PN",
-        "stop_name": "Sabadell Parc del Nord"
+        "stop_name": "sabadellParcDelNord"
       }
     },
     {
@@ -2981,7 +2925,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "NU",
-        "stop_name": "Nuria"
+        "stop_name": "nuria"
       }
     },
     {
@@ -2995,7 +2939,7 @@
         "nom_barri": "",
         "line": [],
         "stop_id": "RR",
-        "stop_name": "Ribes-Enlla\u00e7"
+        "stop_name": "ribesEnllaç"
       }
     }
   ]

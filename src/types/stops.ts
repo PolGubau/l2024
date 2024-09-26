@@ -2,10 +2,10 @@ import { LineName } from "./types";
 
 export interface Stops {
   type: string;
-  features: Feature[];
+  features: StopFeatures[];
 }
 
-export interface Feature {
+export interface StopFeatures {
   type: string;
   geometry: Geometry;
   properties: Properties;
@@ -17,10 +17,10 @@ export interface Geometry {
 }
 
 export interface Properties {
-  LINE: LineName[];
+  line: LineName[];
   stop_name: string;
-  DISTRICTE?: number;
+  districte?: number;
   BARRI?: number;
-  NOM_DISTRICTE: string;
+  nom_districte: string;
   nom_barri: string;
 }
