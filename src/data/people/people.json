@@ -133,6 +133,10 @@
         "percent": 100
       },
       {
+        "name": "L7",
+        "percent": 100
+      },
+      {
         "name": "L9",
         "percent": 100
       },
@@ -218,7 +222,7 @@
   {
     "id": 6,
     "name": "Anna",
-    "surnames": "Vila Penedes",
+    "surnames": "Vila Panades",
     "lines_done": [
       {
         "name": "L10",
@@ -235,7 +239,7 @@
   {
     "id": 7,
     "name": "Maria",
-    "surnames": "Rogès Lopez",
+    "surnames": "Rogès López",
     "lines_done": [
       {
         "name": "L4",
@@ -261,6 +265,10 @@
     "name": "Albert Arrebola Sans",
     "surnames": "",
     "lines_done": [
+      {
+        "name": "L5",
+        "percent": 40
+      },
       {
         "name": "L2",
         "percent": 100
@@ -314,8 +322,8 @@
   },
   {
     "id": 12,
-    "name": "Ivan",
-    "surnames": "Lopez Jimenez",
+    "name": "Iván",
+    "surnames": "López Jimenez",
     "lines_done": [
       {
         "name": "L10",
@@ -356,6 +364,26 @@
       {
         "name": "L4",
         "percent": 90
+      }
+    ],
+    "avatar": ""
+  },
+  {
+    "id": 15,
+    "name": "Gisela",
+    "surnames": "Serra Chico",
+    "lines_done": [
+      {
+        "name": "L6",
+        "percent": 100
+      },
+      {
+        "name": "L7",
+        "percent": 100
+      },
+      {
+        "name": "L12",
+        "percent": 100
       }
     ],
     "avatar": ""

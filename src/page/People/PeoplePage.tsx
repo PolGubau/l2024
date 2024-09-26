@@ -1,16 +1,31 @@
-import { Avatar, Card, formatString, Tooltip } from "pol-ui";
+import { Avatar, Card, formatString, IconButton, Tooltip } from "pol-ui";
+import { useState } from "react";
 import { people } from "../../data/people";
 import { getLineInfo } from "../../util/get-info";
 
 const PeoplePage = () => {
+  const [direction, setDirection] = useState<"asc" | "desc">("desc");
+
+  const toggleDirection = () =>
+    setDirection((prev) => (prev === "asc" ? "desc" : "asc"));
+
+  const orderedPeople = people.sort((a, b) => {
+    return direction === "asc" ? a.kms - b.kms : b.kms - a.kms;
+  });
+
   return (
     <main className="p-6 flex flex-col gap-6">
       <h1 className="text-xl">Who made this possible</h1>
 
+      <div className="flex gap-1">
+        <IconButton onClick={toggleDirection}>
+          {direction === "asc" ? "🔼" : "🔽"}
+        </IconButton>
+      </div>
       <ul className="gap-4 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
-        {people.map((p) => {
+        {orderedPeople.map((p) => {
           return (
-            <li key={p.name}>
+            <li key={p.id}>
               <a href={`/people/${p.id}`}>
                 <Card className="flex gap-3 flex-col">
                   <header className="flex items-center gap-2">
@@ -40,6 +55,10 @@ const PeoplePage = () => {
                       );
                     })}
                   </div>
+
+                  <p>
+                    {p.kms} kms - {p.stopsAmount} stops
+                  </p>
 
                   {/* {getTotalkmPerUser(p.surnames)} -
                   <span className="p-1">

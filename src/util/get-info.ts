@@ -1,5 +1,5 @@
 import { linesData } from "../data/lines";
-import { people } from "../data/people";
+import { rawPeople } from "../data/people";
 import { stops } from "../data/stops";
 import { StopData } from "../types/stops";
 import { LineName, LineType } from "../types/types";
@@ -39,8 +39,8 @@ export const getStopInfo = (stop: string): StopData | null => {
   return stops.find((s) => s.name === stop) ?? null;
 };
 
-export const getTotalkmPerUser = (surnames: string) => {
-  const person = people.find((p) => p.surnames === surnames);
+export const getTotalkmPerUser = (id: number) => {
+  const person = rawPeople.find((p) => p.id === id);
   const linesDone = person?.lines_done;
   if (!linesDone) return 0;
 
@@ -86,7 +86,7 @@ export const getStopsByLinesAndPercent = (
 };
 
 export const userStopAmount = (surnames: string): number => {
-  const person = people.find((p) => p.surnames === surnames);
+  const person = rawPeople.find((p) => p.surnames === surnames);
   const linesDone = person?.lines_done;
   if (!linesDone) return 0;
 
