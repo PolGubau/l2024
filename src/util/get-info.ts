@@ -85,8 +85,8 @@ export const getStopsByLinesAndPercent = (
   return stopsByLines;
 };
 
-export const userStopAmount = (surnames: string): number => {
-  const person = rawPeople.find((p) => p.surnames === surnames);
+export const getUserStopAmount = (id: number): number => {
+  const person = rawPeople.find((p) => p.id === id);
   const linesDone = person?.lines_done;
   if (!linesDone) return 0;
 

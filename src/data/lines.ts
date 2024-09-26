@@ -21,7 +21,7 @@ export const linesData: LineType[] = [
       title: "L1",
       transport: "metro",
       subtitle: "Hospital de Bellvitge / Fondo",
-      color: "#CB2508",
+      color: "#df2937",
       distance: 29.64,
       metro_distance: 20.2,
       stations: 30,
@@ -42,7 +42,7 @@ export const linesData: LineType[] = [
       metro_distance: 13.1,
       stations: 18,
       transport: "metro",
-      color: "#90278E",
+      color: "#993c8c",
       velocity: 4.2,
 
       dateTime: "2024-02-24T10:14:04.387Z",
@@ -60,7 +60,7 @@ export const linesData: LineType[] = [
       stations: 26,
       metro_distance: 18.4,
       transport: "metro",
-      color: "#067634",
+      color: "#3aa83e",
       velocity: 3.8,
 
       dateTime: "2024-04-06T11:14:04.387Z",
@@ -96,7 +96,7 @@ export const linesData: LineType[] = [
       stations: 27,
       metro_distance: 18.9,
       transport: "metro",
-      color: "#006b9d",
+      color: "#0177bc",
       velocity: 4.2,
 
       dateTime: "2024-05-7T10:14:04.387Z",
@@ -114,7 +114,7 @@ export const linesData: LineType[] = [
       metro_distance: 4.7,
       stations: 8,
       transport: "metro",
-      color: "#847dc6",
+      color: "#7386bc",
       velocity: 3.6,
 
       dateTime: "2024-05-15T10:14:04.387Z",
@@ -132,7 +132,7 @@ export const linesData: LineType[] = [
       metro_distance: 3.9,
       stations: 7,
       transport: "metro",
-      color: "#ae6118",
+      color: "#b16612",
       velocity: 3.7,
 
       dateTime: "2024-05-15T10:14:04.387Z",
@@ -150,7 +150,7 @@ export const linesData: LineType[] = [
       metro_distance: 11.8,
       stations: 11,
       transport: "metro",
-      color: "#e796bf",
+      color: "#e579ae",
       velocity: 3.7,
 
       dateTime: "2024-05-15T10:14:04.387Z",
@@ -168,7 +168,7 @@ export const linesData: LineType[] = [
       metro_distance: 15.8 + 11.1,
       stations: 24,
       transport: "metro",
-      color: "#fb712b",
+      color: "#f88d00",
       velocity: 3.7,
 
       dateTime: "2024-05-15T10:14:04.387Z",
@@ -187,7 +187,7 @@ export const linesData: LineType[] = [
       distance: 7.36 + 10,
       metro_distance: 17.1,
       transport: "metro",
-      color: "#31a8e0",
+      color: "#08a0e5",
       velocity: 3.5,
 
       dateTime: "2024-04-06T10:14:04.387Z",
@@ -205,7 +205,7 @@ export const linesData: LineType[] = [
       metro_distance: 2.3,
       stations: 5,
       transport: "metro",
-      color: "#9ed84c",
+      color: "#b4cd56",
       velocity: 4.2,
 
       dateTime: "2024-04-06T10:14:04.387Z",
@@ -223,7 +223,7 @@ export const linesData: LineType[] = [
       metro_distance: 0.6,
       stations: 2,
       transport: "metro",
-      color: "#b6b3e1",
+      color: "#bbb3d7",
       velocity: 4.2,
 
       dateTime: "2024-04-06T10:14:04.387Z",

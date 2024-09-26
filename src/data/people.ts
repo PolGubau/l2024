@@ -1,5 +1,9 @@
 import { LineName } from "../types/types";
-import { getTotalkmPerUser } from "../util/get-info";
+import {
+  getStopsByLinesAndPercent,
+  getTotalkmPerUser,
+  getUserStopAmount,
+} from "../util/get-info";
 import peopleJson from "./people/people.json?raw";
 
 export interface RawPeople {
@@ -23,7 +27,7 @@ export interface Linesdone {
 export const rawPeople: RawPeople[] = JSON.parse(peopleJson);
 
 export const people: People[] = rawPeople.map((p) => {
-  const stopsAmount = getTotalkmPerUser(p.id);
+  const stopsAmount = getUserStopAmount(p.id);
   const kms = getTotalkmPerUser(p.id);
   return { ...p, stopsAmount, kms };
 });
