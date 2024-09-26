@@ -1,9 +1,5 @@
 import { LineName } from "../types/types";
-import {
-  getStopsByLinesAndPercent,
-  getTotalkmPerUser,
-  getUserStopAmount,
-} from "../util/get-info";
+import { getTotalkmPerUser, getUserStopAmount } from "../util/get-info";
 import peopleJson from "./people/people.json?raw";
 
 export interface RawPeople {

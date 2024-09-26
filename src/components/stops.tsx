@@ -4,11 +4,11 @@ import {
   useLayerHoverPopup,
   useSource,
 } from "@mapcomponents/react-maplibre";
-import { useId, useRef } from "react";
-import { Stops as IStops } from "../types/stops";
 import { formatString } from "pol-ui";
+import { useId, useRef } from "react";
+import { StopsObject } from "../types/stops";
 interface StopsProps {
-  stops: IStops;
+  stops: StopsObject;
   setSelectedStop: (stop: string) => void;
 }
 
