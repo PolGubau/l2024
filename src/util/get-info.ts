@@ -1,7 +1,7 @@
 import { lowerAndNoSpace } from "pol-ui";
 import { linesData } from "../data/lines";
 import { rawPeople } from "../data/people";
-import { People, stops } from "../data/stops";
+import { stops } from "../data/stops";
 import { StopData } from "../types/stops";
 import { LineName, LineType } from "../types/types";
 

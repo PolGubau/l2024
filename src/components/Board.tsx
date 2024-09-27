@@ -14,7 +14,6 @@ import {
   DropdownSubContent,
   DropdownSubTrigger,
   formatString,
-  toast,
 } from "pol-ui";
 import {
   DropdownCheckboxItem,
@@ -23,7 +22,7 @@ import {
   DropdownPortal,
   DropdownSub,
 } from "pol-ui/lib/esm/components/Dropdown/Dropdown";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { TbFilterMinus, TbSettings } from "react-icons/tb";
 import { linesData } from "../data/lines";
 import { rawStops } from "../data/stops";
