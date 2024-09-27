@@ -10,7 +10,7 @@ const LineImg = ({ l }: { l: LineName }) => {
         <img
           width={23}
           height={23}
-          className="rounded-lg p-0.5 h-[23px] "
+          className="rounded-lg p-0.5 h-[23px] shadow-md"
           style={{
             backgroundColor: `${line?.metadata.color}`,
           }}

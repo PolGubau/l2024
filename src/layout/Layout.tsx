@@ -1,34 +1,63 @@
 import { buttonVariants, cn, DarkThemeToggle, formatString } from "pol-ui";
+import { IconType } from "react-icons";
+import { TbBusStop, TbMap, TbUsers } from "react-icons/tb";
 import { NavLink, Outlet } from "react-router-dom";
-
-const routes = {
-  map: "/",
-  people: "/people",
-  stations: "/stations",
-} as const;
+interface Route {
+  to: string;
+  icon: IconType;
+  label: string;
+}
+const routes: Route[] = [
+  {
+    to: "/",
+    icon: TbMap,
+    label: "map",
+  },
+  {
+    to: "/people",
+    icon: TbUsers,
+    label: "people",
+  },
+  {
+    to: "/stations",
+    icon: TbBusStop,
+    label: "stations",
+  },
+];
 
 const classes = {
-  common: buttonVariants({
-    variant: "ghost",
-  }),
+  common: cn(
+    buttonVariants({
+      variant: "outline",
+    })
+  ),
   active: "bg-primary",
   pending: "opacity-50 animation-",
 };
 
-const NavItem = (props: typeof NavItem) => {
+interface NavItemProps extends Route {
+  idx: number;
+  amount: number;
+}
+const NavItem = (props: Route) => {
+  const { icon: Icon } = props;
+
+  // const isFirst =
   return (
     <li>
       <NavLink
         {...props}
         className={({ isActive, isPending }) =>
           cn(
+            "items-center",
             classes.common,
             isActive && classes.active,
             isPending && classes.pending
           )
         }
       >
-        {formatString(props.children)}
+        <Icon size={18} />
+        {formatString(props.label)}
       </NavLink>
     </li>
   );
@@ -40,10 +69,9 @@ const Layout = () => {
       <DarkThemeToggle className="absolute top-4 right-4 z-40 bg-secondary-50 dark:bg-secondary-900" />
       <main className="relative w-screen min-h-[100dvh] overflow-hidden grid grid-rows-[1fr,auto] bg-secondary-50 dark:bg-secondary-900 text-secondary-900 dark:text-secondary-50 pb-10">
         <Outlet />
-        <ul className="flex justify-center p-2  w-full bg-secondary-50 dark:bg-secondary-900 fixed bottom-0 left-0">
-          {Object.keys(routes).map((k) => {
-            const v = routes[k];
-            return <NavItem to={v}>{k}</NavItem>;
+        <ul className="flex justify-center p-2  w-full bg-secondary-50 dark:bg-secondary-900 fixed bottom-0 left-0 ">
+          {routes.map((k, i) => {
+            return <NavItem {...k} key={i} idx={i} amount={routes.length} />;
           })}
         </ul>
       </main>
