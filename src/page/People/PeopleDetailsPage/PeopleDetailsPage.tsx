@@ -60,20 +60,21 @@ const PeopleDetailPage = () => {
           })}
         </ul>
 
-        <h2 className="text-lg">{`${user?.name ?? "User"}'s Gallery`}</h2>
-        <ImageCarousel urls={getAllImagesByUser(u.id)} />
+        <h2 className="text-lg">{`${user?.name ?? "User"}'s lines gallery`}</h2>
 
-        {/* {getAllImagesByUser(u.id).map((img, i) => {
-          return (
-            // <img
-            //   key={i}
-            //   src={img}
-            //   alt={`${u.name} ${i}`}
-            //   className="rounded-lg"
-            // />
-
-          );
-        })} */}
+        <ul className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
+          {getAllImagesByUser(u.id).map((img, i) => {
+            return (
+              <img
+                key={i}
+                loading="lazy"
+                src={img}
+                alt={`${u.name} ${i}`}
+                className="rounded-xl"
+              />
+            );
+          })}
+        </ul>
       </main>
     </div>
   );
