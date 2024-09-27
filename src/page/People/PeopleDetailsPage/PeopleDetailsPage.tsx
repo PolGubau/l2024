@@ -1,4 +1,4 @@
-import { Button, formatString, ImageCarousel, toast, Tooltip } from "pol-ui";
+import { Button, formatString, toast, Tooltip } from "pol-ui";
 import { TbChevronLeft } from "react-icons/tb";
 import { redirect, useParams } from "react-router-dom";
 import { People, people } from "../../../data/people";
