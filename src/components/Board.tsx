@@ -14,6 +14,7 @@ import {
   DropdownSubContent,
   DropdownSubTrigger,
   formatString,
+  toast,
 } from "pol-ui";
 import {
   DropdownCheckboxItem,
@@ -22,13 +23,12 @@ import {
   DropdownPortal,
   DropdownSub,
 } from "pol-ui/lib/esm/components/Dropdown/Dropdown";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TbFilterMinus, TbSettings } from "react-icons/tb";
 import { linesData } from "../data/lines";
 import { rawStops } from "../data/stops";
 import { StopsObject } from "../types/stops";
 import { LineName, LineNameEnum, LineType } from "../types/types";
-import { getStopInfo } from "../util/get-info";
 import { Line } from "./Line";
 import StopDrawer from "./StopDrawer/StopDrawer";
 import { Stops } from "./stops";
@@ -78,10 +78,9 @@ const Board = () => {
     return selectedLine?.id === line;
   };
 
-  const thisStop = selectedStop ? getStopInfo(selectedStop) : null;
   return (
     <>
-      <StopDrawer stop={thisStop} setSelectedStop={setSelectedStop} />
+      <StopDrawer stop={selectedStop} setSelectedStop={setSelectedStop} />
       <section className="relative gap-4 bg-secondary/20 p-2 ">
         <Dropdown
           className="z-50"
@@ -186,7 +185,7 @@ const Board = () => {
               // maplibreLogo: false,
               center: { lat: 41.390205, lng: 2.154007 },
               style: "/map/schema.json",
-              zoom: 10,
+              zoom: 12,
               // maxBounds: [
             }}
             style={{

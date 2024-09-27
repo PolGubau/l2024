@@ -1038,7 +1038,7 @@
         "coordinates": [2.111205, 41.384143]
       },
       "properties": {
-        "line": ["L3"],
+        "line": ["L3", "L9"],
         "stop_name": "zonaUniversitària",
         "nom_districte": "Les Corts",
         "nom_barri": "la Maternitat i Sant Ramon"
@@ -1763,58 +1763,12 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L8"],
         "stop_id": "CO",
         "stop_name": "cornellàRiera"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [1.925294975, 41.4792845] },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "MC",
-        "stop_name": "martorellCentral"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [1.973673502, 41.44648001]
-      },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "SA",
-        "stop_name": "santAndreuDeLaBarca"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [1.938956855, 41.4758714] },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "MV",
-        "stop_name": "martorellVila"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [1.827904, 41.731457] },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "MB",
-        "stop_name": "manresaBaixador"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2085,17 +2039,7 @@
         "stop_name": "santJoan"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [2.0190489, 41.5633063] },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "VP",
-        "stop_name": "vallparadísUniversitat"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2130,7 +2074,7 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L8"],
         "stop_id": "SP",
         "stop_name": "santJosep"
       }
@@ -2159,7 +2103,7 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L8"],
         "stop_id": "BO",
         "stop_name": "santBoi"
       }
@@ -2614,20 +2558,7 @@
         "stop_name": "bellaterra"
       }
     },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [2.102510441, 41.50285282]
-      },
-      "properties": {
-        "nom_districte": "",
-        "nom_barri": "",
-        "line": [],
-        "stop_id": "UN",
-        "stop_name": "universitatAutònoma"
-      }
-    },
+
     {
       "type": "Feature",
       "geometry": {
@@ -2679,7 +2610,7 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L8"],
         "stop_id": "ML",
         "stop_name": "ciutatCooperativa"
       }

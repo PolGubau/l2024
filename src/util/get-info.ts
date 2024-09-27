@@ -1,6 +1,7 @@
+import { lowerAndNoSpace } from "pol-ui";
 import { linesData } from "../data/lines";
 import { rawPeople } from "../data/people";
-import { stops } from "../data/stops";
+import { People, stops } from "../data/stops";
 import { StopData } from "../types/stops";
 import { LineName, LineType } from "../types/types";
 
@@ -36,7 +37,10 @@ export const getImage = (line: LineName, stop: string): string => {
   return `/images/${line}/${stop}.jpg`;
 };
 export const getStopInfo = (stop: string): StopData | null => {
-  return stops.find((s) => s.name === stop) ?? null;
+  const s =
+    stops.find((s) => lowerAndNoSpace(s.name) === lowerAndNoSpace(stop)) ??
+    null;
+  return s;
 };
 
 export const getTotalkmPerUser = (id: number) => {

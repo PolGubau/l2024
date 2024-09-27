@@ -1,21 +1,24 @@
 import { Drawer, formatString } from "pol-ui";
 import { useState } from "react";
-import { getImage } from "../../util/get-info";
-import { StopData } from "../../types/stops";
+import { getImage, getStopInfo } from "../../util/get-info";
+import LineImg from "../LineImg";
 
 interface StopDrawerProps {
-  stop: StopData | null;
+  stop: string | null;
   setSelectedStop: (stop: string | null) => void;
 }
 
-const StopDrawer = ({ stop, setSelectedStop }: StopDrawerProps) => {
-  const snaps = ["670px", 1];
+const StopDrawer = ({ stop: stopName, setSelectedStop }: StopDrawerProps) => {
+  const stop = stopName ? getStopInfo(stopName) : null;
+
+  const snaps = ["780px", 1];
   const [snap, setSnap] = useState<number | string | null>(snaps[0]);
 
   return (
     <Drawer
       contentProps={{
-        className: "z-[999] overflow-hidden",
+        className:
+          "z-[999] overflow-hidden text-secondary-900 dark:text-secondary-50",
       }}
       direction="bottom"
       snapPoints={snaps}
@@ -29,21 +32,33 @@ const StopDrawer = ({ stop, setSelectedStop }: StopDrawerProps) => {
         }
       }}
     >
-      <header className="pb-8 flex flex-col gap-1">
+      <header className="pb-8 flex flex-col gap-1 h-[120px] ">
         {stop?.name && <h2 className=" text-xl">{formatString(stop?.name)}</h2>}
         <span className="opacity-80">{stop?.neighborhood}</span>
+        <ul className="flex gap-1 flex-wrap pt-4">
+          {stop?.lines.map((l) => (
+            <LineImg l={l} />
+          ))}
+        </ul>
       </header>
 
-      <div className="flex gap-4 items-center overflow-x-auto overflow-y-hidden">
+      <div className="flex gap-4 items-center overflow-x-auto overflow-y-hidden h-[300px]">
         {stop?.lines.map((l) => {
           const url = getImage(l, stop.name);
+
           return (
-            <div key={url}>
-              <img
-                src={url}
-                alt={stop.name}
-                className="w-[220px] h-full object-cover rounded-3xl"
-              />
+            <div key={url} className="relative">
+              <div className="absolute bottom-2 left-2">
+                <LineImg l={l} />
+              </div>
+
+              <div className="w-[220px] h-full bg-secondary/50 overflow-hidden rounded-3xl">
+                <img
+                  src={url}
+                  alt={stop.name}
+                  className="w-[220px] h-full object-cover"
+                />
+              </div>
             </div>
           );
         })}

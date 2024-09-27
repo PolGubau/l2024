@@ -4,6 +4,7 @@ import HomePage from "./page/Home/Home";
 import PeoplePage from "./page/People/PeoplePage";
 import { buttonVariants } from "pol-ui";
 import PeopleDetailPage from "./page/People/PeopleDetailsPage/PeopleDetailsPage";
+import StationsPage from "./page/Stations/StationsPage";
 
 export const Router = () => {
   return (
@@ -12,7 +13,8 @@ export const Router = () => {
         <Route path="" element={<Layout />}>
           <Route path="" element={<HomePage />} />
           <Route path="people" element={<PeoplePage />} />
-          <Route path="people/:id" element={<PeopleDetailPage />} />
+          <Route path="people/:id" element={<PeopleDetailPage />} />{" "}
+          <Route path="stations" element={<StationsPage />} />
           <Route
             path="*"
             element={

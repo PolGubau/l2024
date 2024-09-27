@@ -5,3 +5,9 @@
 * {
   box-sizing: border-box;
 }
+
+.maplibregl-popup-content {
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
