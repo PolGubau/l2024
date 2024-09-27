@@ -109,7 +109,7 @@
         "percent": 100
       }
     ],
-    "avatar": "https://instagram.fbcn14-1.fna.fbcdn.net/v/t51.29350-15/279613173_295445746097427_416883954788047518_n.webp?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEzNTAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fbcn14-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=hvOrRgMmnRoQ7kNvgEPvoYC&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MjgyNzkzNjQzNzUzNDU1NTA5Nw%3D%3D.3-ccb7-5&oh=00_AYDSFsiCRv6A89T0svJD_bC3CuYV6_o8V06DeOh64eIE2A&oe=66F9A04B&_nc_sid=7a9f4b"
+    "avatar": "/images/profiles/marcos.png"
   },
   {
     "id": 3,
@@ -149,7 +149,7 @@
         "percent": 100
       }
     ],
-    "avatar": "https://instagram.fbcn14-1.fna.fbcdn.net/v/t51.2885-19/448173411_1380257042682556_8197993184858072435_n.jpg?_nc_ht=instagram.fbcn14-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=Y5M7jRJsRn8Q7kNvgHDdIdj&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYCb-eMO6WhmbjSimXBGY1Fo3dUGzQApWJAK6YcKHDnsjg&oe=66F9A18B&_nc_sid=7a9f4b"
+    "avatar": "/images/profiles/rebeca.png"
   },
   {
     "id": 4,
@@ -249,7 +249,7 @@
         "percent": 30
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/annaVila.png"
   },
 
   {
@@ -262,7 +262,7 @@
         "percent": 40
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/maria.png"
   },
   {
     "id": 8,
@@ -274,7 +274,7 @@
         "percent": 100
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/samu.png"
   },
   {
     "id": 9,
@@ -290,7 +290,7 @@
         "percent": 100
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/albert.png"
   },
   {
     "id": 10,
@@ -326,7 +326,7 @@
         "percent": 50
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/berta.png"
   },
   {
     "id": 11,
@@ -338,7 +338,7 @@
         "percent": 8
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/xia.png"
   },
   {
     "id": 12,
@@ -374,7 +374,7 @@
         "percent": 20
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/señora.png"
   },
   {
     "id": 14,
@@ -386,7 +386,7 @@
         "percent": 90
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/pelota.png"
   },
   {
     "id": 15,
@@ -410,7 +410,7 @@
         "percent": 100
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/gis.png"
   },
   {
     "id": 16,
@@ -426,7 +426,7 @@
         "percent": 70
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/miriam.png"
   },
   {
     "id": 17,
@@ -438,7 +438,7 @@
         "percent": 70
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/jandro.png"
   },
   {
     "id": 18,
@@ -450,7 +450,7 @@
         "percent": 70
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/irene.png"
   },
   {
     "id": 19,
@@ -462,6 +462,6 @@
         "percent": 14
       }
     ],
-    "avatar": ""
+    "avatar": "/images/profiles/marinaRiba.png"
   }
 ]

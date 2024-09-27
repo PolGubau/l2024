@@ -1,6 +1,6 @@
 import { lowerAndNoSpace } from "pol-ui";
 import { linesData } from "../data/lines";
-import { rawPeople } from "../data/people";
+import { people, People, rawPeople } from "../data/people";
 import { stops } from "../data/stops";
 import { StopData } from "../types/stops";
 import { LineName, LineType } from "../types/types";
@@ -98,4 +98,10 @@ export const getUserStopAmount = (id: number): number => {
   const stops = getStopsByLinesAndPercent(linesDone);
 
   return stops;
+};
+
+export const getPeopleByLine = (line: LineName): People[] => {
+  return people.filter((p) => {
+    return p.lines_done.find((l) => l.name === line);
+  });
 };

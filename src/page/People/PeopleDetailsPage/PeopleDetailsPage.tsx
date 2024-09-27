@@ -1,9 +1,8 @@
-import { redirect, useParams } from "react-router-dom";
-import { people } from "../../../data/people";
-import { Avatar, Button, formatString, toast, Tooltip } from "pol-ui";
-import { getLineInfo } from "../../../util/get-info";
-import { People } from "../../../data/stops";
+import { Button, formatString, toast, Tooltip } from "pol-ui";
 import { TbChevronLeft } from "react-icons/tb";
+import { redirect, useParams } from "react-router-dom";
+import { People, people } from "../../../data/people";
+import { getLineInfo } from "../../../util/get-info";
 
 const PeopleDetailPage = () => {
   const { id } = useParams();
@@ -26,7 +25,13 @@ const PeopleDetailPage = () => {
         </a>
 
         <header className="flex items-center gap-3">
-          <Avatar img={user?.avatar} size="lg" alt={user?.name} />
+          <img
+            src={user?.avatar}
+            alt={user?.name}
+            width={80}
+            height={80}
+            className="object-cover rounded-full h-[80px] w-[80px]"
+          />
           <hgroup className="flex flex-col gap-1">
             <h1 className="text-3xl">{formatString(u.name)}</h1>
             <h2 className="opacity-80 text-xl truncate">

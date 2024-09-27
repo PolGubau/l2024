@@ -1,6 +1,8 @@
+import { Avatar, Card } from "pol-ui";
 import TimeAgo from "react-timeago";
 import LineImg from "../../components/LineImg";
 import { linesData } from "../../data/lines";
+import { getPeopleByLine } from "../../util/get-info";
 
 const StationsPage = () => {
   return (
@@ -19,7 +21,7 @@ const StationsPage = () => {
 
             return (
               <li key={line.id} className="p-0 w-full">
-                <article className="flex gap-2 py-4">
+                <article className="flex gap-4 py-4">
                   <div
                     className="p-1 rounded-lg"
                     style={{
@@ -36,21 +38,25 @@ const StationsPage = () => {
                       <p className="text-lg opacity-85">
                         {line.metadata.subtitle}
                       </p>
-                      <time dateTime={line.metadata.dateTime}>
-                        {new Date(line.metadata.dateTime).toLocaleString()}
-                        <TimeAgo date="Aug 29, 2014" />
+                      <p>Stations: {line.metadata.stations}</p>
+                      <time
+                        dateTime={line.metadata.dateTime}
+                        className="flex gap-2 items-center"
+                      >
+                        <span>Date:</span>
+                        {new Date(line.metadata.dateTime).toLocaleDateString()}
+                        <TimeAgo date={line.metadata.dateTime} />
                       </time>
                     </header>
-
                     {/* cards */}
-                    <div className="grid grid-cols-2 gap-4 w-full">
-                      <p className="flex flex-col bg-secondary-500/20 py-1 px-4 rounded-lg">
+                    <div className="grid grid-cols-2 gap-2 w-full">
+                      <Card childrenClass="py-2 px-4 gap-0">
                         <span className="text-lg">
                           {line.metadata.metro_distance} km
                         </span>
                         <small className="opacity-90">Distance in metro</small>
-                      </p>
-                      <p className="flex flex-col bg-secondary-500/20 py-1 px-4 rounded-lg">
+                      </Card>
+                      <Card childrenClass="py-2 px-4 gap-0">
                         <span className="text-lg flex gap-1 items-center">
                           {line.metadata.distance} km
                           <small>
@@ -59,13 +65,41 @@ const StationsPage = () => {
                           </small>
                         </span>
                         <small className="opacity-90">Distance in metro</small>
-                      </p>
+                      </Card>
+                      <Card childrenClass="py-2 px-4 gap-0">
+                        <span className="text-lg">
+                          {line.metadata.timeWalking} min
+                        </span>
+                        <small className="opacity-90">Time walking</small>
+                      </Card>
+                      <Card childrenClass="py-2 px-4 gap-0">
+                        <span className="text-lg flex gap-1 items-center">
+                          {line.metadata.velocity} km
+                        </span>
+                        <small className="opacity-90">Speed walking</small>
+                      </Card>
                     </div>
 
-                    <p>Stations: {line.metadata.stations}</p>
-
-                    <p>Time walking: {line.metadata.timeWalking}</p>
-                    <p>Speed walking: {line.metadata.velocity}</p>
+                    <div className="flex flex-col gap-2">
+                      <h3>Thanks to</h3>
+                      <ul className="flex flex-col gap-2">
+                        {getPeopleByLine(line.id).map((p) => (
+                          <li key={p.name} className="flex gap-2 items-center">
+                            <a href={`/people/${p.id}`} className="flex gap-2">
+                              <Avatar
+                                img={p.avatar}
+                                size="xs"
+                                className="object-cover"
+                              />
+                              <span>{p.name}</span>
+                              <span className="opacity-70">
+                                {p.surnames}
+                              </span>{" "}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </article>
               </li>

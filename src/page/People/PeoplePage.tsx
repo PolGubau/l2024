@@ -1,9 +1,9 @@
-import { Avatar, Card, Chip, formatString, IconButton, Tooltip } from "pol-ui";
+import { Card, Chip, formatString, IconButton, Tooltip } from "pol-ui";
 import { useState } from "react";
-import { people } from "../../data/people";
-import { getLineInfo } from "../../util/get-info";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { TbArrowDown, TbArrowUp } from "react-icons/tb";
+import { people } from "../../data/people";
+import { getLineInfo } from "../../util/get-info";
 
 const PeoplePage = () => {
   const [direction, setDirection] = useState<"asc" | "desc">("desc");
@@ -31,7 +31,13 @@ const PeoplePage = () => {
                 <a href={`/people/${p.id}`}>
                   <Card className="flex gap-3 flex-col">
                     <header className="flex items-center gap-2">
-                      <Avatar img={p.avatar} alt={p.name} />
+                      <img
+                        src={p?.avatar}
+                        alt={p?.name}
+                        width={40}
+                        height={40}
+                        className="object-cover rounded-full h-[40px] w-[40px]"
+                      />
                       <hgroup className="flex flex-col ">
                         <h2>{formatString(p.name)}</h2>
                         <h3 className="opacity-80 text-sm truncate">

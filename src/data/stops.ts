@@ -2,13 +2,6 @@ import { RawStop, StopData } from "../types/stops";
 import { LineName } from "../types/types";
 import stopsJson from "./geojson/stops.geojson?raw";
 
-export interface People {
-  name: string;
-  surnames: string;
-  lines_done: Linesdone[];
-  avatar: string;
-}
-
 export interface Linesdone {
   name: LineName;
   percent: number;
