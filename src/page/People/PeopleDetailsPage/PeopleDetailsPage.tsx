@@ -1,8 +1,8 @@
-import { Button, formatString, toast, Tooltip } from "pol-ui";
+import { Button, formatString, ImageCarousel, toast, Tooltip } from "pol-ui";
 import { TbChevronLeft } from "react-icons/tb";
 import { redirect, useParams } from "react-router-dom";
 import { People, people } from "../../../data/people";
-import { getLineInfo } from "../../../util/get-info";
+import { getAllImagesByUser, getLineInfo } from "../../../util/get-info";
 
 const PeopleDetailPage = () => {
   const { id } = useParams();
@@ -59,6 +59,21 @@ const PeopleDetailPage = () => {
             );
           })}
         </ul>
+
+        <h2 className="text-lg">{`${user?.name ?? "User"}'s Gallery`}</h2>
+        <ImageCarousel urls={getAllImagesByUser(u.id)} />
+
+        {/* {getAllImagesByUser(u.id).map((img, i) => {
+          return (
+            // <img
+            //   key={i}
+            //   src={img}
+            //   alt={`${u.name} ${i}`}
+            //   className="rounded-lg"
+            // />
+
+          );
+        })} */}
       </main>
     </div>
   );

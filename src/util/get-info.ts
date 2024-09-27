@@ -105,3 +105,29 @@ export const getPeopleByLine = (line: LineName): People[] => {
     return p.lines_done.find((l) => l.name === line);
   });
 };
+
+
+const getStopNamesByLine = (line: LineName): StopData[] => {
+   const lineStops = stops.filter((s) => s.lines.includes(line));
+
+  return lineStops;
+}
+
+
+export const getAllImagesByUser = (id: number): string[] => {
+  const person = rawPeople.find((p) => p.id === id);
+  const linesDone = person?.lines_done;
+  if (!linesDone) return [];
+
+  // check each name of the stops of these lines and return the images
+
+  // the url of the image is /images/lineName/stopName.jpg
+
+  const images = linesDone.reduce((acc, l) => {
+    const stops = getStopNamesByLine(l.name);
+    const images = stops.map((s) => getImage(l.name, s.name));
+    return [...acc, ...images];
+  }, [] as string[]);
+
+  return images;
+};
