@@ -69,7 +69,7 @@ const PeopleDetailPage = () => {
                 key={i}
                 loading="lazy"
                 src={img}
-                alt={`${u.name} ${i}`}
+                alt={`${u.name} ${i} (${img})`}
                 className="rounded-xl"
               />
             );
