@@ -1,4 +1,4 @@
-import { Button, Dialog, DialogClose, Drawer, formatString } from "pol-ui";
+import { Dialog, Drawer, formatString } from "pol-ui";
 import { useState } from "react";
 import { getImage, getStopInfo } from "../../util/get-info";
 import LineImg from "../LineImg";
