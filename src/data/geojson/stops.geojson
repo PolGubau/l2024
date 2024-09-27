@@ -151,7 +151,7 @@
         "coordinates": [2.169144, 41.374921]
       },
       "properties": {
-        "line": ["L3"],
+        "line": ["L3", "L2"],
         "stop_name": "paral·lel",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "el Poble-sec"

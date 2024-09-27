@@ -29,30 +29,38 @@ const classes = {
   common: cn(
     buttonVariants({
       variant: "outline",
-    })
+    }),
+    "rounded-none border-x-none"
   ),
   active: "bg-primary",
-  pending: "opacity-50 animation-",
+  pending: "opacity-50 ",
+  first: "rounded-l-2xl rounded-r-none border-r-0",
+  last: "rounded-r-2xl rounded-l-none border-l-0",
 };
 
 interface NavItemProps extends Route {
   idx: number;
   amount: number;
 }
-const NavItem = (props: Route) => {
+const NavItem = (props: NavItemProps) => {
   const { icon: Icon } = props;
 
-  // const isFirst =
+  const isFirst = props.idx === 0;
+  const isLast = props.idx === props.amount - 1;
+
   return (
     <li>
       <NavLink
-        {...props}
+        to={props.to}
+        title={props.label}
         className={({ isActive, isPending }) =>
           cn(
             "items-center",
             classes.common,
             isActive && classes.active,
-            isPending && classes.pending
+            isPending && classes.pending,
+            isFirst && classes.first,
+            isLast && classes.last
           )
         }
       >

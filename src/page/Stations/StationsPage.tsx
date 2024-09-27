@@ -11,7 +11,7 @@ const StationsPage = () => {
         <header className="flex justify-between gap-2">
           <h1 className="text-xl">Lines Information</h1>
         </header>
-        <ul className="flex gap-2 flex-col divide-y divide-secondary-500/20">
+        <ul className="flex gap-2 flex-col divide-y divide-secondary/40">
           {linesData.map((line) => {
             const percentMoreWalkedThanMetroDistance = Math.round(
               ((line.metadata.distance - line.metadata.metro_distance) /
@@ -34,19 +34,20 @@ const StationsPage = () => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <header className="flex flex-col gap-1">
-                      {/* <h2 className="text-2xl">{line.id}</h2> */}
-                      <p className="text-lg opacity-85">
-                        {line.metadata.subtitle}
-                      </p>
-                      <p>Stations: {line.metadata.stations}</p>
+                      {" "}
                       <time
                         dateTime={line.metadata.dateTime}
-                        className="flex gap-2 items-center"
+                        className="flex gap-2 items-center text-sm"
                       >
-                        <span>Date:</span>
                         {new Date(line.metadata.dateTime).toLocaleDateString()}
+                        <span>-</span>
                         <TimeAgo date={line.metadata.dateTime} />
                       </time>
+                      {/* <h2 className="text-2xl">{line.id}</h2> */}
+                      <p className="text-lg ">{line.metadata.subtitle}</p>
+                      <p className="opacity-85">
+                        Stations: {line.metadata.stations}
+                      </p>
                     </header>
                     {/* cards */}
                     <div className="grid grid-cols-2 gap-2 w-full">

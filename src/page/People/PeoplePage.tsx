@@ -55,9 +55,9 @@ const PeoplePage = () => {
                             label={`${line?.metadata.distance} km`}
                           >
                             <img
-                              width={23}
-                              height={23}
-                              className="rounded-lg p-0.5 h-[23px] "
+                              width={20}
+                              height={20}
+                              className="rounded-lg p-0.5 h-[20px] "
                               style={{
                                 backgroundColor: `${line?.metadata.color}`,
                               }}

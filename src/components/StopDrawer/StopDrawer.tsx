@@ -1,4 +1,4 @@
-import { Drawer, formatString } from "pol-ui";
+import { Button, Dialog, DialogClose, Drawer, formatString } from "pol-ui";
 import { useState } from "react";
 import { getImage, getStopInfo } from "../../util/get-info";
 import LineImg from "../LineImg";
@@ -53,11 +53,31 @@ const StopDrawer = ({ stop: stopName, setSelectedStop }: StopDrawerProps) => {
               </div>
 
               <div className="w-[220px] h-full bg-secondary/50 overflow-hidden rounded-3xl">
-                <img
-                  src={url}
-                  alt={stop.name}
-                  className="w-[220px] h-full object-cover"
-                />
+                <Dialog
+                  contentProps={{
+                    className: "w-[80vw] max-w-3xl h-[80dvh] p-0  z-[999999]",
+                  }}
+                  trigger={
+                    <img
+                      src={url}
+                      alt={stop.name}
+                      className="w-[220px] h-full object-cover"
+                    />
+                  }
+                >
+                  {/* <div className="relative"> */}
+                  <img
+                    src={url}
+                    alt={stop.name}
+                    className="w-full h-full object-contain"
+                  />
+                  {/* <DialogClose>
+                      <Button className="absolute bottom-3 right-3">
+                        Close
+                      </Button>
+                    </DialogClose> */}
+                  {/* </div> */}
+                </Dialog>
               </div>
             </div>
           );
