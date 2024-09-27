@@ -51,7 +51,7 @@ const PeoplePage = () => {
                             <img
                               width={23}
                               height={23}
-                              className="rounded-lg p-0.5"
+                              className="rounded-lg p-0.5 h-[23px] "
                               style={{
                                 backgroundColor: `${line?.metadata.color}`,
                               }}

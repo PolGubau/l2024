@@ -39,9 +39,6 @@ const StopDrawer = ({ stop, setSelectedStop }: StopDrawerProps) => {
           const url = getImage(l, stop.name);
           return (
             <div key={url}>
-              <div className="w-[30px] aspect-square absolute bottom-2 left-2">
-                hola
-              </div>
               <img
                 src={url}
                 alt={stop.name}
