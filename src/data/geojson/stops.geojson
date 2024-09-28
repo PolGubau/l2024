@@ -98,7 +98,7 @@
         "coordinates": [2.205, 41.436]
       },
       "properties": {
-        "line": ["L10"],
+        "line": ["L10", "L9"],
         "stop_name": "bonPastor",
         "nom_districte": "",
         "nom_barri": ""
@@ -115,6 +115,32 @@
         "stop_name": "foneria",
         "nom_districte": "Sants-Montjuïc",
         "nom_barri": "la Marina de Port"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.140640683057215, 41.335978204077165]
+      },
+      "properties": {
+        "line": ["L10"],
+        "stop_name": "portComercial",
+        "nom_districte": "Zona Comercial",
+        "nom_barri": "Zona Comercial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.137024309068414, 41.3301572275709]
+      },
+      "properties": {
+        "line": ["L10"],
+        "stop_name": "ecoParc",
+        "nom_districte": "Zona Comercial",
+        "nom_barri": "Zona Comercial"
       }
     },
 
@@ -157,6 +183,19 @@
         "nom_barri": "el Poble-sec"
       }
     },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.1323084031105433, 41.36311455170744]
+      },
+      "properties": {
+        "line": ["L10"],
+        "stop_name": "ciutatDeLaJusticia",
+        "nom_districte": "Hospitalet de Llobregat",
+        "nom_barri": "El Port"
+      }
+    },
 
     {
       "type": "Feature",
@@ -165,7 +204,7 @@
         "coordinates": [2.21846, 41.451611]
       },
       "properties": {
-        "line": ["L1"],
+        "line": ["L1", "L9"],
         "stop_name": "fondo",
         "nom_districte": "",
         "nom_barri": ""
@@ -984,7 +1023,7 @@
         "coordinates": [2.19359, 41.429587]
       },
       "properties": {
-        "line": ["L9"],
+        "line": ["L9", "L10"],
         "stop_name": "onzeDeSetembre",
         "nom_districte": "Sant Andreu",
         "nom_barri": "Sant Andreu"
@@ -1183,7 +1222,7 @@
         "coordinates": [2.118424, 41.376084]
       },
       "properties": {
-        "line": ["L9", "L5"],
+        "line": ["L9", "L5", "L10"],
         "stop_name": "collblanc",
         "nom_districte": "",
         "nom_barri": ""
@@ -1395,8 +1434,21 @@
         "coordinates": [2.11802, 41.360923]
       },
       "properties": {
-        "line": ["L9"],
+        "line": ["L9", "L10"],
         "stop_name": "canTries",
+        "nom_districte": "",
+        "nom_barri": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.1240590139407765, 41.36135629978903]
+      },
+      "properties": {
+        "line": ["L10"],
+        "stop_name": "provençana",
         "nom_districte": "",
         "nom_barri": ""
       }
@@ -2063,7 +2115,7 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L8"],
         "stop_id": "IC",
         "stop_name": "ildefonsCerdà"
       }
@@ -2568,7 +2620,7 @@
       "properties": {
         "nom_districte": "",
         "nom_barri": "",
-        "line": [],
+        "line": ["L8"],
         "stop_id": "GO",
         "stop_name": "gornal"
       }

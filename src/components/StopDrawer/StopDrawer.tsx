@@ -60,7 +60,7 @@ const StopDrawer = ({ stop: stopName, setSelectedStop }: StopDrawerProps) => {
                   trigger={
                     <img
                       src={url}
-                      alt={stop.name}
+                      alt={`${url}`}
                       className="w-[220px] h-full object-cover"
                     />
                   }
