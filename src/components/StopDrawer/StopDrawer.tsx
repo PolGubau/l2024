@@ -65,18 +65,11 @@ const StopDrawer = ({ stop: stopName, setSelectedStop }: StopDrawerProps) => {
                     />
                   }
                 >
-                  {/* <div className="relative"> */}
                   <img
                     src={url}
                     alt={stop.name}
                     className="w-full h-full object-contain"
                   />
-                  {/* <DialogClose>
-                      <Button className="absolute bottom-3 right-3">
-                        Close
-                      </Button>
-                    </DialogClose> */}
-                  {/* </div> */}
                 </Dialog>
               </div>
             </div>
