@@ -11,18 +11,18 @@ import {
   DropdownGroup,
   DropdownItem,
   DropdownLabel,
+  DropdownCheckboxItem,
+  DropdownPortal,
+  DropdownSub,
   DropdownSubContent,
   DropdownSubTrigger,
   formatString,
 } from "pol-ui";
+import { useMemo, useState } from "react";
 import {
-  DropdownCheckboxItem,
   DropdownDescription,
   DropdownHeader,
-  DropdownPortal,
-  DropdownSub,
 } from "pol-ui/lib/esm/components/Dropdown/Dropdown";
-import { useState } from "react";
 import { TbFilterMinus, TbSettings } from "react-icons/tb";
 import { linesData } from "../data/lines";
 import { rawStops } from "../data/stops";
@@ -31,42 +31,38 @@ import { LineName, LineNameEnum, LineType } from "../types/types";
 import { Line } from "./Line";
 import StopDrawer from "./StopDrawer/StopDrawer";
 import { Stops } from "./stops";
+
+const exclusionArgs = {
+  paint: {
+    "fill-extrusion-color": "hsl(196, 61%, 83%)",
+    "fill-extrusion-height": { property: "render_height", type: "identity" },
+    "fill-extrusion-base": { property: "render_min_height", type: "identity" },
+    "fill-extrusion-opacity": [
+      "interpolate",
+      ["linear"],
+      ["zoom"],
+      13.5,
+      0,
+      14,
+      0.5,
+      14.5,
+      1,
+    ],
+  },
+};
+
+const metroStops: StopsObject = {
+  type: "FeatureCollection",
+  features: rawStops,
+};
+
+const extraOptions = ["hasElevation", "hasBuildings"] as const;
+type ExtraOption = (typeof extraOptions)[number];
+
 const Board = () => {
-  const exclusionArgs = {
-    paint: {
-      "fill-extrusion-color": "hsl(196, 61%, 83%)",
-      "fill-extrusion-height": {
-        property: "render_height",
-        type: "identity",
-      },
-      "fill-extrusion-base": {
-        property: "render_min_height",
-        type: "identity",
-      },
-      "fill-extrusion-opacity": [
-        "interpolate",
-        // Set to interpoleta linearly between the pair of stops
-        ["linear"],
-        ["zoom"],
-        // When zoom is 13.5, buildings will be 100% transparent.
-        13.5,
-        0,
-        14,
-        0.5,
-        // When zoom is 15 or higher, buildings will be 100% opaque.
-        14.5,
-        1,
-      ],
-    },
-  };
   const [selectedLine, setSelectedLine] = useState<LineType | null>(null);
   const [selectedStop, setSelectedStop] = useState<string | null>(null);
-
-  const metroStops: StopsObject = {
-    type: "FeatureCollection",
-    features: rawStops,
-  };
-  const [extras, setExtras] = useState({
+  const [extras, setExtras] = useState<Record<ExtraOption, boolean>>({
     hasElevation: false,
     hasBuildings: false,
   });
@@ -76,6 +72,10 @@ const Board = () => {
     if (!selectedLine) return true;
     return selectedLine?.id === line;
   };
+  const visibleLines = useMemo(
+    () => (selectedLine ? [selectedLine] : linesData),
+    [selectedLine]
+  );
 
   return (
     <>
@@ -96,8 +96,8 @@ const Board = () => {
           }
         >
           <DropdownHeader>
-            <DropdownLabel>Options</DropdownLabel>
-            <DropdownDescription>Customize the map</DropdownDescription>
+            <DropdownLabel>Opciones</DropdownLabel>
+            <DropdownDescription>Personaliza el mapa</DropdownDescription>
           </DropdownHeader>
 
           <Divider />
@@ -105,7 +105,7 @@ const Board = () => {
           <DropdownGroup>
             <DropdownSub>
               <DropdownSubTrigger>
-                <span>Filter Lines</span>
+                <span>Filtrar líneas</span>
               </DropdownSubTrigger>
               <DropdownPortal>
                 <DropdownSubContent>
@@ -113,11 +113,10 @@ const Board = () => {
                     icon={TbFilterMinus}
                     onSelect={() => setSelectedLine(null)}
                   >
-                    <span>All</span>
+                    <span>Todas</span>
                   </DropdownItem>
                   {Object.keys(LineNameEnum).map((line) => (
-                    <>
-                      <DropdownItem
+                    <DropdownItem
                         className={cn(" transition-colors ", {
                           "bg-secondary/30": isThisLineSelected(
                             line as LineName
@@ -137,20 +136,19 @@ const Board = () => {
                             width={20}
                             height={20}
                             src={`/logos/${line}.svg`}
-                            alt="logo"
+                            alt={`Logotipo de la línea ${line}`}
                           />
 
                           {line}
                         </span>
-                      </DropdownItem>{" "}
-                    </>
+                    </DropdownItem>
                   ))}
                 </DropdownSubContent>
               </DropdownPortal>
             </DropdownSub>
           </DropdownGroup>
           <DropdownGroup>
-            {Object.keys(extras).map((extra) => (
+            {extraOptions.map((extra) => (
               <DropdownCheckboxItem
                 className="text-secondary-900 dark:text-secondary-50"
                 key={extra}
@@ -169,7 +167,7 @@ const Board = () => {
 
         <div className="relative w-full h-full overflow-hidden rounded-3xl">
           {extras.hasBuildings && <MlFillExtrusionLayer {...exclusionArgs} />}
-          {linesData.map((line) => (
+          {visibleLines.map((line) => (
             <Line
               seeElevation={extras.hasElevation ?? false}
               line={line}

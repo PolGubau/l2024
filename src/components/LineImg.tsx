@@ -15,7 +15,7 @@ const LineImg = ({ l }: { l: LineName }) => {
             backgroundColor: `${line?.metadata.color}`,
           }}
           src={`/logos/${l}.svg`}
-          alt="logo"
+          alt={`Logotipo de la línea ${l}`}
         />
       </Tooltip>
     </li>

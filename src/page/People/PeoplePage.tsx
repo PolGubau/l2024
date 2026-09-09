@@ -2,6 +2,7 @@ import { Card, Chip, formatString, IconButton, Tooltip } from "pol-ui";
 import { useState } from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { TbArrowDown, TbArrowUp } from "react-icons/tb";
+import { Link } from "react-router-dom";
 import { people } from "../../data/people";
 import { getLineInfo } from "../../util/get-info";
 
@@ -11,7 +12,7 @@ const PeoplePage = () => {
   const toggleDirection = () =>
     setDirection((prev) => (prev === "asc" ? "desc" : "asc"));
 
-  const orderedPeople = people.sort((a, b) => {
+  const orderedPeople = [...people].sort((a, b) => {
     return direction === "asc" ? a.kms - b.kms : b.kms - a.kms;
   });
 
@@ -19,8 +20,8 @@ const PeoplePage = () => {
     <div className="flex justify-center">
       <main className="p-6 flex flex-col gap-6 w-full max-w-5xl pt-16">
         <header className="flex justify-between gap-2">
-          <h1 className="text-xl">Who made this possible</h1>
-          <IconButton onClick={toggleDirection} label="Sort by km">
+          <h1 className="text-xl">Participantes</h1>
+          <IconButton onClick={toggleDirection} label="Ordenar por kilómetros">
             {direction === "asc" ? <TbArrowDown /> : <TbArrowUp />}
           </IconButton>
         </header>
@@ -28,7 +29,10 @@ const PeoplePage = () => {
           {orderedPeople.map((p) => {
             return (
               <li key={p.id}>
-                <a href={`/people/${p.id}`}>
+                <Link
+                  to={`/people/${p.id}`}
+                  className="block h-full rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                >
                   <Card className="flex gap-3 flex-col">
                     <header className="flex items-center gap-2">
                       <img
@@ -62,7 +66,7 @@ const PeoplePage = () => {
                                 backgroundColor: `${line?.metadata.color}`,
                               }}
                               src={`/logos/${l.name}.svg`}
-                              alt="logo"
+                              alt={`Logotipo de la línea ${l.name}`}
                             />
                           </Tooltip>
                         );
@@ -110,7 +114,7 @@ const PeoplePage = () => {
                     })}
                   </ul> */}
                   </Card>
-                </a>
+                </Link>
               </li>
             );
           })}

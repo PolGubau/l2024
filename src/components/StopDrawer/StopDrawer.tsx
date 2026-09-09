@@ -37,7 +37,7 @@ const StopDrawer = ({ stop: stopName, setSelectedStop }: StopDrawerProps) => {
         <span className="opacity-80">{stop?.neighborhood}</span>
         <ul className="flex gap-1 flex-wrap pt-4">
           {stop?.lines.map((l) => (
-            <LineImg l={l} />
+            <LineImg key={l} l={l} />
           ))}
         </ul>
       </header>
@@ -60,14 +60,18 @@ const StopDrawer = ({ stop: stopName, setSelectedStop }: StopDrawerProps) => {
                   trigger={
                     <img
                       src={url}
-                      alt={`${url}`}
+                      alt={`Foto de ${stop.name} en la línea ${l}`}
+                      loading="lazy"
+                      onError={(event) => {
+                        event.currentTarget.style.display = "none";
+                      }}
                       className="w-[220px] h-full object-cover"
                     />
                   }
                 >
                   <img
                     src={url}
-                    alt={stop.name}
+                    alt={`Foto ampliada de ${stop.name} en la línea ${l}`}
                     className="w-full h-full object-contain"
                   />
                 </Dialog>

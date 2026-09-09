@@ -1,19 +1,25 @@
+import { useState } from "react";
+
 interface ImageProps {
   image: string;
+  alt: string;
+  className?: string;
 }
 
-const LineImage = ({ image }: ImageProps) => {
+const LineImage = ({ image, alt, className = "" }: ImageProps) => {
+  const [hasFailed, setHasFailed] = useState(false);
+
+  if (hasFailed) return null;
+
   return (
     <img
-      key={image}
-      onError={(e) => {
-        e.currentTarget.style.display = "none";
-      }}
+      onError={() => setHasFailed(true)}
       src={image}
-      alt={image}
+      alt={alt}
       width={400}
       height={400}
-      className="w-[400px] h-[400px] object-cover rounded-md"
+      loading="lazy"
+      className={`h-[400px] w-[400px] object-cover ${className}`}
     />
   );
 };

@@ -1,5 +1,5 @@
 import { Avatar, Card } from "pol-ui";
-import TimeAgo from "react-timeago";
+import { Link } from "react-router-dom";
 import LineImg from "../../components/LineImg";
 import { linesData } from "../../data/lines";
 import { getPeopleByLine } from "../../util/get-info";
@@ -9,7 +9,7 @@ const StationsPage = () => {
     <div className="flex justify-center">
       <main className="p-6 flex flex-col gap-6 w-full max-w-5xl pt-16">
         <header className="flex justify-between gap-2">
-          <h1 className="text-xl">Lines Information</h1>
+          <h1 className="text-xl">Información de líneas</h1>
         </header>
         <ul className="flex gap-2 flex-col divide-y divide-secondary/40">
           {linesData.map((line) => {
@@ -39,14 +39,12 @@ const StationsPage = () => {
                         dateTime={line.metadata.dateTime}
                         className="flex gap-2 items-center text-sm"
                       >
-                        {new Date(line.metadata.dateTime).toLocaleDateString()}
-                        <span>-</span>
-                        <TimeAgo date={line.metadata.dateTime} />
+                        Recorrido el {new Date(line.metadata.dateTime).toLocaleDateString("es-ES")}
                       </time>
                       {/* <h2 className="text-2xl">{line.id}</h2> */}
                       <p className="text-lg ">{line.metadata.subtitle}</p>
                       <p className="opacity-85">
-                        Stations: {line.metadata.stations}
+                        Estaciones: {line.metadata.stations}
                       </p>
                     </header>
                     {/* cards */}
@@ -55,7 +53,7 @@ const StationsPage = () => {
                         <span className="text-lg">
                           {line.metadata.metro_distance} km
                         </span>
-                        <small className="opacity-90">Distance in metro</small>
+                        <small className="opacity-90">Distancia en metro</small>
                       </Card>
                       <Card childrenClass="py-2 px-4 gap-0">
                         <span className="text-lg flex gap-1 items-center">
@@ -65,28 +63,31 @@ const StationsPage = () => {
                             {percentMoreWalkedThanMetroDistance}%)
                           </small>
                         </span>
-                        <small className="opacity-90">Distance in metro</small>
+                        <small className="opacity-90">Distancia caminada</small>
                       </Card>
                       <Card childrenClass="py-2 px-4 gap-0">
                         <span className="text-lg">
-                          {line.metadata.timeWalking} min
+                          {line.metadata.timeWalking}
                         </span>
-                        <small className="opacity-90">Time walking</small>
+                        <small className="opacity-90">Tiempo caminando</small>
                       </Card>
                       <Card childrenClass="py-2 px-4 gap-0">
                         <span className="text-lg flex gap-1 items-center">
-                          {line.metadata.velocity} km
+                          {line.metadata.velocity} km/h
                         </span>
-                        <small className="opacity-90">Speed walking</small>
+                        <small className="opacity-90">Velocidad media</small>
                       </Card>
                     </div>
 
                     <div className="flex flex-col gap-2">
-                      <h3>Thanks to</h3>
+                      <h3>Gracias a</h3>
                       <ul className="flex flex-col gap-2">
                         {getPeopleByLine(line.id).map((p) => (
                           <li key={p.name} className="flex gap-2 items-center">
-                            <a href={`/people/${p.id}`} className="flex gap-2">
+                            <Link
+                              to={`/people/${p.id}`}
+                              className="flex gap-2 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+                            >
                               <Avatar
                                 img={p.avatar}
                                 size="xs"
@@ -96,7 +97,7 @@ const StationsPage = () => {
                               <span className="opacity-70">
                                 {p.surnames}
                               </span>{" "}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>

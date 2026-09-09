@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   useLayer,
   useLayerHoverPopup,
@@ -12,10 +11,20 @@ interface StopsProps {
   setSelectedStop: (stop: string) => void;
 }
 
+interface StopClickEvent {
+  features?: Array<{
+    properties?: Record<string, unknown>;
+  }>;
+}
+
 export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   const id = useId();
   const sourceName = useRef("gpx-viewer-source-" + id);
   const layerNamePoints = useRef("importer-layer-points-" + id);
+  const handleStopClick = (event: unknown) => {
+    const stopName = (event as StopClickEvent).features?.[0]?.properties?.stop_name;
+    if (typeof stopName === "string") setSelectedStop(stopName);
+  };
 
   useLayerHoverPopup({
     layerId: layerNamePoints.current,
@@ -28,15 +37,12 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
     sourceId: sourceName.current,
     source: {
       type: "geojson",
-      data: stops as any,
+      data: stops as unknown as string,
     },
   });
 
   useLayer({
-    onClick: (ev) => {
-      const e = ev as any;
-      setSelectedStop(e.features[0]._vectorTileFeature.properties["stop_name"]);
-    },
+    onClick: handleStopClick,
 
     layerId: layerNamePoints.current,
     options: {

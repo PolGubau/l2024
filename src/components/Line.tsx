@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   MlSpatialElevationProfile,
   useLayer,
   useLayerHoverPopup,
   useSource,
 } from "@mapcomponents/react-maplibre";
-import { useId, useRef } from "react";
+import { useId, useMemo, useRef } from "react";
 import { LineType } from "../types/types";
 
 export interface MlGpxViewerProps {
@@ -16,7 +15,7 @@ export interface MlGpxViewerProps {
 
 export const Line = ({ line, isSelected, seeElevation }: MlGpxViewerProps) => {
   const id = useId();
-  const parsedGpx = JSON.parse(line.gpx);
+  const parsedGpx = useMemo(() => JSON.parse(line.gpx), [line.gpx]);
 
   const sourceName = useRef("gpx-viewer-source-" + id);
   const layerNameLines = useRef("importer-layer-lines-" + id);

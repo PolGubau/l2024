@@ -1,8 +1,12 @@
 import { PoluiProvider, Toaster } from "pol-ui";
-import { PropsWithChildren } from "react";
+import type { ReactNode } from "react";
 import { MapComponentsProvider } from "@mapcomponents/react-maplibre";
 
-export default function AppProviders(props: PropsWithChildren<{}>) {
+interface AppProvidersProps {
+  children: ReactNode;
+}
+
+export default function AppProviders(props: AppProvidersProps) {
   return (
     <MapComponentsProvider>
       <PoluiProvider>
