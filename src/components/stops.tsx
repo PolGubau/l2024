@@ -3,6 +3,7 @@ import {
   useLayerHoverPopup,
   useSource,
 } from "@mapcomponents/react-maplibre";
+import type { GeoJSONSourceSpecification } from "maplibre-gl";
 import { formatString } from "pol-ui";
 import { useId, useRef } from "react";
 import { StopsObject } from "../types/stops";
@@ -21,6 +22,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
   const id = useId();
   const sourceName = useRef("gpx-viewer-source-" + id);
   const layerNamePoints = useRef("importer-layer-points-" + id);
+  const sourceData = stops as unknown as GeoJSONSourceSpecification["data"];
   const handleStopClick = (event: unknown) => {
     const stopName = (event as StopClickEvent).features?.[0]?.properties?.stop_name;
     if (typeof stopName === "string") setSelectedStop(stopName);
@@ -37,7 +39,7 @@ export const Stops = ({ stops, setSelectedStop }: StopsProps) => {
     sourceId: sourceName.current,
     source: {
       type: "geojson",
-      data: stops as unknown as string,
+      data: sourceData,
     },
   });
 
